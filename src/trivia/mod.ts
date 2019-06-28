@@ -6,6 +6,14 @@ import films from './films/mod.ts';
 import games from './games/mod.ts';
 import television from './television/mod.ts';
 
+export {
+  books,
+  comics,
+  films,
+  games,
+  television,
+};
+
 const trivia: QUESTION[] = [
   ...books,
   ...comics,
