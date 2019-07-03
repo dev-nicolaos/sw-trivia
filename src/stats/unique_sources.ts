@@ -1,4 +1,4 @@
-import { QUESTION } from '../question.interface.ts';
+import { QUESTION } from '../interfaces/question.interface.ts';
 
 export default (questions: QUESTION[]) => questions
   .map(question => question.source.name)

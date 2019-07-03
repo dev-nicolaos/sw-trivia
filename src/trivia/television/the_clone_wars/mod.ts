@@ -1,4 +1,4 @@
-import { QUESTION } from "../../../question.interface.ts";
+import { QUESTION } from "../../../interfaces/question.interface.ts";
 
 import theCloneWarsSeason1 from './season_1.ts';
 import theCloneWarsSeason2 from './season_2.ts';

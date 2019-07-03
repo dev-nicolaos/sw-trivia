@@ -1,4 +1,4 @@
-import { QUESTION } from '../../question.interface.ts';
+import { QUESTION } from '../../interfaces/question.interface.ts';
 
 import rebels from './rebels/mod.ts';
 import theCloneWars from './the_clone_wars/mod.ts';

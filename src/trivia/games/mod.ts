@@ -1,4 +1,4 @@
-import { QUESTION } from '../../question.interface.ts';
+import { QUESTION } from '../../interfaces/question.interface.ts';
 
 import battlefront2 from './battlefront_2.ts';
 import jediFallenOrder from './jedi_fallen_order.ts';

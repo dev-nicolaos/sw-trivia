@@ -1,4 +1,4 @@
-import { QUESTION } from '../question.interface.ts';
+import { QUESTION } from '../interfaces/question.interface.ts';
 
 import books from './books/mod.ts';
 import comics from './comics/mod.ts';

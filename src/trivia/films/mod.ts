@@ -1,4 +1,4 @@
-import { QUESTION } from '../../question.interface.ts';
+import { QUESTION } from '../../interfaces/question.interface.ts';
 
 import aNewHope from './a_new_hope.ts';
 import attackOfTheClones from './attack_of_the_clones.ts';
