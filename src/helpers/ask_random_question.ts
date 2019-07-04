@@ -1,6 +1,5 @@
 import { QUESTION } from '../interfaces/mod.ts';
-import { getPossibleAnswers } from './get_possible_answers.ts';
-import { getInput } from './get_input.ts';
+import { getPossibleAnswers, getInput } from './mod.ts';
 
 export async function askRandomQuestion(trivia: QUESTION[]) {
   const selectedIndex = Math.floor(Math.random() * trivia.length);

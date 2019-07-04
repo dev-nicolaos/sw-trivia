@@ -1,4 +1,4 @@
-import { EOL } from './eol.ts';
+import { EOL } from './mod.ts';
 
 export async function getInput(prompt: string = ''): Promise<string> {
   if (prompt) {
