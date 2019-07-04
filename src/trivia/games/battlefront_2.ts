@@ -90,7 +90,7 @@ const trivia: QUESTION[] = [
     source: { name: `Star Wars Battlefront 2`, mediaType: `Game` },
   },
   {
-    question: `What planet did the Imperial defector Paldora give Han Solo intel on?`,
+    question: `What planet did the Imperial defector Paldora give Han Solo intel about?`,
     correctAnswer: `Kashyyyk`,
     wrongAnswers: [`Fondor`, `Ryloth`, `Tatooine`],
     source: { name: `Star Wars Battlefront 2`, mediaType: `Game` },
