@@ -1,7 +1,8 @@
 import { QUESTION } from '../interfaces/mod.ts';
 import { getPossibleAnswers } from './get_possible_answers.ts';
+import { getInput } from './get_input.ts';
 
-export function askRandomQuestion(trivia: QUESTION[]) {
+export async function askRandomQuestion(trivia: QUESTION[]) {
   const selectedIndex = Math.floor(Math.random() * trivia.length);
   const selectedTrivia = trivia[selectedIndex];
   const possibleAnswers = getPossibleAnswers(selectedTrivia);
@@ -11,13 +12,18 @@ export function askRandomQuestion(trivia: QUESTION[]) {
     console.log(i + 1 + ')', answer);
   });
 
-  // Listen for response
+  const response = await getInput();
 
-  /* if (possibleAnswers[(+response) - 1] === selectedTrivia.correctAnswer) {
+  if (possibleAnswers[+response - 1] === selectedTrivia.correctAnswer) {
     console.log('Correct ✔');
   } else {
     console.log('Incorrect 😢');
-    console.log('The correct answer is', selectedTrivia.correctAnswer);
+    console.log('The correct answer is:', selectedTrivia.correctAnswer);
   }
-  console.log('Source:', selectedTrivia.source.name); */
+  console.log('Source:', selectedTrivia.source.name);
+
+  const another = (await getInput('Another? (y/n)')).toLowerCase();
+  if (another === 'y' || another === 'yes') {
+    askRandomQuestion(trivia);
+  }
 }
