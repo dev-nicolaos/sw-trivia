@@ -5,4 +5,4 @@ export interface QUESTION {
   correctAnswer: string;
   wrongAnswers: string[];
   source: SOURCE;
-};
+}

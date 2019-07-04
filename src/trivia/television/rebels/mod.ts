@@ -1,4 +1,4 @@
-import { QUESTION } from "../../../interfaces/question.interface.ts";
+import { QUESTION } from '../../../interfaces/question.interface.ts';
 
 import rebelsSeason1 from './season_1.ts';
 import rebelsSeason2 from './season_2.ts';

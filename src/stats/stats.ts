@@ -1,4 +1,10 @@
-import trivia, { books, comics, films, games, television } from '../trivia/mod.ts';
+import trivia, {
+  books,
+  comics,
+  films,
+  games,
+  television,
+} from '../trivia/mod.ts';
 
 import uniqueSources from './unique_sources.ts';
 import sourcesWithMostQuestions from './sources_with_most_questions.ts';

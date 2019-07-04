@@ -8,7 +8,7 @@ export function askRandomQuestion(trivia: QUESTION[]) {
 
   console.log(selectedTrivia.question);
   possibleAnswers.forEach((answer, i) => {
-    console.log((i + 1) + ')', answer);
+    console.log(i + 1 + ')', answer);
   });
 
   // Listen for response
