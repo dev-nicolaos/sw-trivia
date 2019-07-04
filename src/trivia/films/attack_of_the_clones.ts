@@ -122,9 +122,9 @@ const trivia: QUESTION[] = [
     question: `Where did Dexter Jettster say Kamino was located?`,
     correctAnswer: `About 12 parsecs outside the Rishi maze`,
     wrongAnswers: [
-      `12 parsecs inside Wild Space`,
-      `12 parsecs outside the Archeon Nebula`,
-      `12 parsecs outside the Kaliida Nebula`,
+      `About 12 parsecs inside Wild Space`,
+      `About 12 parsecs outside the Archeon Nebula`,
+      `About 12 parsecs outside the Kaliida Nebula`,
     ],
     source: {
       name: `Star Wars Episode II: Attack of the Clones`,
