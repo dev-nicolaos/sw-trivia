@@ -20,7 +20,7 @@ const trivia: QUESTION[] = [
     },
   },
   {
-    question: `Which Partisan was known as \`The Mentor\`?`,
+    question: `Which Partisan was known as "The Mentor"?`,
     correctAnswer: `Lux Bonteri`,
     wrongAnswers: [`Staven`, `Reece Tallent`, `Saw Gerrera`],
     source: {

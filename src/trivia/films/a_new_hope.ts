@@ -40,8 +40,8 @@ const trivia: QUESTION[] = [
     correctAnswer: `overweight glob of grease!`,
     wrongAnswers: [
       `stupid little astromech!`,
-      `pathetic excuse for a droid`,
-      `piece of junk`,
+      `pathetic excuse for a droid!`,
+      `piece of junk!`,
     ],
     source: { name: `Episode IV: A New Hope`, mediaType: `Film` },
   },
@@ -114,9 +114,9 @@ const trivia: QUESTION[] = [
     source: { name: `Episode IV: A New Hope`, mediaType: `Film` },
   },
   {
-    question: `Finish the quote: "It's the ship that made the Kessel run in _____"`,
-    correctAnswer: `12 parsecs`,
-    wrongAnswers: [`14 parsecs`, `10 parsecs`, `8 parsecs`],
+    question: `Finish the quote: "It's the ship that made the Kessel run in less than _____"`,
+    correctAnswer: `12 parsecs.`,
+    wrongAnswers: [`14 parsecs.`, `10 parsecs.`, `8 parsecs.`],
     source: { name: `Episode IV: A New Hope`, mediaType: `Film` },
   },
   {

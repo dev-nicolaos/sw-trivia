@@ -126,11 +126,11 @@ const trivia: QUESTION[] = [
   },
   {
     question: `Finish the quote: "The dark side of the Force is a pathway to _____"`,
-    correctAnswer: `many abilities some consider to be unnatural`,
+    correctAnswer: `many abilities some consider to be unnatural.`,
     wrongAnswers: [
-      `unlimited power`,
-      `ruling the galaxy`,
-      `being able to save others from death`,
+      `unlimited power.`,
+      `ruling the galaxy.`,
+      `being able to save others from death.`,
     ],
     source: {
       name: `Star Wars Episode III: Revenge of the Sith`,
@@ -191,7 +191,7 @@ const trivia: QUESTION[] = [
     },
   },
   {
-    question: `Finish the quote: "If they (the Jedi) are not all destroyed, _____"`,
+    question: `Finish the quote: "If they are not all destroyed, _____"`,
     correctAnswer: `it will be civil war without end.`,
     wrongAnswers: [
       `they will hunt us down.`,

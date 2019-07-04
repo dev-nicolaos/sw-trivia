@@ -30,7 +30,7 @@ const trivia: QUESTION[] = [
     correctAnswer: `Please do not resist.`,
     wrongAnswers: [
       `You can thank me later.`,
-      `We have a long ride ahead of us`,
+      `We have a long ride ahead of us.`,
       `Did I miss something?`,
     ],
     source: { name: `Rouge One: A Star Wars Story`, mediaType: `Film` },
@@ -84,7 +84,7 @@ const trivia: QUESTION[] = [
     source: { name: `Rouge One: A Star Wars Story`, mediaType: `Film` },
   },
   {
-    question: `Who said Well done! You"re a rebel now"?`,
+    question: `Who said "Well done! You're a rebel now"?`,
     correctAnswer: `K2SO`,
     wrongAnswers: [`Cassian Andor`, `Han Solo`, `Leia Organa`],
     source: { name: `Rouge One: A Star Wars Story`, mediaType: `Film` },

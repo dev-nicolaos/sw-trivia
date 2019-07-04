@@ -48,8 +48,8 @@ const trivia: QUESTION[] = [
   },
   {
     question: `Finish the quote: I don't need more security, I need _____`,
-    correctAnswer: `answers`,
-    wrongAnswers: [`an investigation`, `real protection`, `Senate support`],
+    correctAnswer: `answers.`,
+    wrongAnswers: [`an investigation.`, `real protection.`, `Senate support.`],
     source: {
       name: `Star Wars Episode II: Attack of the Clones`,
       mediaType: `Film`,
@@ -75,8 +75,8 @@ const trivia: QUESTION[] = [
   },
   {
     question: `Finish the quote: Anakin, how many times have I told you to stay away from _____`,
-    correctAnswer: `power couplings`,
-    wrongAnswers: [`greedy Senators`, `younglings`, `Coruscant clubs`],
+    correctAnswer: `power couplings!`,
+    wrongAnswers: [`greedy Senators!`, `younglings!`, `Coruscant clubs!`],
     source: {
       name: `Star Wars Episode II: Attack of the Clones`,
       mediaType: `Film`,
