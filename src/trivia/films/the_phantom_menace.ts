@@ -20,7 +20,7 @@ const trivia: QUESTION[] = [
     },
   },
   {
-    question: `Finish the quote: The ability to speak _____`,
+    question: `Finish the quote: "The ability to speak _____"`,
     correctAnswer: `does not make you intelligent.`,
     wrongAnswers: [
       `should be used sparingly.`,

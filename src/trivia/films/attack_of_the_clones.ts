@@ -29,7 +29,7 @@ const trivia: QUESTION[] = [
     },
   },
   {
-    question: `Finish the quote: He is a _____, not a murderer`,
+    question: `Finish the quote: "He is a _____, not a murderer"`,
     correctAnswer: `political idealist`,
     wrongAnswers: [`failed Jedi`, `separtist leader`, `Sith Lord`],
     source: {
@@ -47,7 +47,7 @@ const trivia: QUESTION[] = [
     },
   },
   {
-    question: `Finish the quote: I don't need more security, I need _____`,
+    question: `Finish the quote: "I don't need more security, I need _____"`,
     correctAnswer: `answers.`,
     wrongAnswers: [`an investigation.`, `real protection.`, `Senate support.`],
     source: {
@@ -74,7 +74,7 @@ const trivia: QUESTION[] = [
     },
   },
   {
-    question: `Finish the quote: Anakin, how many times have I told you to stay away from _____`,
+    question: `Finish the quote: "Anakin, how many times have I told you to stay away from _____"`,
     correctAnswer: `power couplings!`,
     wrongAnswers: [`greedy Senators!`, `younglings!`, `Coruscant clubs!`],
     source: {
