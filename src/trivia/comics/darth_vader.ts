@@ -1,6 +1,6 @@
-import { QUESTION } from '../../interfaces/question.interface.ts';
+import { TRIVIA } from '../../interfaces/mod.ts';
 
-const trivia: QUESTION[] = [
+const trivia: TRIVIA[] = [
   {
     question: `Which Jedi Master defeated Darth Vader on Al’doleem?`,
     correctAnswer: `Infil’a`,

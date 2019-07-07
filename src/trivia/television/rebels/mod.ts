@@ -1,11 +1,11 @@
-import { QUESTION } from '../../../interfaces/question.interface.ts';
+import { TRIVIA } from '../../../interfaces/mod.ts';
 
 import rebelsSeason1 from './season_1.ts';
 import rebelsSeason2 from './season_2.ts';
 import rebelsSeason3 from './season_3.ts';
 import rebelsSeason4 from './season_4.ts';
 
-const trivia: QUESTION[] = [
+const trivia: TRIVIA[] = [
   ...rebelsSeason1,
   ...rebelsSeason2,
   ...rebelsSeason3,

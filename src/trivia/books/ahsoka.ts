@@ -1,6 +1,6 @@
-import { QUESTION } from '../../interfaces/question.interface.ts';
+import { TRIVIA } from '../../interfaces/mod.ts';
 
-const trivia: QUESTION[] = [
+const trivia: TRIVIA[] = [
   {
     question: `Just before Order 66, Ahsoka Tano had the opportunity to kill Darth Maul, but she instead chose to save who?`,
     correctAnswer: `Captain Rex`,

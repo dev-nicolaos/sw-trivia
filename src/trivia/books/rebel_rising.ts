@@ -1,6 +1,6 @@
-import { QUESTION } from '../../interfaces/question.interface.ts';
+import { TRIVIA } from '../../interfaces/mod.ts';
 
-const trivia: QUESTION[] = [
+const trivia: TRIVIA[] = [
   {
     question: `Where did Jyn and Saw go after leaving Lah'mu?`,
     correctAnswer: `Wrea`,

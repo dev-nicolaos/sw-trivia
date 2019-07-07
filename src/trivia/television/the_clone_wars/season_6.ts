@@ -1,6 +1,6 @@
-import { QUESTION } from '../../../interfaces/question.interface.ts';
+import { TRIVIA } from '../../../interfaces/mod.ts';
 
-const trivia: QUESTION[] = [
+const trivia: TRIVIA[] = [
   {
     question: `What planet was the homeworld of the Pyke Syndicate?`,
     correctAnswer: `Oba Diah`,

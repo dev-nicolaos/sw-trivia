@@ -1,6 +1,6 @@
-import { QUESTION } from '../../interfaces/question.interface.ts';
+import { TRIVIA } from '../../interfaces/mod.ts';
 
-const trivia: QUESTION[] = [
+const trivia: TRIVIA[] = [
   {
     question:
       'After the Battle of Yavin, where did Luke travel in an attempt to setup a secret supply line for the Alliance?',

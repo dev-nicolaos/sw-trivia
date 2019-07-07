@@ -1,6 +1,6 @@
-import { QUESTION } from '../../interfaces/question.interface.ts';
+import { TRIVIA } from '../../interfaces/mod.ts';
 
-const trivia: QUESTION[] = [
+const trivia: TRIVIA[] = [
   {
     question: `Who dispatched Qui-Gon and Obi-Wan to Naboo?`,
     correctAnswer: `The Supreme Chancellor`,

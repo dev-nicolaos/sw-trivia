@@ -1,6 +1,6 @@
-import { QUESTION } from '../../interfaces/question.interface.ts';
+import { TRIVIA } from '../../interfaces/mod.ts';
 
-const trivia: QUESTION[] = [
+const trivia: TRIVIA[] = [
   {
     question: `How did Anakin describe General Grievous's ship at the Battle of Coruscant?`,
     correctAnswer: `Crawling with vulture droids`,

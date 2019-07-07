@@ -1,6 +1,6 @@
-import { QUESTION } from '../../interfaces/question.interface.ts';
+import { TRIVIA } from '../../interfaces/mod.ts';
 
-const trivia: QUESTION[] = [
+const trivia: TRIVIA[] = [
   {
     question: `During Episode II: Attack of the Clones, who was the ruler of the Naboo?`,
     correctAnswer: `Queen Jamillia`,

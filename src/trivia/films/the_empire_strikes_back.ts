@@ -1,6 +1,6 @@
-import { QUESTION } from '../../interfaces/question.interface.ts';
+import { TRIVIA } from '../../interfaces/mod.ts';
 
-const trivia: QUESTION[] = [
+const trivia: TRIVIA[] = [
   {
     question: `Prior to Disney's purchase of Lucasfilm, which Star Wars film was the only one not to show Tatooine?`,
     correctAnswer: `Episode V: Empire Strikes Back`,

@@ -1,4 +1,4 @@
-import { QUESTION } from '../../interfaces/question.interface.ts';
+import { TRIVIA } from '../../interfaces/mod.ts';
 
 import aftermath from './aftermath.ts';
 import ahsoka from './ahsoka.ts';
@@ -25,7 +25,7 @@ import thrawn from './thrawn.ts';
 import thrawnAlliances from './thrawn_alliances.ts';
 import twiglightCompany from './twiglight_company.ts';
 
-const trivia: QUESTION[] = [
+const trivia: TRIVIA[] = [
   ...aftermath,
   ...ahsoka,
   ...beforeTheAwakening,

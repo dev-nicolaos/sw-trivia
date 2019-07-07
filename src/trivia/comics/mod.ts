@@ -1,4 +1,4 @@
-import { QUESTION } from '../../interfaces/question.interface.ts';
+import { TRIVIA } from '../../interfaces/mod.ts';
 
 import captainPhasma from './captain_phasma.ts';
 import chewbacca from './chewbacca.ts';
@@ -17,7 +17,7 @@ import princessLeia from './princess_leia.ts';
 import shatteredEmpire from './shattered_empire.ts';
 import starWars from './star_wars.ts';
 
-const trivia: QUESTION[] = [
+const trivia: TRIVIA[] = [
   ...captainPhasma,
   ...chewbacca,
   ...darthMaul,

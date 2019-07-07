@@ -1,6 +1,6 @@
-import { QUESTION } from '../../interfaces/question.interface.ts';
+import { TRIVIA } from '../../interfaces/mod.ts';
 
-const trivia: QUESTION[] = [
+const trivia: TRIVIA[] = [
   {
     question: `Who captured and tortured Vi Moradi?`,
     correctAnswer: `Captain Cardinal`,
@@ -60,7 +60,7 @@ const trivia: QUESTION[] = [
     },
   },
   {
-    question: `What originally owned the ship Phasma smelted her chrome armor from?`,
+    question: `Who originally owned the ship Phasma smelted her chrome armor from?`,
     correctAnswer: `Emperor Palpatine`,
     wrongAnswers: [`Brendol Hux`, `Padmé Amidala`, `General Grievous`],
     source: {

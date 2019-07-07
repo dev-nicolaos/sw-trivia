@@ -1,6 +1,6 @@
-import { QUESTION } from '../../interfaces/question.interface.ts';
+import { TRIVIA } from '../../interfaces/mod.ts';
 
-const trivia: QUESTION[] = [
+const trivia: TRIVIA[] = [
   {
     question: `What was the code Iden Versio used to activate the ID-10 on board the Invincible Faith?`,
     correctAnswer: `VZ-626`,
@@ -131,7 +131,7 @@ const trivia: QUESTION[] = [
   },
   {
     question: `How did Lando shut down the weapons factory on Sullust?`,
-    correctAnswer: `Flooded it with Lava`,
+    correctAnswer: `Flooded it with lava`,
     wrongAnswers: [
       `Bombared it from a capitol ship`,
       `Y-Wing Bombing Runs`,

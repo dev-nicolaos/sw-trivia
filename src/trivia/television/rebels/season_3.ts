@@ -1,6 +1,6 @@
-import { QUESTION } from '../../../interfaces/question.interface.ts';
+import { TRIVIA } from '../../../interfaces/mod.ts';
 
-const trivia: QUESTION[] = [
+const trivia: TRIVIA[] = [
   {
     question: `All Imperial Super Commandos come from what race of people?`,
     correctAnswer: `Mandalorians`,

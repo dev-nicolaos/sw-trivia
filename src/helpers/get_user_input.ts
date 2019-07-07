@@ -1,8 +1,8 @@
-import { EOL } from './mod.ts';
+import { EOL, printQuestion } from './mod.ts';
 
-export async function getInput(prompt: string = ''): Promise<string> {
+export async function getUserInput(prompt: string = ''): Promise<string> {
   if (prompt) {
-    console.log(prompt);
+    printQuestion(prompt);
   }
 
   const { stdin, platform } = Deno;
