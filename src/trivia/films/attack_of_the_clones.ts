@@ -40,7 +40,7 @@ const trivia: TRIVIA[] = [
   {
     question: `Other than Amidala herself, who questioned Chancellor Paplatine's recommendation to assign Padmé Jedi protection?`,
     correctAnswer: `Senator Organa`,
-    wrongAnswers: [`Senator Farr`, `Master Windu`, `Master Undili`],
+    wrongAnswers: [`Senator Farr`, `Master Windu`, `Master Unduli`],
     source: {
       name: `Star Wars Episode II: Attack of the Clones`,
       mediaType: `Film`,

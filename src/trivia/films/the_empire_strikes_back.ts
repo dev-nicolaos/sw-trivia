@@ -34,8 +34,8 @@ const trivia: TRIVIA[] = [
   },
   {
     question: `Who was in command of Echo Base?`,
-    correctAnswer: `General Riekkan`,
-    wrongAnswers: [`General Madiene`, `General Veers`, `General Kenobi`],
+    correctAnswer: `General Rieekan`,
+    wrongAnswers: [`General Madine`, `General Veers`, `General Kenobi`],
     source: {
       name: `Episode V: The Empire Strikes Back`,
       mediaType: `Film`,
@@ -120,7 +120,7 @@ const trivia: TRIVIA[] = [
   {
     question: `Which Imperial did Darth Vader choke just before the Battle of Hoth?`,
     correctAnswer: `Admiral Ozzle`,
-    wrongAnswers: [`Captain Piett`, `Captain Needa`, `Moff Jerijodd`],
+    wrongAnswers: [`Captain Piett`, `Captain Needa`, `Moff Jerjerrod`],
     source: {
       name: `Episode V: The Empire Strikes Back`,
       mediaType: `Film`,
