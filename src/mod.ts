@@ -1,4 +1,5 @@
 import { parse } from './deps.ts';
+import { printVersion } from './version.ts';
 import { printStats } from './stats/mod.ts';
 import {
   askRandomTriviaQuestion,
@@ -7,12 +8,18 @@ import {
   startQuiz,
 } from './helpers/mod.ts';
 
-const { args } = Deno;
 
-const statsFlag = parse(args).stats;
+const { stats, version } = parse(Deno.args, {
+  alias: {
+    s: 'stats',
+    v: 'version',
+  }
+});
 
-if (statsFlag) {
+if (stats) {
   printStats();
+} else if (version) {
+  printVersion();
 } else {
   main();
 }
