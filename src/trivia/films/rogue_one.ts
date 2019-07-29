@@ -137,6 +137,12 @@ const trivia: TRIVIA[] = [
     wrongAnswers: [`TIE Fighter`, `TIE Interceptor`, `TIE Defender`],
     source: { name: `Rouge One: A Star Wars Story`, mediaType: `Film` },
   },
+  {
+    question: `How was the destruction of Jedha City explained to the Senate?`,
+    correctAnswer: `A Mining Accident`,
+    wrongAnswers: [`A Natural Disaster`, `'A Weapons Test'`, `An Alien Invasion`],
+    source: { name: `Rouge One: A Star Wars Story`, mediaType: `Film` },
+  },
 ];
 
 export default trivia;
