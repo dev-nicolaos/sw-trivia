@@ -1,14 +1,12 @@
 import { TRIVIA } from '../../../interfaces/mod.ts';
+import { generateRebelsSource as genSource } from './mod.ts';
 
 const trivia: TRIVIA[] = [
   {
     question: `All Imperial Super Commandos come from what race of people?`,
     correctAnswer: `Mandalorians`,
     wrongAnswers: [`Echani`, `Corellians`, `Pamarthens`],
-    source: {
-      name: `Star Wars Rebels: Imperial Super Commandos`,
-      mediaType: `Television`,
-    },
+    source: genSource('Imperial Super Commandos'),
   },
 ];
 

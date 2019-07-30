@@ -1,4 +1,5 @@
 import { TRIVIA } from '../../../interfaces/mod.ts';
+import { generateTVSource } from '../../../helpers/mod.ts';
 
 import rebelsSeason1 from './season_1.ts';
 import rebelsSeason2 from './season_2.ts';
@@ -13,3 +14,5 @@ const trivia: TRIVIA[] = [
 ];
 
 export default trivia;
+
+export const generateRebelsSource = (episode: string) => generateTVSource('Rebels', episode);
