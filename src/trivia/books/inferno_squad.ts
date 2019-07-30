@@ -6,7 +6,7 @@ const trivia: TRIVIA[] = [
     correctAnswer: `Inspector General`,
     wrongAnswers: [`Admiral`, `Inquisitor`, `ISB Agent`],
     source: {
-      name: `Star Wars Battlefront II Inferno Squad`,
+      name: `Battlefront II: Inferno Squad`,
       mediaType: `Book`,
     },
   },
@@ -15,7 +15,7 @@ const trivia: TRIVIA[] = [
     correctAnswer: `5`,
     wrongAnswers: [`3`, `7`, `9`],
     source: {
-      name: `Star Wars Battlefront II Inferno Squad`,
+      name: `Battlefront II: Inferno Squad`,
       mediaType: `Book`,
     },
   },
@@ -24,7 +24,7 @@ const trivia: TRIVIA[] = [
     correctAnswer: `Lux Bonteri`,
     wrongAnswers: [`Staven`, `Reece Tallent`, `Saw Gerrera`],
     source: {
-      name: `Star Wars Battlefront II Inferno Squad`,
+      name: `Battlefront II: Inferno Squad`,
       mediaType: `Book`,
     },
   },
@@ -33,7 +33,7 @@ const trivia: TRIVIA[] = [
     correctAnswer: `Gideon and Del`,
     wrongAnswers: [`Iden and Gideon`, `Iden and Seyn`, `Gideon and Seyn`],
     source: {
-      name: `Star Wars Battlefront II Inferno Squad`,
+      name: `Battlefront II: Inferno Squad`,
       mediaType: `Book`,
     },
   },

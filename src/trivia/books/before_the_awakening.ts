@@ -10,7 +10,7 @@ const trivia: TRIVIA[] = [
       `She stole another scavenger's ship`,
     ],
     source: {
-      name: `Star Wars Before the Awakening`,
+      name: `Before the Awakening`,
       mediaType: `Book`,
     },
   },
@@ -19,7 +19,7 @@ const trivia: TRIVIA[] = [
     correctAnswer: `Rapier Squadron`,
     wrongAnswers: [`Corona Squadron`, `Phantom Squadron`, `Blade Squadron`],
     source: {
-      name: `Star Wars Before the Awakening`,
+      name: `Before the Awakening`,
       mediaType: `Book`,
     },
   },
@@ -28,7 +28,7 @@ const trivia: TRIVIA[] = [
     correctAnswer: `FN-9330`,
     wrongAnswers: [`Nines`, `Zeroes`, `Slip`],
     source: {
-      name: `Star Wars Before the Awakening`,
+      name: `Before the Awakening`,
       mediaType: `Book`,
     },
   },

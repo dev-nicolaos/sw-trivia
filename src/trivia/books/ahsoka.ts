@@ -6,7 +6,7 @@ const trivia: TRIVIA[] = [
     correctAnswer: `Captain Rex`,
     wrongAnswers: [`Commander Cody`, `Ezra Bridger`, `Kaeden Larte`],
     source: {
-      name: `Star Wars Ahsoka`,
+      name: `Ahsoka`,
       mediaType: `Book`,
     },
   },

@@ -6,7 +6,7 @@ const trivia: TRIVIA[] = [
     correctAnswer: `Vallt`,
     wrongAnswers: [`Coruscant`, `Lokori`, `Wobani`],
     source: {
-      name: `Star Wars Catalyst: A Rogue One Novel`,
+      name: `Catalyst: A Rogue One Novel`,
       mediaType: `Book`,
     },
   },

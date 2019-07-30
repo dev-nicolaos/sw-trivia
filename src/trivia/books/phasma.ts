@@ -6,7 +6,7 @@ const trivia: TRIVIA[] = [
     correctAnswer: `Captain Cardinal`,
     wrongAnswers: [`Captain Phasma`, `Brendol Hux`, `Sinjir Rath Velus`],
     source: {
-      name: `Star Wars Phasma`,
+      name: `Phasma`,
       mediaType: `Book`,
     },
   },
@@ -15,7 +15,7 @@ const trivia: TRIVIA[] = [
     correctAnswer: `Parnassos`,
     wrongAnswers: [`Arkanis`, `Jakku`, `Eriadu`],
     source: {
-      name: `Star Wars Phasma`,
+      name: `Phasma`,
       mediaType: `Book`,
     },
   },
@@ -24,7 +24,7 @@ const trivia: TRIVIA[] = [
     correctAnswer: `Keldo`,
     wrongAnswers: [`Cardinal`, `Armitage`, `Wilhuff`],
     source: {
-      name: `Star Wars Phasma`,
+      name: `Phasma`,
       mediaType: `Book`,
     },
   },
@@ -37,7 +37,7 @@ const trivia: TRIVIA[] = [
       `Shot down in dogfight`,
     ],
     source: {
-      name: `Star Wars Phasma`,
+      name: `Phasma`,
       mediaType: `Book`,
     },
   },
@@ -46,7 +46,7 @@ const trivia: TRIVIA[] = [
     correctAnswer: `Captain Phasma`,
     wrongAnswers: [`Captain Cardinal`, `Kylo Ren`, `Iden Versio`],
     source: {
-      name: `Star Wars Phasma`,
+      name: `Phasma`,
       mediaType: `Book`,
     },
   },
@@ -55,7 +55,7 @@ const trivia: TRIVIA[] = [
     correctAnswer: `Archex`,
     wrongAnswers: [`Wullf`, `Churkk`, `Rae`],
     source: {
-      name: `Star Wars Phasma`,
+      name: `Phasma`,
       mediaType: `Book`,
     },
   },
@@ -64,7 +64,7 @@ const trivia: TRIVIA[] = [
     correctAnswer: `Emperor Palpatine`,
     wrongAnswers: [`Brendol Hux`, `Padmé Amidala`, `General Grievous`],
     source: {
-      name: `Star Wars Phasma`,
+      name: `Phasma`,
       mediaType: `Book`,
     },
   },
@@ -73,7 +73,7 @@ const trivia: TRIVIA[] = [
     correctAnswer: `Within 1 year`,
     wrongAnswers: [`Within 2 years`, `Within 5 years`, `Within 3 years`],
     source: {
-      name: `Star Wars Phasma`,
+      name: `Phasma`,
       mediaType: `Book`,
     },
   },
