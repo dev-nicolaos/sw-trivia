@@ -8,23 +8,21 @@ import {
   startQuiz,
 } from './helpers/mod.ts';
 
+window.addEventListener('load', () => {
+  const { stats, version } = parse(Deno.args, {
+    alias: { s: 'stats', v: 'version' },
+  });
 
-const { stats, version } = parse(Deno.args, {
-  alias: {
-    s: 'stats',
-    v: 'version',
+  if (stats) {
+    printStats();
+  } else if (version) {
+    printVersion();
+  } else {
+    startGame();
   }
 });
 
-if (stats) {
-  printStats();
-} else if (version) {
-  printVersion();
-} else {
-  main();
-}
-
-async function main() {
+async function startGame() {
   printOptions(
     'How would you like to play?',
     'Answer a random trivia question',
@@ -42,7 +40,7 @@ async function main() {
       break;
     default:
       console.log('Please select a valid option');
-      main();
+      startGame();
       break;
   }
 }
