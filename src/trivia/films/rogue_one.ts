@@ -140,7 +140,7 @@ const trivia: TRIVIA[] = [
   {
     question: `How was the destruction of Jedha City explained to the Senate?`,
     correctAnswer: `A Mining Accident`,
-    wrongAnswers: [`A Natural Disaster`, `'A Weapons Test'`, `An Alien Invasion`],
+    wrongAnswers: [`A Natural Disaster`, `A Weapons Test`, `An Alien Invasion`],
     source: { name: `Rouge One: A Star Wars Story`, mediaType: `Film` },
   },
 ];
