@@ -1,5 +1,5 @@
 import { TRIVIA } from '../../../interfaces/mod.ts';
-import { generateRebelsSource as genSource } from './mod.ts';
+import { generateRebelsSource as genSource } from '../../../helpers/mod.ts';
 
 const trivia: TRIVIA[] = [
   {
