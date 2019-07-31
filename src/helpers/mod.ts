@@ -5,12 +5,7 @@ export {
 } from './ask_user.ts';
 export { combineAnswers } from './combine_answers.ts';
 export { EOL } from './eol.ts';
-export {
-  generateCloneWarsSource,
-  generateMandalorianSource,
-  generateRebelsSource,
-  generateResistanceSource,
-} from './generate_tv_source.ts';
+export { generateComicSource, generateTVSource } from './generate_source.ts';
 export { getUserInput } from './get_user_input.ts';
 export {
   acceptAnswer,
