@@ -15,4 +15,5 @@ const trivia: TRIVIA[] = [
 
 export default trivia;
 
-export const generateRebelsSource = (episode: string) => generateTVSource('Rebels', episode);
+export const generateRebelsSource = (episode: string) =>
+  generateTVSource('Rebels', episode);

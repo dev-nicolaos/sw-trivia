@@ -7,4 +7,5 @@ const trivia: TRIVIA[] = [...theMandalorianSeason1];
 
 export default trivia;
 
-export const generateMandalorianSource = (episode: string) => generateTVSource('The Mandalorian', episode);
+export const generateMandalorianSource = (episode: string) =>
+  generateTVSource('The Mandalorian', episode);

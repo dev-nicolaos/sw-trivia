@@ -7,4 +7,5 @@ const trivia: TRIVIA[] = [...resistanceSeason1];
 
 export default trivia;
 
-export const generateResistanceSource = (episode: string) => generateTVSource('Resistance', episode);
+export const generateResistanceSource = (episode: string) =>
+  generateTVSource('Resistance', episode);

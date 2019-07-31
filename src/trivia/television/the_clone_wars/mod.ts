@@ -19,4 +19,5 @@ const trivia: TRIVIA[] = [
 
 export default trivia;
 
-export const generateCloneWarsSource = (episode: string) => generateTVSource('The Clone Wars', episode);
+export const generateCloneWarsSource = (episode: string) =>
+  generateTVSource('The Clone Wars', episode);
