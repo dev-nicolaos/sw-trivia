@@ -1,4 +1,6 @@
-import { TRIVIA } from '../../interfaces/mod.ts';
+import { TRIVIA, SOURCE } from '../../interfaces/mod.ts';
+
+const source: SOURCE = { name: 'Before the Awakening', mediaType: 'Book' };
 
 const trivia: TRIVIA[] = [
   {
@@ -9,28 +11,19 @@ const trivia: TRIVIA[] = [
       `Test flying the Falcon for Unkar Plutt`,
       `She stole another scavenger's ship`,
     ],
-    source: {
-      name: `Before the Awakening`,
-      mediaType: `Book`,
-    },
+    source,
   },
   {
     question: `Before joining the resistance, what New Republic Squadron did Poe command?`,
     correctAnswer: `Rapier Squadron`,
     wrongAnswers: [`Corona Squadron`, `Phantom Squadron`, `Blade Squadron`],
-    source: {
-      name: `Before the Awakening`,
-      mediaType: `Book`,
-    },
+    source,
   },
   {
     question: `Which of the following was NOT a part of Finn's First Order Squad?`,
     correctAnswer: `FN-9330`,
     wrongAnswers: [`Nines`, `Zeroes`, `Slip`],
-    source: {
-      name: `Before the Awakening`,
-      mediaType: `Book`,
-    },
+    source,
   },
 ];
 

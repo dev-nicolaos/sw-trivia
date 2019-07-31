@@ -1,4 +1,6 @@
-import { TRIVIA } from '../../interfaces/mod.ts';
+import { TRIVIA, SOURCE } from '../../interfaces/mod.ts';
+
+const source: SOURCE = { name: 'Heir to the Jedi', mediaType: 'Book' };
 
 const trivia: TRIVIA[] = [
   {
@@ -6,19 +8,19 @@ const trivia: TRIVIA[] = [
       'After the Battle of Yavin, where did Luke travel in an attempt to setup a secret supply line for the Alliance?',
     correctAnswer: 'Rodia',
     wrongAnswers: ['Orto Plutonia', 'Sullust', 'Pamarth'],
-    source: { name: 'Heir to the Jedi', mediaType: 'Book' },
+    source,
   },
   {
     question: 'Who loaned Luke the Desert Jewel?',
     correctAnswer: 'Nakari Kelen',
     wrongAnswers: ['Sana Starros', 'Hera Syndulla', 'Dr. Aphra'],
-    source: { name: 'Heir to the Jedi', mediaType: 'Book' },
+    source,
   },
   {
     question: 'Who was Drusil Bephorin?',
     correctAnswer: 'A Givin Cryptologist',
     wrongAnswers: ['An Imperial Officer', 'A Bothan Spy', 'A Duros Mechanic'],
-    source: { name: 'Heir to the Jedi', mediaType: 'Book' },
+    source,
   },
 ];
 
