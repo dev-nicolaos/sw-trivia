@@ -5,9 +5,9 @@ const genSource = (episode: string) => generateTVSource('Rebels', episode);
 
 const trivia: TRIVIA[] = [
   {
-    question: `All Imperial Super Commandos come from what race of people?`,
-    correctAnswer: `Mandalorians`,
-    wrongAnswers: [`Echani`, `Corellians`, `Pamarthens`],
+    question: 'All Imperial Super Commandos come from what race of people?',
+    correctAnswer: 'Mandalorians',
+    wrongAnswers: ['Echani', 'Corellians', 'Pamarthens'],
     source: genSource('Imperial Super Commandos'),
   },
 ];
