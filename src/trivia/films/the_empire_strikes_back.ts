@@ -4,17 +4,6 @@ const source: SOURCE = { name: 'The Empire Strikes Back', mediaType: 'Film' };
 
 const trivia: TRIVIA[] = [
   {
-    question:
-      "Prior to Disney's purchase of Lucasfilm, which Star Wars film was the only one not to show Tatooine?",
-    correctAnswer: 'Episode V: The Empire Strikes Back',
-    wrongAnswers: [
-      'Episode III: Revenge of the Sith',
-      'Episode II: Attack of the Clones',
-      'Episode VI: Return of the Jedi',
-    ],
-    source,
-  },
-  {
     question: 'What creatures did the rebels ride on Hoth?',
     correctAnswer: 'Tauntauns',
     wrongAnswers: ['Wampas', 'Dewbacks', 'Rontos'],
