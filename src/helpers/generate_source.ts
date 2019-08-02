@@ -8,5 +8,5 @@ const generateSource = (name: string, mediaType: string): SOURCE => ({
 export const generateTVSource = (series: string, episode: string): SOURCE =>
   generateSource(`${series}: ${episode}`, 'Television');
 
-export const generateComicSource = (series: string, part: number): SOURCE =>
-  generateSource(`${series}, Part ${part}`, 'Comic');
+export const generateComicSource = (series: string, issue: number): SOURCE =>
+  generateSource(`${series}, Issue ${issue}`, 'Comic');
