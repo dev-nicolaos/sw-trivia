@@ -31,7 +31,8 @@ const trivia: TRIVIA[] = [
     source,
   },
   {
-    question: 'What famine stricken planet did R2-D2 take holos and scans of for Princess Leia?',
+    question:
+      'What famine stricken planet did R2-D2 take holos and scans of for Princess Leia?',
     correctAnswer: 'Chasmeene',
     wrongAnswers: ['Rend 5', 'Taris', 'Toydaria'],
     source,

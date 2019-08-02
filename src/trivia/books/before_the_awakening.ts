@@ -14,13 +14,15 @@ const trivia: TRIVIA[] = [
     source,
   },
   {
-    question: 'Before joining the resistance, what New Republic Squadron did Poe command?',
+    question:
+      'Before joining the resistance, what New Republic Squadron did Poe command?',
     correctAnswer: 'Rapier Squadron',
     wrongAnswers: ['Corona Squadron', 'Phantom Squadron', 'Blade Squadron'],
     source,
   },
   {
-    question: "Which of the following was NOT a part of Finn's First Order Squad?",
+    question:
+      "Which of the following was NOT a part of Finn's First Order Squad?",
     correctAnswer: 'FN-9330',
     wrongAnswers: ['Nines', 'Zeroes', 'Slip'],
     source,

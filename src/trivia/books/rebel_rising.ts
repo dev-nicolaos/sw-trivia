@@ -16,13 +16,15 @@ const trivia: TRIVIA[] = [
     source,
   },
   {
-    question: 'How many credits did Jyn recieve for the Ponta Two on Five Points?',
+    question:
+      'How many credits did Jyn recieve for the Ponta Two on Five Points?',
     correctAnswer: '100',
     wrongAnswers: ['500', '1000', '2000'],
     source,
   },
   {
-    question: 'How many different cell mates did Jyn have while imprissoned on Wobani?',
+    question:
+      'How many different cell mates did Jyn have while imprissoned on Wobani?',
     correctAnswer: '3',
     wrongAnswers: ['1', '2', '4'],
     source,

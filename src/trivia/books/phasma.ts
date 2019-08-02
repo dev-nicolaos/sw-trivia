@@ -44,13 +44,15 @@ const trivia: TRIVIA[] = [
     source,
   },
   {
-    question: 'Who originally owned the ship Phasma smelted her chrome armor from?',
+    question:
+      'Who originally owned the ship Phasma smelted her chrome armor from?',
     correctAnswer: 'Emperor Palpatine',
     wrongAnswers: ['Brendol Hux', 'Padmé Amidala', 'General Grievous'],
     source,
   },
   {
-    question: "How soon after joining the First Order did Phasma earn her Captain's cloak?",
+    question:
+      "How soon after joining the First Order did Phasma earn her Captain's cloak?",
     correctAnswer: 'Within 1 year',
     wrongAnswers: ['Within 2 years', 'Within 5 years', 'Within 3 years'],
     source,

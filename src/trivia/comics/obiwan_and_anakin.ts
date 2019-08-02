@@ -6,7 +6,8 @@ const genSource = (issue: number) =>
 
 const trivia: TRIVIA[] = [
   {
-    question: 'Who put out the call for Jedi assistance on Carnelion IV that Anakin and Obi-Wan responded to?',
+    question:
+      'Who put out the call for Jedi assistance on Carnelion IV that Anakin and Obi-Wan responded to?',
     correctAnswer: 'Sera',
     wrongAnswers: ['Grecker', 'Kolara', 'Mother Pran'],
     source: genSource(4),

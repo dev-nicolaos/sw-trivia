@@ -7,13 +7,15 @@ const source: SOURCE = {
 
 const trivia: TRIVIA[] = [
   {
-    question: 'What rank was Garrick Versio at the time of the Battle of Yavin?',
+    question:
+      'What rank was Garrick Versio at the time of the Battle of Yavin?',
     correctAnswer: 'Inspector General',
     wrongAnswers: ['Admiral', 'Inquisitor', 'ISB Agent'],
     source,
   },
   {
-    question: 'How many Rebel ships did Iden Versio destroy during the Battle of Yavin?',
+    question:
+      'How many Rebel ships did Iden Versio destroy during the Battle of Yavin?',
     correctAnswer: '5',
     wrongAnswers: ['3', '7', '9'],
     source,
@@ -25,7 +27,8 @@ const trivia: TRIVIA[] = [
     source,
   },
   {
-    question: 'Which two members of Inferno squad infiltrated the Dreamers as siblings?',
+    question:
+      'Which two members of Inferno squad infiltrated the Dreamers as siblings?',
     correctAnswer: 'Gideon and Del',
     wrongAnswers: ['Iden and Gideon', 'Iden and Seyn', 'Gideon and Seyn'],
     source,
