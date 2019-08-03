@@ -1,7 +1,7 @@
 import { bgBlue, bgGreen, bgRed, bgYellow, black, white } from '../deps.ts';
 
 export function acceptAnswer() {
-  console.log(bgGreen(white('Correct ✔')));
+  printSuccess('Correct ✔');
 }
 
 export function rejectAnswer() {
@@ -35,4 +35,8 @@ export function printScore(correct: number, total: number): void {
   console.log(
     bgColor(black(`You got ${correct}/${total} correct (${percentage}%)`)),
   );
+}
+
+export function printSuccess(message: string): void {
+  console.log(bgGreen(white(message)));
 }

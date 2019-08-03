@@ -12,6 +12,7 @@ export {
   printOptions,
   printQuestion,
   printScore,
+  printSuccess,
   rejectAnswer,
 } from './logger.ts';
 export { pickRandomTrivia, pickTrivia } from './pick_trivia.ts';
