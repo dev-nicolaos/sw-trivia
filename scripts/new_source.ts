@@ -1,9 +1,10 @@
+import { SOURCE } from '../src/interfaces/mod.ts';
 import {
   getUserInput,
   printOptions,
   printSuccess,
 } from '../src/helpers/mod.ts';
-import template from './new_source_template.ts';
+import { generateBasicTriviaTemplate } from './templates.ts';
 
 const formatFileName = (sourceName: string): string =>
   sourceName
@@ -11,18 +12,20 @@ const formatFileName = (sourceName: string): string =>
     .join('_')
     .toLowerCase() + '.ts';
 
-function createSourceFile(mediaType: string, name: string) {
-  const { url } = import.meta;
-  const projRootURL = url.slice(
+const getProjectRootPath = (): string =>
+  import.meta.url.slice(
     8, // file:///
-    url.lastIndexOf('/', url.lastIndexOf('/') - 1),
+    import.meta.url.lastIndexOf('/', import.meta.url.lastIndexOf('/') - 1),
   );
-  const targetDir = `${projRootURL}/src/trivia/${mediaType.toLowerCase()}s`;
 
+function createSourceFile(source: SOURCE): void {
+  const { name, mediaType } = source;
+
+  const targetDir = `${getProjectRootPath()}/src/trivia/${mediaType.toLowerCase()}s`;
   const fileName = formatFileName(name);
-
-  const encoder = new TextEncoder();
-  const encodedTemplate = encoder.encode(template(mediaType, name));
+  const encodedTemplate = new TextEncoder().encode(
+    generateBasicTriviaTemplate(source),
+  );
 
   try {
     Deno.chdir(targetDir);
@@ -35,7 +38,7 @@ function createSourceFile(mediaType: string, name: string) {
   }
 }
 
-async function getNewSourceDetails() {
+async function getNewSourceDetails(): Promise<SOURCE> {
   const supportedMediaTypes = ['Book', 'Film', 'Game'];
 
   printOptions(
@@ -45,15 +48,18 @@ async function getNewSourceDetails() {
 
   const selectedMediaIndex = +(await getUserInput()) - 1;
 
-  const selectedMediaType = supportedMediaTypes[selectedMediaIndex];
+  const mediaType = supportedMediaTypes[selectedMediaIndex];
 
-  if (selectedMediaType) {
-    const sourceName = await getUserInput('What is the name of the source?');
-    createSourceFile(selectedMediaType, sourceName);
+  if (mediaType) {
+    const name = await getUserInput('What is the name of the source?');
+    return { name, mediaType };
   } else {
     console.log('Please selected a valid option');
     getNewSourceDetails();
   }
 }
 
-window.addEventListener('load', getNewSourceDetails);
+window.addEventListener('load', async () => {
+  const newSource = await getNewSourceDetails();
+  createSourceFile(newSource);
+});
