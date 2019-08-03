@@ -1,4 +1,8 @@
-import { getUserInput, printOptions, printSuccess } from '../src/helpers/mod.ts';
+import {
+  getUserInput,
+  printOptions,
+  printSuccess,
+} from '../src/helpers/mod.ts';
 import template from './new_source_template.ts';
 
 const formatFileName = (sourceName: string): string =>
@@ -23,7 +27,9 @@ function createSourceFile(mediaType: string, name: string) {
   try {
     Deno.chdir(targetDir);
     Deno.writeFileSync(fileName, encodedTemplate);
-    printSuccess(`Success! Don't forget to import ${name} in ${targetDir}/mod.ts`);
+    printSuccess(
+      `Success! Don't forget to import ${name} in ${targetDir}/mod.ts`,
+    );
   } catch (err) {
     console.error(err);
   }
