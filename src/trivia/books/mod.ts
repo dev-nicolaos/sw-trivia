@@ -11,6 +11,7 @@ import darkDisciple from './dark_disciple.ts';
 import dookuJediLost from './dooku_jedi_lost.ts';
 import heirToTheJedi from './heir_to_the_jedi.ts';
 import infernoSquad from './inferno_squad.ts';
+import lastShot from './last_shot.ts';
 import leiaPrincessOfAlderaan from './leia_princess_of_alderaan.ts';
 import lordsOfTheSith from './lords_of_the_sith.ts';
 import lostStars from './lost_stars.ts';
@@ -41,6 +42,7 @@ const trivia: TRIVIA[] = [
   ...dookuJediLost,
   ...heirToTheJedi,
   ...infernoSquad,
+  ...lastShot,
   ...leiaPrincessOfAlderaan,
   ...lordsOfTheSith,
   ...lostStars,
