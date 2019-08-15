@@ -1,11 +1,15 @@
 import { bgBlue, bgGreen, bgRed, bgYellow, black, white } from '../deps.ts';
 
-export function acceptAnswer() {
-  printSuccess('Correct ✔');
+export function printSuccess(message: string): void {
+  console.log(bgGreen(white(message)));
 }
 
-export function rejectAnswer() {
-  console.log(bgRed(white('Incorrect 😢')));
+export function printNeutral(message: string): void {
+  console.log(bgYellow(black(message)));
+}
+
+export function printFailure(message: string): void {
+  console.log(bgRed(white(message)));
 }
 
 export function printQuestion(question: string, options: string[] = []): void {
@@ -18,21 +22,12 @@ export function printQuestion(question: string, options: string[] = []): void {
 export function printScore(correct: number, total: number): void {
   const percentage = Math.round((correct / total) * 100);
 
-  let bgColor;
+  const printFunc =
+    percentage >= 90
+      ? printSuccess
+      : percentage >= 67
+      ? printNeutral
+      : printFailure;
 
-  if (percentage >= 90) {
-    bgColor = bgGreen;
-  } else if (percentage >= 67) {
-    bgColor = bgYellow;
-  } else {
-    bgColor = bgRed;
-  }
-
-  console.log(
-    bgColor(black(`You got ${correct}/${total} correct (${percentage}%)`)),
-  );
-}
-
-export function printSuccess(message: string): void {
-  console.log(bgGreen(white(message)));
+  printFunc(`You got ${correct}/${total} correct (${percentage}%)`);
 }

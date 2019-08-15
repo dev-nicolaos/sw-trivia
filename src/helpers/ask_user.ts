@@ -1,11 +1,11 @@
 import { TRIVIA } from '../interfaces/mod.ts';
 import {
-  acceptAnswer,
   combineAnswers,
   getUserInput,
   pickRandomTrivia,
+  printFailure,
   printQuestion,
-  rejectAnswer,
+  printSuccess,
 } from './mod.ts';
 
 export async function askTriviaQuestion(
@@ -20,9 +20,9 @@ export async function askTriviaQuestion(
     possibleAnswers[+response - 1] === selectedTrivia.correctAnswer;
 
   if (correct) {
-    acceptAnswer();
+    printSuccess('Correct ✔');
   } else {
-    rejectAnswer();
+    printFailure('Incorrect 😢');
     console.log('The correct answer is:', selectedTrivia.correctAnswer);
   }
   console.log('Source:', selectedTrivia.source.name);
