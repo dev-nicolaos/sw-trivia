@@ -19,8 +19,12 @@ const getProjectRootPath = (): string =>
   );
 
 async function handleDeniedPermission(source: SOURCE): Promise<void> {
-  console.log('This script requires write access to create a new trivia source file');
-  console.log('To avoid this error in the future, run this script with the --allow-write flag');
+  console.log(
+    'This script requires write access to create a new trivia source file',
+  );
+  console.log(
+    'To avoid this error in the future, run this script with the --allow-write flag',
+  );
   const retry = await getUserInput('Retry command? y/n');
   if (retry === 'y' || retry === 'yes') {
     createSourceFile(source);
