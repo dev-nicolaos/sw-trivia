@@ -18,6 +18,15 @@ const getProjectRootPath = (): string =>
     import.meta.url.lastIndexOf('/', import.meta.url.lastIndexOf('/') - 1),
   );
 
+async function handleDeniedPermission(source: SOURCE): Promise<void> {
+  console.log('This script requires write access to create a new trivia source file');
+  console.log('To avoid this error in the future, run this script with the --allow-write flag');
+  const retry = await getUserInput('Retry command? y/n');
+  if (retry === 'y' || retry === 'yes') {
+    createSourceFile(source);
+  }
+}
+
 function createSourceFile(source: SOURCE): void {
   const { name, mediaType } = source;
 
@@ -34,7 +43,11 @@ function createSourceFile(source: SOURCE): void {
       `Success! Don't forget to import ${name} in ${targetDir}/mod.ts`,
     );
   } catch (err) {
-    console.error(err);
+    if (err.name === 'PermissionDenied') {
+      handleDeniedPermission(source);
+    } else {
+      console.error(err);
+    }
   }
 }
 
