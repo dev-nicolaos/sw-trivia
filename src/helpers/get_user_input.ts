@@ -5,7 +5,7 @@ export async function getUserInput(prompt: string = ''): Promise<string> {
     printQuestion(prompt);
   }
 
-  const { stdin, platform } = Deno;
+  const { stdin } = Deno;
   const decoder = new TextDecoder();
   const byteArray = new Uint8Array(1024);
 
