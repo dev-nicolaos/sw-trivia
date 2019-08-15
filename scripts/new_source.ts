@@ -1,8 +1,8 @@
 import { SOURCE } from '../src/interfaces/mod.ts';
 import {
   getUserInput,
+  printPositive,
   printQuestion,
-  printSuccess,
 } from '../src/helpers/mod.ts';
 import { generateBasicTriviaTemplate } from './templates.ts';
 
@@ -43,7 +43,7 @@ function createSourceFile(source: SOURCE): void {
   try {
     Deno.chdir(targetDir);
     Deno.writeFileSync(fileName, encodedTemplate);
-    printSuccess(
+    printPositive(
       `Success! Don't forget to import ${name} in ${targetDir}/mod.ts`,
     );
   } catch (err) {

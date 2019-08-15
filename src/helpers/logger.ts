@@ -1,6 +1,6 @@
 import { bgBlue, bgGreen, bgRed, bgYellow, black, white } from '../deps.ts';
 
-export function printSuccess(message: string): void {
+export function printPositive(message: string): void {
   console.log(bgGreen(white(message)));
 }
 
@@ -8,7 +8,7 @@ export function printNeutral(message: string): void {
   console.log(bgYellow(black(message)));
 }
 
-export function printFailure(message: string): void {
+export function printNegative(message: string): void {
   console.log(bgRed(white(message)));
 }
 
@@ -24,10 +24,10 @@ export function printScore(correct: number, total: number): void {
 
   const printFunc =
     percentage >= 90
-      ? printSuccess
+      ? printPositive
       : percentage >= 67
       ? printNeutral
-      : printFailure;
+      : printNegative;
 
   printFunc(`You got ${correct}/${total} correct (${percentage}%)`);
 }

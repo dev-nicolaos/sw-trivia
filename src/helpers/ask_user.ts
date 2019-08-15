@@ -3,9 +3,9 @@ import {
   combineAnswers,
   getUserInput,
   pickRandomTrivia,
-  printFailure,
+  printNegative,
+  printPositive,
   printQuestion,
-  printSuccess,
 } from './mod.ts';
 
 export async function askTriviaQuestion(
@@ -20,9 +20,9 @@ export async function askTriviaQuestion(
     possibleAnswers[+response - 1] === selectedTrivia.correctAnswer;
 
   if (correct) {
-    printSuccess('Correct ✔');
+    printPositive('Correct ✔');
   } else {
-    printFailure('Incorrect 😢');
+    printNegative('Incorrect 😢');
     console.log('The correct answer is:', selectedTrivia.correctAnswer);
   }
   console.log('Source:', selectedTrivia.source.name);
