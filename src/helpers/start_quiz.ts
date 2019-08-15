@@ -10,21 +10,20 @@ import {
   askTriviaQuestion,
   getQuizLength,
   getUserInput,
-  printOptions,
+  printQuestion,
   printScore,
   pickTrivia,
 } from './mod.ts';
 
 export async function startQuiz() {
-  printOptions(
-    'Select a source',
+  printQuestion('Select a source', [
     'All',
     'Books',
     'Comics',
     'Films',
     'Games',
     'Television',
-  );
+  ]);
 
   let selectedSource = null;
 

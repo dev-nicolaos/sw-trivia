@@ -4,7 +4,7 @@ import { printStats } from './stats/mod.ts';
 import {
   askRandomTriviaQuestion,
   getUserInput,
-  printOptions,
+  printQuestion,
   startQuiz,
 } from './helpers/mod.ts';
 
@@ -23,11 +23,10 @@ window.addEventListener('load', () => {
 });
 
 async function startGame() {
-  printOptions(
-    'How would you like to play?',
+  printQuestion('How would you like to play?', [
     'Answer a random trivia question',
     'Multi-question quiz',
-  );
+  ]);
 
   const action = await getUserInput();
 

@@ -8,12 +8,8 @@ export function rejectAnswer() {
   console.log(bgRed(white('Incorrect 😢')));
 }
 
-export function printQuestion(question: string): void {
+export function printQuestion(question: string, options: string[] = []): void {
   console.log(bgBlue(white(question)));
-}
-
-export function printOptions(question: string, ...options: string[]): void {
-  printQuestion(question);
   options.forEach((option, i) => {
     console.log(`${i + 1}) ${option}`);
   });

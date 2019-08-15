@@ -4,7 +4,7 @@ import {
   combineAnswers,
   getUserInput,
   pickRandomTrivia,
-  printOptions,
+  printQuestion,
   rejectAnswer,
 } from './mod.ts';
 
@@ -12,7 +12,7 @@ export async function askTriviaQuestion(
   selectedTrivia: TRIVIA,
 ): Promise<boolean> {
   const possibleAnswers = combineAnswers(selectedTrivia);
-  printOptions(selectedTrivia.question, ...possibleAnswers);
+  printQuestion(selectedTrivia.question, possibleAnswers);
 
   const response = await getUserInput();
 

@@ -9,7 +9,6 @@ export { generateComicSource, generateTVSource } from './generate_source.ts';
 export { getUserInput } from './get_user_input.ts';
 export {
   acceptAnswer,
-  printOptions,
   printQuestion,
   printScore,
   printSuccess,

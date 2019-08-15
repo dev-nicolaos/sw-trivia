@@ -1,7 +1,7 @@
 import { SOURCE } from '../src/interfaces/mod.ts';
 import {
   getUserInput,
-  printOptions,
+  printQuestion,
   printSuccess,
 } from '../src/helpers/mod.ts';
 import { generateBasicTriviaTemplate } from './templates.ts';
@@ -54,9 +54,9 @@ function createSourceFile(source: SOURCE): void {
 async function getNewSourceDetails(): Promise<SOURCE> {
   const supportedMediaTypes = ['Book', 'Film', 'Game'];
 
-  printOptions(
+  printQuestion(
     'What type of source would you like to create?',
-    ...supportedMediaTypes,
+    supportedMediaTypes,
   );
 
   const selectedMediaIndex = +(await getUserInput()) - 1;
