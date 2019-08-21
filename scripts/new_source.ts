@@ -8,7 +8,8 @@ import { generateBasicTriviaTemplate } from './templates.ts';
 
 const formatFileName = (sourceName: string): string =>
   sourceName
-    .split(/[- _,:'—]+/)
+    .replace(/'/g, '')
+    .split(/[- _,:—]+/)
     .join('_')
     .toLowerCase() + '.ts';
 
