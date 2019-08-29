@@ -66,11 +66,15 @@ async function getNewSourceDetails(): Promise<SOURCE> {
 
   if (mediaType) {
     const name = await getUserInput('What is the name of the source?');
-    return { name, mediaType };
+    if (name) {
+      return { name, mediaType };
+    } else {
+      console.log('An empty string is not a valid source name');
+    }
   } else {
     console.log('Please selected a valid option');
-    getNewSourceDetails();
   }
+  return getNewSourceDetails();
 }
 
 window.addEventListener('load', async () => {
