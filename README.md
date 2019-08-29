@@ -15,4 +15,4 @@ Because Deno is still pre 1.0 and in rapid development, this project is built ag
 `deno fmt src scripts -- --single-quote --trailing-comma all`
 
 #### Scaffold New Trivia File (doesn't support tv or comics yet)
-`deno scripts/new_source.ts --allow-write`
+`deno scripts/new_source.ts --allow-write --importmap=import_map.json`

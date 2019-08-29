@@ -1,9 +1,5 @@
-import { SOURCE } from '../src/interfaces/mod.ts';
-import {
-  getUserInput,
-  printPositive,
-  printQuestion,
-} from '../src/helpers/mod.ts';
+import { SOURCE } from 'interfaces';
+import { getUserInput, printPositive, printQuestion } from 'helpers';
 import { generateBasicTriviaTemplate } from './templates.ts';
 
 const formatFileName = (sourceName: string): string =>

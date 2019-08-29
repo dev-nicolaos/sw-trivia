@@ -1,4 +1,4 @@
-import { SOURCE } from '../src/interfaces/mod.ts';
+import { SOURCE } from 'interfaces';
 
 export const generateBasicTriviaTemplate = (source: SOURCE) =>
   `import { TRIVIA, SOURCE } from '../../interfaces/mod.ts';
