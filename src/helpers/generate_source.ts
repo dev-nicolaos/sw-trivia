@@ -1,4 +1,4 @@
-import { SOURCE } from '../interfaces/mod.ts';
+import { SOURCE } from 'interfaces';
 
 const generateSource = (name: string, mediaType: string): SOURCE => ({
   name,

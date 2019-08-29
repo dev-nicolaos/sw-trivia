@@ -1,5 +1,5 @@
-import { TRIVIA } from '../../interfaces/mod.ts';
-import { generateComicSource } from '../../helpers/mod.ts';
+import { TRIVIA } from 'interfaces';
+import { generateComicSource } from 'helpers';
 
 const genSource = (issue: number) => generateComicSource('Kanan', issue);
 

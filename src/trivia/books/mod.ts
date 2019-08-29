@@ -1,4 +1,4 @@
-import { TRIVIA } from '../../interfaces/mod.ts';
+import { TRIVIA } from 'interfaces';
 
 import aftermath from './aftermath.ts';
 import aftermathEmpiresEnd from './aftermath_empires_end.ts';

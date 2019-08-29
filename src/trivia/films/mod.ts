@@ -1,4 +1,4 @@
-import { TRIVIA } from '../../interfaces/mod.ts';
+import { TRIVIA } from 'interfaces';
 
 import aNewHope from './a_new_hope.ts';
 import attackOfTheClones from './attack_of_the_clones.ts';

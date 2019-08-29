@@ -1,4 +1,4 @@
-import { TRIVIA } from '../../../interfaces/mod.ts';
+import { TRIVIA } from 'interfaces';
 
 import theCloneWarsSeason1 from './season_1.ts';
 import theCloneWarsSeason2 from './season_2.ts';

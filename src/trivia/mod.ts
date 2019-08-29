@@ -1,4 +1,4 @@
-import { TRIVIA } from '../interfaces/mod.ts';
+import { TRIVIA } from 'interfaces';
 
 import BOOKS from './books/mod.ts';
 import COMICS from './comics/mod.ts';

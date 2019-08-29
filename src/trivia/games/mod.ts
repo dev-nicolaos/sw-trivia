@@ -1,4 +1,4 @@
-import { TRIVIA } from '../../interfaces/mod.ts';
+import { TRIVIA } from 'interfaces';
 
 import battlefront2 from './battlefront_2.ts';
 import jediFallenOrder from './jedi_fallen_order.ts';

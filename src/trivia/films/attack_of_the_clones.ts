@@ -1,4 +1,4 @@
-import { TRIVIA, SOURCE } from '../../interfaces/mod.ts';
+import { TRIVIA, SOURCE } from 'interfaces';
 
 const source: SOURCE = { name: 'Attack of the Clones', mediaType: 'Film' };
 

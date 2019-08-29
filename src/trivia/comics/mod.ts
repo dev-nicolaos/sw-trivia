@@ -1,4 +1,4 @@
-import { TRIVIA } from '../../interfaces/mod.ts';
+import { TRIVIA } from 'interfaces';
 
 import captainPhasma from './captain_phasma.ts';
 import chewbacca from './chewbacca.ts';

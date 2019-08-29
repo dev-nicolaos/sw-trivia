@@ -6,7 +6,7 @@ import {
   getUserInput,
   printQuestion,
   startQuiz,
-} from './helpers/mod.ts';
+} from 'helpers';
 
 window.addEventListener('load', () => {
   const { stats, version } = parse(Deno.args, {

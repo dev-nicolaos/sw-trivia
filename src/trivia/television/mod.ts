@@ -1,4 +1,4 @@
-import { TRIVIA } from '../../interfaces/mod.ts';
+import { TRIVIA } from 'interfaces';
 
 import rebels from './rebels/mod.ts';
 import resistance from './resistance/mod.ts';

@@ -1,5 +1,5 @@
-import { TRIVIA } from '../../../interfaces/mod.ts';
-import { generateTVSource } from '../../../helpers/mod.ts';
+import { TRIVIA } from 'interfaces';
+import { generateTVSource } from 'helpers';
 
 const genSource = (episode: string) =>
   generateTVSource('The Mandalorian', episode);

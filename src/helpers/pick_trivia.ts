@@ -1,4 +1,4 @@
-import { TRIVIA } from '../interfaces/mod.ts';
+import { TRIVIA } from 'interfaces';
 import { ALLTRIVIA } from '../trivia/mod.ts';
 
 export function pickRandomTrivia(providedTrivia: TRIVIA[] = ALLTRIVIA): TRIVIA {

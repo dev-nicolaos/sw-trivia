@@ -9,7 +9,7 @@ Because Deno is still pre 1.0 and in rapid development, this project is built ag
 ### Scripts
 
 #### Run Program
-`deno src/mod.ts`
+`deno src/mod.ts --importmap=import_map.json`
 
 #### Format Code with Prettier
 `deno fmt src scripts -- --single-quote --trailing-comma all`
