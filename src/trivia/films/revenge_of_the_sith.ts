@@ -16,9 +16,9 @@ const trivia: TRIVIA[] = [
   },
   {
     question:
-      'What type of star fighters were flown Oddball and his clone squadron at the Battle of Coruscant?',
-    correctAnswer: 'ARC-170',
-    wrongAnswers: ['Z-95 Headhunter', 'V-wing', 'V-19 Torrent'],
+      'What type of starfighters did Oddball and his clone squadron fly at the Battle of Coruscant?',
+    correctAnswer: 'ARC-170s',
+    wrongAnswers: ['Z-95 Headhunters', 'V-wings', 'V-19 Torrents'],
     source,
   },
   {
