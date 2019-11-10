@@ -1,6 +1,6 @@
-import { TRIVIA } from 'interfaces';
+import { TRIVIA } from "interfaces";
 
-import resistanceSeason1 from './season_1.ts';
+import resistanceSeason1 from "./season_1.ts";
 
 const trivia: TRIVIA[] = [...resistanceSeason1];
 

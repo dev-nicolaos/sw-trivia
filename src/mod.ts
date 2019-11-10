@@ -1,16 +1,16 @@
-import { parse } from './deps.ts';
-import { printVersion } from './version.ts';
-import { printStats } from './stats/mod.ts';
+import { parse } from "./deps.ts";
+import { printVersion } from "./version.ts";
+import { printStats } from "./stats/mod.ts";
 import {
   askRandomTriviaQuestion,
   getUserInput,
   printQuestion,
-  startQuiz,
-} from 'helpers';
+  startQuiz
+} from "helpers";
 
-window.addEventListener('load', () => {
+window.addEventListener("load", () => {
   const { stats, version } = parse(Deno.args, {
-    alias: { s: 'stats', v: 'version' },
+    alias: { s: "stats", v: "version" }
   });
 
   if (stats) {
@@ -23,9 +23,9 @@ window.addEventListener('load', () => {
 });
 
 async function startGame() {
-  printQuestion('How would you like to play?', [
-    'Answer a random trivia question',
-    'Multi-question quiz',
+  printQuestion("How would you like to play?", [
+    "Answer a random trivia question",
+    "Multi-question quiz"
   ]);
 
   const action = await getUserInput();
@@ -38,7 +38,7 @@ async function startGame() {
       startQuiz();
       break;
     default:
-      console.log('Please select a valid option');
+      console.log("Please select a valid option");
       startGame();
       break;
   }

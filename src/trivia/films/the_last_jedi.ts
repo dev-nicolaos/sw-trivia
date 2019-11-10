@@ -1,6 +1,6 @@
-import { TRIVIA, SOURCE } from 'interfaces';
+import { TRIVIA, SOURCE } from "interfaces";
 
-const source: SOURCE = { name: 'The Last Jedi', mediaType: 'Film' };
+const source: SOURCE = { name: "The Last Jedi", mediaType: "Film" };
 
 const trivia: TRIVIA[] = [];
 

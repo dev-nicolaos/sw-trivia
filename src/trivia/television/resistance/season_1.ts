@@ -1,7 +1,7 @@
-import { TRIVIA } from 'interfaces';
-import { generateTVSource } from 'helpers';
+import { TRIVIA } from "interfaces";
+import { generateTVSource } from "helpers";
 
-const genSource = (episode: string) => generateTVSource('Resistance', episode);
+const genSource = (episode: string) => generateTVSource("Resistance", episode);
 
 const trivia: TRIVIA[] = [];
 

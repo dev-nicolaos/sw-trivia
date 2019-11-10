@@ -4,25 +4,25 @@ import {
   COMICS,
   FILMS,
   GAMES,
-  TELEVISION,
-} from '../trivia/mod.ts';
+  TELEVISION
+} from "../trivia/mod.ts";
 import {
   askTriviaQuestion,
   getQuizLength,
   getUserInput,
   printQuestion,
   printScore,
-  pickTrivia,
-} from './mod.ts';
+  pickTrivia
+} from "./mod.ts";
 
 export async function startQuiz() {
-  printQuestion('Select a source', [
-    'All',
-    'Books',
-    'Comics',
-    'Films',
-    'Games',
-    'Television',
+  printQuestion("Select a source", [
+    "All",
+    "Books",
+    "Comics",
+    "Films",
+    "Games",
+    "Television"
   ]);
 
   let selectedSource = null;
@@ -47,7 +47,7 @@ export async function startQuiz() {
       selectedSource = TELEVISION;
       break;
     default:
-      console.log('Please select a valid option');
+      console.log("Please select a valid option");
       break;
   }
 

@@ -1,4 +1,4 @@
-import { TRIVIA } from 'interfaces';
+import { TRIVIA } from "interfaces";
 
 interface MOSTCOMMONSOURCES {
   names: string[];
@@ -6,7 +6,7 @@ interface MOSTCOMMONSOURCES {
 }
 
 export function findMostCommonSources(
-  providedTrivia: TRIVIA[],
+  providedTrivia: TRIVIA[]
 ): MOSTCOMMONSOURCES {
   const sourceCounts = {};
 
@@ -36,15 +36,15 @@ export function findMostCommonSources(
 
 export function formatMostCommonSources({
   names,
-  count,
+  count
 }: MOSTCOMMONSOURCES): string {
-  const s = names.length > 1 ? 's' : '';
+  const s = names.length > 1 ? "s" : "";
   let statline = `Source${s} with the most questions: `;
 
   names.forEach((name, i) => {
-    statline += (i > 0 ? ', ' : '') + name;
+    statline += (i > 0 ? ", " : "") + name;
   });
 
-  statline += ` - ${count} questions${s ? ' each' : ''}`;
+  statline += ` - ${count} questions${s ? " each" : ""}`;
   return statline;
 }

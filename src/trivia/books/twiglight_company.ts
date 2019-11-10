@@ -1,8 +1,8 @@
-import { TRIVIA, SOURCE } from 'interfaces';
+import { TRIVIA, SOURCE } from "interfaces";
 
 const source: SOURCE = {
-  name: 'Battlefront: Twighlight Company',
-  mediaType: 'Book',
+  name: "Battlefront: Twighlight Company",
+  mediaType: "Book"
 };
 
 const trivia: TRIVIA[] = [];

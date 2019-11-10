@@ -1,8 +1,8 @@
-import { TRIVIA } from 'interfaces';
-import { generateComicSource } from 'helpers';
+import { TRIVIA } from "interfaces";
+import { generateComicSource } from "helpers";
 
 const genSource = (issue: number) =>
-  generateComicSource('Captain Phasma', issue);
+  generateComicSource("Captain Phasma", issue);
 
 const trivia: TRIVIA[] = [];
 

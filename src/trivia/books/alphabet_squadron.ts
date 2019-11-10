@@ -1,30 +1,30 @@
-import { TRIVIA, SOURCE } from 'interfaces';
+import { TRIVIA, SOURCE } from "interfaces";
 
-const source: SOURCE = { name: 'Alphabet Squadron', mediaType: 'Book' };
+const source: SOURCE = { name: "Alphabet Squadron", mediaType: "Book" };
 
 const trivia: TRIVIA[] = [
   {
-    question: 'Who convinced Yrica Quell to defect from the Empire?',
-    correctAnswer: 'Soran Keize',
-    wrongAnswers: ['Caern Adan', 'Jyn Erso', 'Iden Versio'],
-    source,
+    question: "Who convinced Yrica Quell to defect from the Empire?",
+    correctAnswer: "Soran Keize",
+    wrongAnswers: ["Caern Adan", "Jyn Erso", "Iden Versio"],
+    source
   },
   {
     question: "Where did the Hellion's Dare attempt to escape Shadow Wing?",
-    correctAnswer: 'The Oridol Cluster',
+    correctAnswer: "The Oridol Cluster",
     wrongAnswers: [
-      'The Minos Cluster',
-      'The Kaliida Nebula',
-      'The Vulpinus Nebula',
+      "The Minos Cluster",
+      "The Kaliida Nebula",
+      "The Vulpinus Nebula"
     ],
-    source,
+    source
   },
   {
-    question: 'Which starfighter was NOT a part of Alphabet Squadron?',
-    correctAnswer: 'V-wing',
-    wrongAnswers: ['A-wing', 'U-wing', 'X-wing'],
-    source,
-  },
+    question: "Which starfighter was NOT a part of Alphabet Squadron?",
+    correctAnswer: "V-wing",
+    wrongAnswers: ["A-wing", "U-wing", "X-wing"],
+    source
+  }
 ];
 
 export default trivia;

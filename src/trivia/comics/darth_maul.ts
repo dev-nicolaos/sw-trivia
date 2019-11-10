@@ -1,7 +1,7 @@
-import { TRIVIA } from 'interfaces';
-import { generateComicSource } from 'helpers';
+import { TRIVIA } from "interfaces";
+import { generateComicSource } from "helpers";
 
-const genSource = (issue: number) => generateComicSource('Darth Maul', issue);
+const genSource = (issue: number) => generateComicSource("Darth Maul", issue);
 
 const trivia: TRIVIA[] = [];
 

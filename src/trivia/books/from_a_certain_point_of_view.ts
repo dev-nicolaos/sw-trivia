@@ -1,8 +1,8 @@
-import { TRIVIA, SOURCE } from 'interfaces';
+import { TRIVIA, SOURCE } from "interfaces";
 
 const source: SOURCE = {
-  name: 'From a Certain Point of View',
-  mediaType: 'Book',
+  name: "From a Certain Point of View",
+  mediaType: "Book"
 };
 
 const trivia: TRIVIA[] = [];

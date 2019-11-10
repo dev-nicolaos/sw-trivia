@@ -1,4 +1,4 @@
-import { TRIVIA } from 'interfaces';
+import { TRIVIA } from "interfaces";
 
 export function combineAnswers(trivia: TRIVIA): string[] {
   const { wrongAnswers, correctAnswer } = trivia;

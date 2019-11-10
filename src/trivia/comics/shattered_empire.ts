@@ -1,8 +1,8 @@
-import { TRIVIA } from 'interfaces';
-import { generateComicSource } from 'helpers';
+import { TRIVIA } from "interfaces";
+import { generateComicSource } from "helpers";
 
 const genSource = (issue: number) =>
-  generateComicSource('Shattered Empire', issue);
+  generateComicSource("Shattered Empire", issue);
 
 const trivia: TRIVIA[] = [];
 

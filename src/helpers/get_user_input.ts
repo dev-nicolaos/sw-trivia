@@ -1,6 +1,6 @@
-import { EOL, printQuestion } from './mod.ts';
+import { EOL, printQuestion } from "./mod.ts";
 
-export async function getUserInput(prompt: string = ''): Promise<string> {
+export async function getUserInput(prompt: string = ""): Promise<string> {
   if (prompt) {
     printQuestion(prompt);
   }

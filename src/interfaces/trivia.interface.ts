@@ -1,4 +1,4 @@
-import { SOURCE } from './source.interface.ts';
+import { SOURCE } from "./source.interface.ts";
 
 export interface TRIVIA {
   question: string;
