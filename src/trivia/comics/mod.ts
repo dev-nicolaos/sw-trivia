@@ -33,7 +33,7 @@ const trivia: TRIVIA[] = [
   ...poeDameron,
   ...princessLeia,
   ...shatteredEmpire,
-  ...starWars
+  ...starWars,
 ];
 
 export default trivia;

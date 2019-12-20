@@ -1,7 +1,7 @@
 export {
   askRandomTriviaQuestion,
   askTriviaQuestion,
-  getQuizLength
+  getQuizLength,
 } from "./ask_user.ts";
 export { combineAnswers } from "./combine_answers.ts";
 export { EOL } from "./eol.ts";
@@ -12,7 +12,7 @@ export {
   printNeutral,
   printPositive,
   printQuestion,
-  printScore
+  printScore,
 } from "./logger.ts";
 export { pickRandomTrivia, pickTrivia } from "./pick_trivia.ts";
 export { startQuiz } from "./start_quiz.ts";

@@ -8,20 +8,20 @@ const trivia: TRIVIA[] = [
       "After the Battle of Yavin, where did Luke travel in an attempt to setup a secret supply line for the Alliance?",
     correctAnswer: "Rodia",
     wrongAnswers: ["Orto Plutonia", "Sullust", "Pamarth"],
-    source
+    source,
   },
   {
     question: "Who loaned Luke the Desert Jewel?",
     correctAnswer: "Nakari Kelen",
     wrongAnswers: ["Sana Starros", "Hera Syndulla", "Dr. Aphra"],
-    source
+    source,
   },
   {
     question: "Who was Drusil Bephorin?",
     correctAnswer: "A Givin Cryptologist",
     wrongAnswers: ["An Imperial Officer", "A Bothan Spy", "A Duros Mechanic"],
-    source
-  }
+    source,
+  },
 ];
 
 export default trivia;

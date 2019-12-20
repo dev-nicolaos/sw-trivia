@@ -5,11 +5,11 @@ import {
   pickRandomTrivia,
   printNegative,
   printPositive,
-  printQuestion
+  printQuestion,
 } from "./mod.ts";
 
 export async function askTriviaQuestion(
-  selectedTrivia: TRIVIA
+  selectedTrivia: TRIVIA,
 ): Promise<boolean> {
   const possibleAnswers = combineAnswers(selectedTrivia);
   printQuestion(selectedTrivia.question, possibleAnswers);
@@ -42,8 +42,8 @@ export async function askRandomTriviaQuestion(): Promise<void> {
 export async function getQuizLength(maxLength: number): Promise<number> {
   const quizLength = Math.round(
     +(await getUserInput(
-      `How many questions would you like? (max: ${maxLength})`
-    ))
+      `How many questions would you like? (max: ${maxLength})`,
+    )),
   );
 
   if (quizLength <= maxLength && quizLength > 0) {
@@ -51,7 +51,7 @@ export async function getQuizLength(maxLength: number): Promise<number> {
   } else {
     console.log(
       "Please enter a positive number less than or equal to",
-      maxLength
+      maxLength,
     );
     return await getQuizLength(maxLength);
   }

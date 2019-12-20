@@ -2,7 +2,7 @@ import { TRIVIA, SOURCE } from "interfaces";
 
 const source: SOURCE = {
   name: "From a Certain Point of View",
-  mediaType: "Book"
+  mediaType: "Book",
 };
 
 const trivia: TRIVIA[] = [];

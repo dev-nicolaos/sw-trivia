@@ -13,7 +13,7 @@ const trivia: TRIVIA[] = [
   ...theCloneWarsSeason3,
   ...theCloneWarsSeason4,
   ...theCloneWarsSeason5,
-  ...theCloneWarsSeason6
+  ...theCloneWarsSeason6,
 ];
 
 export default trivia;

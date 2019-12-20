@@ -63,7 +63,7 @@ const trivia: TRIVIA[] = [
   ...thrawn,
   ...thrawnAlliances,
   ...thrawnTreason,
-  ...twiglightCompany
+  ...twiglightCompany,
 ];
 
 export default trivia;

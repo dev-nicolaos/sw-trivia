@@ -2,7 +2,7 @@ import { SOURCE } from "interfaces";
 
 const generateSource = (name: string, mediaType: string): SOURCE => ({
   name,
-  mediaType
+  mediaType,
 });
 
 export const generateTVSource = (series: string, episode: string): SOURCE =>

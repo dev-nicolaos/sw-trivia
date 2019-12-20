@@ -5,12 +5,12 @@ import {
   askRandomTriviaQuestion,
   getUserInput,
   printQuestion,
-  startQuiz
+  startQuiz,
 } from "helpers";
 
 window.addEventListener("load", () => {
   const { stats, version } = parse(Deno.args, {
-    alias: { s: "stats", v: "version" }
+    alias: { s: "stats", v: "version" },
   });
 
   if (stats) {
@@ -25,7 +25,7 @@ window.addEventListener("load", () => {
 async function startGame() {
   printQuestion("How would you like to play?", [
     "Answer a random trivia question",
-    "Multi-question quiz"
+    "Multi-question quiz",
   ]);
 
   const action = await getUserInput();

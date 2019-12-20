@@ -12,8 +12,14 @@ Because Deno is still pre 1.0 and in rapid development, this project is built ag
 
 #### Run Program
 
-`deno src/mod.ts --importmap=import_map.json`
+`deno --importmap=import_map.json src/mod.ts`
+
+##### Flags
+
+`-v`, `--version`: Show application version
+
+`-s`, `--stats`: Show statistics about trivia contents
 
 #### Scaffold New Trivia File (doesn't support tv or comics yet)
 
-`deno scripts/new_source.ts --allow-write --importmap=import_map.json`
+`deno --allow-write --importmap=import_map.json scripts/new_source.ts`

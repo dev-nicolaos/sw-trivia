@@ -8,7 +8,7 @@ const trivia: TRIVIA[] = [
       "Which language did Thrawn communicate with Eli Vanto in when they first met?",
     correctAnswer: "Sy Bisti",
     wrongAnswers: ["Basic", "Huttesse", "Shyriiwook"],
-    source
+    source,
   },
   {
     question: "Why did Thrawn ask Palpatine to assign Eli Vanto to him?",
@@ -16,29 +16,29 @@ const trivia: TRIVIA[] = [
     wrongAnswers: [
       "To translate for him",
       "Because of Vanto's tactical skills",
-      "To teach him the politcal hierachy of the Empire"
+      "To teach him the politcal hierachy of the Empire",
     ],
-    source
+    source,
   },
   {
     question: "Which district of Coruscant was The Pinnacle located in?",
     correctAnswer: "The Federal District",
     wrongAnswers: ["The Uscru District", "The Works", "CoCo Town"],
-    source
+    source,
   },
   {
     question: "From which rank was Eli Vanto promoted to Lieutenant Commander?",
     correctAnswer: "Ensign",
     wrongAnswers: ["Lieutenant", "Captain", "Corporal"],
-    source
+    source,
   },
   {
     question:
       "Who was the first person Thrawn tried to recruit into Chiss service while he was in the Imperial Navy?",
     correctAnswer: "Nevil Cygni",
     wrongAnswers: ["Eli Vanto", "Brierly Ronan", "Wullf Yularen"],
-    source
-  }
+    source,
+  },
 ];
 
 export default trivia;

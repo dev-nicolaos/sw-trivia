@@ -4,7 +4,7 @@ import {
   COMICS,
   FILMS,
   GAMES,
-  TELEVISION
+  TELEVISION,
 } from "../trivia/mod.ts";
 import {
   askTriviaQuestion,
@@ -12,7 +12,7 @@ import {
   getUserInput,
   printQuestion,
   printScore,
-  pickTrivia
+  pickTrivia,
 } from "./mod.ts";
 
 export async function startQuiz() {
@@ -22,7 +22,7 @@ export async function startQuiz() {
     "Comics",
     "Films",
     "Games",
-    "Television"
+    "Television",
   ]);
 
   let selectedSource = null;

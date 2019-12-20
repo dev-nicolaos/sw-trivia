@@ -10,16 +10,16 @@ const trivia: TRIVIA[] = [
     wrongAnswers: [
       "Covered with vulture droids",
       "Crawling with buzz droids",
-      "Covered with buzz droids"
+      "Covered with buzz droids",
     ],
-    source
+    source,
   },
   {
     question:
       "What type of starfighters did Oddball and his clone squadron fly at the Battle of Coruscant?",
     correctAnswer: "ARC-170s",
     wrongAnswers: ["Z-95 Headhunters", "V-wings", "V-19 Torrents"],
-    source
+    source,
   },
   {
     question:
@@ -28,22 +28,22 @@ const trivia: TRIVIA[] = [
     wrongAnswers: [
       "Scraping them off",
       "Letting R2 shock them",
-      "Pushing them off with the force"
+      "Pushing them off with the force",
     ],
-    source
+    source,
   },
   {
     question:
       "How many battle droids were in elevator 31174 with Anakin and Obi-Wan?",
     correctAnswer: "8",
     wrongAnswers: ["4", "6", "10"],
-    source
+    source,
   },
   {
     question: 'Who said "Twice the pride, double the fall"?',
     correctAnswer: "Count Dooku",
     wrongAnswers: ["Yoda", "Darth Sideous", "Obi-Wan Kenobi"],
-    source
+    source,
   },
   {
     question: "Why did Palpatine tell Anakin it was right to kill Count Dooku?",
@@ -51,9 +51,9 @@ const trivia: TRIVIA[] = [
     wrongAnswers: [
       "Doing so would make Anakin stronger",
       "Dooku might escape capture",
-      "Palpatine needed a new apprentice"
+      "Palpatine needed a new apprentice",
     ],
-    source
+    source,
   },
   {
     question:
@@ -62,9 +62,9 @@ const trivia: TRIVIA[] = [
     wrongAnswers: [
       "Reversing stabilizers",
       "Magnetizing",
-      "Extending flaps and drag fins"
+      "Extending flaps and drag fins",
     ],
-    source
+    source,
   },
   {
     question:
@@ -73,9 +73,9 @@ const trivia: TRIVIA[] = [
     wrongAnswers: [
       "You're taller than I expected",
       "You're dumber than I expected",
-      "You smell more than I expected"
+      "You smell more than I expected",
     ],
-    source
+    source,
   },
   {
     question:
@@ -84,22 +84,22 @@ const trivia: TRIVIA[] = [
     wrongAnswers: [
       "He had been with Padmé",
       "He had been training",
-      "He was stuck in traffic"
+      "He was stuck in traffic",
     ],
-    source
+    source,
   },
   {
     question:
       "What planet did Grievous retreat to after the Battle of Coruscant?",
     correctAnswer: "Utapau",
     wrongAnswers: ["Geonosis", "Mustafar", "Scipio"],
-    source
+    source,
   },
   {
     question: `Who said "It's very dangerous putting them together. I don't think the boy can handle it."?`,
     correctAnswer: "Mace Windu",
     wrongAnswers: ["Quinlan Vos", "Obi-Wan Kenobi", "Ki-Adi-Mundi"],
-    source
+    source,
   },
   {
     question:
@@ -108,29 +108,29 @@ const trivia: TRIVIA[] = [
     wrongAnswers: [
       "unlimited power.",
       "ruling the galaxy.",
-      "being able to save others from death."
+      "being able to save others from death.",
     ],
-    source
+    source,
   },
   {
     question:
       "How many of Grievous' hands did Obi-Wan cut off BEFORE the clones engaged on Utapau?",
     correctAnswer: "2",
     wrongAnswers: ["0", "1", "3"],
-    source
+    source,
   },
   {
     question: "What creature did Obi-Wan ride on Utapau?",
     correctAnswer: "A Varactyl",
     wrongAnswers: ["An Anooba", "A Shaak", "A Dewback"],
-    source
+    source,
   },
   {
     question:
       "How many blaster shots did Obi-Wan fire to kill General Grievous?",
     correctAnswer: "5",
     wrongAnswers: ["2", "3", "4"],
-    source
+    source,
   },
   {
     question:
@@ -139,9 +139,9 @@ const trivia: TRIVIA[] = [
     wrongAnswers: [
       "The Jedi Archives",
       "The Room of a Thousand Fountains",
-      "Windu's Quarters"
+      "Windu's Quarters",
     ],
-    source
+    source,
   },
   {
     question: `Finish the quote: "He has control of the Senate and the Courts, he's _____"`,
@@ -149,9 +149,9 @@ const trivia: TRIVIA[] = [
     wrongAnswers: [
       "a Sith Lord!",
       "responsible for the war.",
-      "totally corrupted the Republic."
+      "totally corrupted the Republic.",
     ],
-    source
+    source,
   },
   {
     question: 'Finish the quote: "If they are not all destroyed, _____"',
@@ -159,15 +159,15 @@ const trivia: TRIVIA[] = [
     wrongAnswers: [
       "they will hunt us down.",
       "the Senate will side with them.",
-      "the Separtist Army will be defeated."
+      "the Separtist Army will be defeated.",
     ],
-    source
+    source,
   },
   {
     question: "Which Jedi Master was killed on Mygeeto?",
     correctAnswer: "Ki-Adi-Mundi",
     wrongAnswers: ["Plo Koon", "Aayla Secura", "Depa Billaba"],
-    source
+    source,
   },
   {
     question: 'Finish the quote: "So this is how liberty dies, _____"',
@@ -175,15 +175,15 @@ const trivia: TRIVIA[] = [
     wrongAnswers: [
       "in the hands of the corrupt.",
       "in darkness of night.",
-      "when we stop believing democracy can work."
+      "when we stop believing democracy can work.",
     ],
-    source
+    source,
   },
   {
     question: "Who destroyed the Separtist leaders to end the Clone Wars?",
     correctAnswer: "Darth Vader",
     wrongAnswers: ["Darth Sideous", "The Clone Army", "Mace Windu"],
-    source
+    source,
   },
   {
     question: "How did Obi-Wan track Darth Vader to Mustafar?",
@@ -191,35 +191,35 @@ const trivia: TRIVIA[] = [
     wrongAnswers: [
       "He intercepted a communication",
       "He followed Padmé's ship",
-      "He sensed Vader there"
+      "He sensed Vader there",
     ],
-    source
+    source,
   },
   {
     question: "Where did Yoda duel Darth Sideous?",
     correctAnswer: "The Senate Chambers",
     wrongAnswers: ["The Chancellor's Office", "The Jedi Temple", "Mustafar"],
-    source
+    source,
   },
   {
     question:
       "Who disabled the protective shielding at the Mustafar mining facility?",
     correctAnswer: "Darth Vader",
     wrongAnswers: ["Obi-Wan Kenobi", "Padmé Amidala", "R2-D2"],
-    source
+    source,
   },
   {
     question: "Where were Luke and Leia born?",
     correctAnswer: "Polis Massa",
     wrongAnswers: ["Coruscant", "Tatooine", "Alderaan"],
-    source
+    source,
   },
   {
     question: "Where was Yoda when Order 66 went out?",
     correctAnswer: "Kashyyyk",
     wrongAnswers: ["Coruscant", "Dagobah", "Tatooine"],
-    source
-  }
+    source,
+  },
 ];
 
 export default trivia;

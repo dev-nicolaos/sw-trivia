@@ -8,19 +8,19 @@ const trivia: TRIVIA[] = [
     question: "All Imperial Super Commandos come from what race of people?",
     correctAnswer: "Mandalorians",
     wrongAnswers: ["Echani", "Corellians", "Pamarthens"],
-    source: genSource("Imperial Super Commandos")
+    source: genSource("Imperial Super Commandos"),
   },
   {
     question: 'Finish the quote: "Everything I did was for family, for _____"',
     correctAnswer: "Mandalore!",
     wrongAnswers: ["honor!", "the Rebellion!", "glory!"],
-    source: genSource("Trials of the Darksaber")
+    source: genSource("Trials of the Darksaber"),
   },
   {
     question: "Who killed Gar Saxon?",
     correctAnswer: "Ursa Wren",
     wrongAnswers: ["Sabine Wren", "Fenn Rau", "Captain Rex"],
-    source: genSource("Legacy of Mandalore")
+    source: genSource("Legacy of Mandalore"),
   },
   {
     question:
@@ -29,10 +29,10 @@ const trivia: TRIVIA[] = [
     wrongAnswers: [
       "Colonel Yularen",
       "Commander Skerris",
-      "Commander Hammerly"
+      "Commander Hammerly",
     ],
-    source: genSource("Through Imperial Eyes")
-  }
+    source: genSource("Through Imperial Eyes"),
+  },
 ];
 
 export default trivia;

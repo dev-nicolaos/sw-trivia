@@ -4,12 +4,12 @@ import {
   COMICS,
   FILMS,
   GAMES,
-  TELEVISION
+  TELEVISION,
 } from "../trivia/mod.ts";
 import {
   countUniqueSources,
   findMostCommonSources,
-  formatMostCommonSources
+  formatMostCommonSources,
 } from "./mod.ts";
 
 export function printStats() {

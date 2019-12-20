@@ -7,7 +7,7 @@ const trivia: TRIVIA[] = [
     question: "Who convinced Yrica Quell to defect from the Empire?",
     correctAnswer: "Soran Keize",
     wrongAnswers: ["Caern Adan", "Jyn Erso", "Iden Versio"],
-    source
+    source,
   },
   {
     question: "Where did the Hellion's Dare attempt to escape Shadow Wing?",
@@ -15,16 +15,16 @@ const trivia: TRIVIA[] = [
     wrongAnswers: [
       "The Minos Cluster",
       "The Kaliida Nebula",
-      "The Vulpinus Nebula"
+      "The Vulpinus Nebula",
     ],
-    source
+    source,
   },
   {
     question: "Which starfighter was NOT a part of Alphabet Squadron?",
     correctAnswer: "V-wing",
     wrongAnswers: ["A-wing", "U-wing", "X-wing"],
-    source
-  }
+    source,
+  },
 ];
 
 export default trivia;

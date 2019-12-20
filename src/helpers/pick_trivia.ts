@@ -8,7 +8,7 @@ export function pickRandomTrivia(providedTrivia: TRIVIA[] = ALLTRIVIA): TRIVIA {
 
 export function pickTrivia(
   numberOfTrivia: number,
-  providedTrivia: TRIVIA[] = ALLTRIVIA
+  providedTrivia: TRIVIA[] = ALLTRIVIA,
 ): TRIVIA[] {
   const triviaList = [];
 

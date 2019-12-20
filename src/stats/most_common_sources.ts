@@ -6,7 +6,7 @@ interface MOSTCOMMONSOURCES {
 }
 
 export function findMostCommonSources(
-  providedTrivia: TRIVIA[]
+  providedTrivia: TRIVIA[],
 ): MOSTCOMMONSOURCES {
   const sourceCounts = {};
 
@@ -36,7 +36,7 @@ export function findMostCommonSources(
 
 export function formatMostCommonSources({
   names,
-  count
+  count,
 }: MOSTCOMMONSOURCES): string {
   const s = names.length > 1 ? "s" : "";
   let statline = `Source${s} with the most questions: `;

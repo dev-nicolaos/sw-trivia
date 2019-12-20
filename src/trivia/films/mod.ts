@@ -23,7 +23,7 @@ const trivia: TRIVIA[] = [
   ...theForceAwakens,
   ...theLastJedi,
   ...thePhantomMenace,
-  ...theRiseOfSkywalker
+  ...theRiseOfSkywalker,
 ];
 
 export default trivia;

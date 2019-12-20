@@ -9,7 +9,7 @@ const trivia: TRIVIA[] = [
   ...rebels,
   ...resistance,
   ...theCloneWars,
-  ...theMandalorian
+  ...theMandalorian,
 ];
 
 export default trivia;

@@ -9,7 +9,7 @@ const trivia: TRIVIA[] = [
   ...rebelsSeason1,
   ...rebelsSeason2,
   ...rebelsSeason3,
-  ...rebelsSeason4
+  ...rebelsSeason4,
 ];
 
 export default trivia;
