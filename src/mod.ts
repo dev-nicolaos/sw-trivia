@@ -1,4 +1,4 @@
-import { parse } from "./deps.ts";
+import { parse } from "std/flags/mod.ts";
 import { printVersion } from "./version.ts";
 import { printStats } from "./stats/mod.ts";
 import {
