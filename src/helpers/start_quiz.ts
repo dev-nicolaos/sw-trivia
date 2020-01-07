@@ -47,12 +47,15 @@ export async function startQuiz() {
       selectedSource = TELEVISION;
       break;
     default:
+      console.clear();
       console.log("Please select a valid option");
       break;
   }
 
   if (selectedSource) {
+    console.clear();
     const quizLength = await getQuizLength(selectedSource.length);
+    console.clear();
 
     const trivia = pickTrivia(quizLength, selectedSource);
 

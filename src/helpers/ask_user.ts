@@ -34,6 +34,7 @@ export async function askRandomTriviaQuestion(): Promise<void> {
   await askTriviaQuestion(pickRandomTrivia());
 
   const another = (await getUserInput("Another? (y/n)")).trim().toLowerCase();
+  console.clear();
   if (another === "y" || another === "yes") {
     askRandomTriviaQuestion();
   }
@@ -49,6 +50,7 @@ export async function getQuizLength(maxLength: number): Promise<number> {
   if (quizLength <= maxLength && quizLength > 0) {
     return quizLength;
   } else {
+    console.clear();
     console.log(
       "Please enter a positive number less than or equal to",
       maxLength,
