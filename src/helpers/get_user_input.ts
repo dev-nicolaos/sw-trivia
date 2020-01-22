@@ -12,6 +12,6 @@ export async function getUserInput(prompt: string = ""): Promise<string> {
     const line = new TextDecoder().decode(buffer);
     return line.substring(0, n).trim();
   } else {
-    throw Error('Encountered end of file');
+    throw Error("Encountered end of file");
   }
 }

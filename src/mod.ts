@@ -22,7 +22,7 @@ window.addEventListener("load", () => {
   }
 });
 
-async function startGame(retry:boolean = false) {
+async function startGame(retry: boolean = false) {
   console.clear();
 
   if (retry) {
@@ -40,7 +40,7 @@ async function startGame(retry:boolean = false) {
       console.clear();
       askRandomTriviaQuestion();
       break;
-      case 2:
+    case 2:
       console.clear();
       startQuiz();
       break;
