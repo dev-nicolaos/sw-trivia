@@ -1,15 +1,17 @@
-import { EOL, printQuestion } from "./mod.ts";
+import { printQuestion } from "./mod.ts";
 
 export async function getUserInput(prompt: string = ""): Promise<string> {
   if (prompt) {
     printQuestion(prompt);
   }
 
-  const { stdin } = Deno;
-  const decoder = new TextDecoder();
-  const byteArray = new Uint8Array(1024);
+  const buffer = new Uint8Array(1024);
+  const n = await Deno.stdin.read(buffer);
 
-  await stdin.read(byteArray);
-  const line = decoder.decode(byteArray);
-  return line.substring(0, line.indexOf(EOL));
+  if (n !== Deno.EOF) {
+    const line = new TextDecoder().decode(buffer);
+    return line.substring(0, n).trim();
+  } else {
+    throw Error('Encountered end of file');
+  }
 }

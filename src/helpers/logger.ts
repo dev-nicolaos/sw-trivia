@@ -1,4 +1,4 @@
-import { bgBlue, bgGreen, bgRed, bgYellow, black, white } from "../deps.ts";
+import { bgBlue, bgGreen, bgRed, bgYellow, black, white } from "std/fmt/colors.ts";
 
 export function printPositive(message: string): void {
   console.log(bgGreen(white(message)));

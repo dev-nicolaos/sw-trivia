@@ -4,7 +4,6 @@ export {
   getQuizLength,
 } from "./ask_user.ts";
 export { combineAnswers } from "./combine_answers.ts";
-export { EOL } from "./eol.ts";
 export { generateComicSource, generateTVSource } from "./generate_source.ts";
 export { getUserInput } from "./get_user_input.ts";
 export {

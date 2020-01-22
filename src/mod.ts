@@ -1,4 +1,4 @@
-import { parse } from "./deps.ts";
+import { parse } from "std/flags/mod.ts";
 import { printVersion } from "./version.ts";
 import { printStats } from "./stats/mod.ts";
 import {
@@ -22,7 +22,12 @@ window.addEventListener("load", () => {
   }
 });
 
-async function startGame() {
+async function startGame(retry:boolean = false) {
+  console.clear();
+
+  if (retry) {
+    console.log("Please select a valid option");
+  }
   printQuestion("How would you like to play?", [
     "Answer a random trivia question",
     "Multi-question quiz",
@@ -32,14 +37,15 @@ async function startGame() {
 
   switch (+action) {
     case 1:
+      console.clear();
       askRandomTriviaQuestion();
       break;
-    case 2:
+      case 2:
+      console.clear();
       startQuiz();
       break;
     default:
-      console.log("Please select a valid option");
-      startGame();
+      startGame(true);
       break;
   }
 }
