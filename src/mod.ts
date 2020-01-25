@@ -1,5 +1,5 @@
 import { parse } from "std/flags/mod.ts";
-import { printVersion } from "./version.ts";
+import { printVersion, checkRuntimeVersion } from "./version.ts";
 import { printStats } from "./stats/mod.ts";
 import {
   askRandomTriviaQuestion,
@@ -8,7 +8,9 @@ import {
   startQuiz,
 } from "helpers";
 
-window.addEventListener("load", () => {
+window.addEventListener("load", async () => {
+  await checkRuntimeVersion();
+
   const { stats, version } = parse(Deno.args, {
     alias: { s: "stats", v: "version" },
   });
@@ -22,7 +24,7 @@ window.addEventListener("load", () => {
   }
 });
 
-async function startGame(retry:boolean = false) {
+async function startGame(retry: boolean = false) {
   console.clear();
 
   if (retry) {
@@ -40,7 +42,7 @@ async function startGame(retry:boolean = false) {
       console.clear();
       askRandomTriviaQuestion();
       break;
-      case 2:
+    case 2:
       console.clear();
       startQuiz();
       break;

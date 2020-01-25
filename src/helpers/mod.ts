@@ -5,7 +5,7 @@ export {
 } from "./ask_user.ts";
 export { combineAnswers } from "./combine_answers.ts";
 export { generateComicSource, generateTVSource } from "./generate_source.ts";
-export { getUserInput } from "./get_user_input.ts";
+export { getUserInput, getYesNoResponse } from "./get_user_input.ts";
 export {
   printNegative,
   printNeutral,

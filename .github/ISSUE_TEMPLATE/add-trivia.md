@@ -4,9 +4,9 @@ about: Propose a new trivia question
 title: ''
 labels: content
 assignees: ''
-
 ---
 
+<!-- prettier-ignore -->
 **Question**
 
 - ...
