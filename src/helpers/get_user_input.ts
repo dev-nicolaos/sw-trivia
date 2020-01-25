@@ -15,3 +15,11 @@ export async function getUserInput(prompt: string = ""): Promise<string> {
     throw Error("Encountered end of file");
   }
 }
+
+export async function getYesNoResponse(question: string): Promise<boolean> {
+  const response = (await getUserInput(`${question} (y/n)`))
+    .trim()
+    .toLowerCase();
+
+  return response === "y" || response === "yes";
+}
