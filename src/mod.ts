@@ -1,5 +1,5 @@
 import { parse } from "std/flags/mod.ts";
-import { printVersion } from "./version.ts";
+import { printVersion, checkRuntimeVersion } from "./version.ts";
 import { printStats } from "./stats/mod.ts";
 import {
   askRandomTriviaQuestion,
@@ -8,7 +8,9 @@ import {
   startQuiz,
 } from "helpers";
 
-window.addEventListener("load", () => {
+window.addEventListener("load", async () => {
+  await checkRuntimeVersion();
+
   const { stats, version } = parse(Deno.args, {
     alias: { s: "stats", v: "version" },
   });
