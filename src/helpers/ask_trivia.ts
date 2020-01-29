@@ -40,21 +40,12 @@ export async function askRandomTriviaQuestion(): Promise<void> {
   }
 }
 
-export async function getQuizLength(maxLength: number): Promise<number> {
-  const quizLength = Math.round(
-    +(await getUserInput(
-      `How many questions would you like? (max: ${maxLength})`,
-    )),
-  );
-
-  if (quizLength <= maxLength && quizLength > 0) {
-    return quizLength;
-  } else {
-    console.clear();
-    console.log(
-      "Please enter a positive number less than or equal to",
-      maxLength,
-    );
-    return await getQuizLength(maxLength);
+export async function askMultipleTrivia(trivia: TRIVIA[]): Promise<number> {
+  let score = 0;
+  for (let i = 0; i < trivia.length; i++) {
+    if (await askTriviaQuestion(trivia[i])) {
+      score++;
+    }
   }
+  return score;
 }

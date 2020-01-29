@@ -1,7 +1,7 @@
 import { getYesNoResponse } from "helpers";
 
-const VERSION = "0.4.0";
-const DENO_VERSION = "0.28.0";
+const VERSION = "0.5.0";
+const DENO_VERSION = "0.30.0";
 
 export function printVersion(): void {
   console.log("Star Wars Trivia:", VERSION);
@@ -9,12 +9,17 @@ export function printVersion(): void {
 }
 
 export async function checkRuntimeVersion(): Promise<void> {
-  if (DENO_VERSION !== Deno.version.deno) {
-    console.warn("Potentially incompatibale runtime version detected.");
+  const {
+    version: { deno },
+  } = Deno;
+  if (DENO_VERSION !== deno) {
+    console.warn(`Potentially incompatibale runtime detected (Deno v${deno})`);
     console.warn(`If you experience errors, try using Deno v${DENO_VERSION}`);
 
     if (!(await getYesNoResponse("Continue?"))) {
       Deno.exit();
+    } else {
+      console.clear();
     }
   }
 }

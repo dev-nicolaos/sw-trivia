@@ -9,6 +9,7 @@ import {
 } from "helpers";
 
 window.addEventListener("load", async () => {
+  console.clear();
   await checkRuntimeVersion();
 
   const { stats, version } = parse(Deno.args, {
@@ -25,11 +26,10 @@ window.addEventListener("load", async () => {
 });
 
 async function startGame(retry: boolean = false) {
-  console.clear();
-
   if (retry) {
     console.log("Please select a valid option");
   }
+
   printQuestion("How would you like to play?", [
     "Answer a random trivia question",
     "Multi-question quiz",
@@ -37,13 +37,13 @@ async function startGame(retry: boolean = false) {
 
   const action = await getUserInput();
 
+  console.clear();
+
   switch (+action) {
     case 1:
-      console.clear();
       askRandomTriviaQuestion();
       break;
     case 2:
-      console.clear();
       startQuiz();
       break;
     default:

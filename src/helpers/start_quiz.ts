@@ -7,9 +7,10 @@ import {
   TELEVISION,
 } from "../trivia/mod.ts";
 import {
-  askTriviaQuestion,
-  getQuizLength,
+  askMultipleTrivia,
+  getNumericInput,
   getUserInput,
+  getYesNoResponse,
   printQuestion,
   printScore,
   pickTrivia,
@@ -54,19 +55,22 @@ export async function startQuiz() {
 
   if (selectedSource) {
     console.clear();
-    const quizLength = await getQuizLength(selectedSource.length);
+    const quizLength = await getNumericInput({
+      max: selectedSource.length,
+      prompt: "How many questions would you like?",
+    });
     console.clear();
 
     const trivia = pickTrivia(quizLength, selectedSource);
 
-    let correctCount = 0;
-    for (let i = 0; i < trivia.length; i++) {
-      if (await askTriviaQuestion(trivia[i])) {
-        correctCount++;
-      }
-    }
+    const correctCount = await askMultipleTrivia(trivia);
 
     printScore(correctCount, trivia.length);
+
+    if (await getYesNoResponse("Another?")) {
+      console.clear();
+      startQuiz();
+    }
   } else {
     startQuiz();
   }

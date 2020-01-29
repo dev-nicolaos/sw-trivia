@@ -1,11 +1,15 @@
 export {
+  askMultipleTrivia,
   askRandomTriviaQuestion,
   askTriviaQuestion,
-  getQuizLength,
-} from "./ask_user.ts";
+} from "./ask_trivia.ts";
 export { combineAnswers } from "./combine_answers.ts";
 export { generateComicSource, generateTVSource } from "./generate_source.ts";
-export { getUserInput, getYesNoResponse } from "./get_user_input.ts";
+export {
+  getNumericInput,
+  getUserInput,
+  getYesNoResponse,
+} from "./get_user_input.ts";
 export {
   printNegative,
   printNeutral,

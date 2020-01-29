@@ -6,7 +6,7 @@ const genSource = (episode: string) => generateTVSource("Rebels", episode);
 const trivia: TRIVIA[] = [
   {
     question:
-      "Which clan assisted Clan Wren in to freeing Alrich Wren from Imperial captivity",
+      "Which clan assisted Clan Wren in freeing Alrich Wren from Imperial captivity",
     correctAnswer: "Clan Kryze",
     wrongAnswers: ["Clan Fett", "Clan Vizsla", "Clan Saxon"],
     source: genSource("Heroes of Mandalore: Part 1"),

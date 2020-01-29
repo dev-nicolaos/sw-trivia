@@ -54,7 +54,7 @@ const trivia: TRIVIA[] = [
   },
   {
     question:
-      "What species terroized Kaz and Poe while responeding to a distress signal in sector six?",
+      "What species terroized Kaz and Poe while responding to a distress signal in sector six?",
     correctAnswer: "Kowakian Monkey-Lizards",
     wrongAnswers: ["Grallocs", "Reeks", "Rathars"],
     source: genSource("Signal from Sector Six"),

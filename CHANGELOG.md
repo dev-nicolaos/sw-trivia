@@ -4,6 +4,29 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## 0.5.0 - 2020-01-29
+
+### Added
+
+- After finishing a quiz, the user has the option of taking another
+
+### Changed
+
+- Improved how answers are sorted
+  - Numeric answers are now sorted lowest to highest
+  - For non-numeric answers, all answers are sorted randomly instead of just the correct answer
+- Update target runtime (Deno) and dependencies (Deno Standard) to v0.30.0
+
+### Fixed
+
+- A couple typos in the trivia content
+
+## 0.4.0 - 2020-01-25
+
+### Added
+
+- Checks version of runtime (Deno) at launch for compatibility
+
 ## 0.3.0 - 2020-01-21
 
 ### Added
@@ -13,5 +36,3 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Changed
 
 - Update target runtime (Deno) and dependencies (Deno Standard) to v0.28.0
-- Specify dependencies in `import_map.json` instead of `src/deps.ts`
-- Minor refactor of a couple helper functions
