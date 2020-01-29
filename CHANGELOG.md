@@ -12,6 +12,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- Improved how answers are sorted
+  - Numeric answers are now sorted lowest to highest
+  - For non-numeric answers, all answers are sorted randomly instead of just the correct answer
 - Update target runtime (Deno) and dependencies (Deno Standard) to v0.30.0
 
 ### Fixed
