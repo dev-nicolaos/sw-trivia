@@ -1,5 +1,5 @@
 import {
-  ALLTRIVIA,
+  ALL_TRIVIA,
   BOOKS,
   COMICS,
   FILMS,
@@ -13,12 +13,12 @@ import {
 } from "./mod.ts";
 
 export function printStats() {
-  console.log("Number of Trivia Questions:", ALLTRIVIA.length);
+  console.log("Number of Trivia Questions:", ALL_TRIVIA.length);
   console.log("From books:", BOOKS.length);
   console.log("From comics:", COMICS.length);
   console.log("From films:", FILMS.length);
   console.log("From games:", GAMES.length);
   console.log("From television:", TELEVISION.length);
-  console.log("Number of Unique Sources:", countUniqueSources(ALLTRIVIA));
-  console.log(formatMostCommonSources(findMostCommonSources(ALLTRIVIA)));
+  console.log("Number of Unique Sources:", countUniqueSources(ALL_TRIVIA));
+  console.log(formatMostCommonSources(findMostCommonSources(ALL_TRIVIA)));
 }

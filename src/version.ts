@@ -9,9 +9,8 @@ export function printVersion(): void {
 }
 
 export async function checkRuntimeVersion(): Promise<void> {
-  const {
-    version: { deno },
-  } = Deno;
+  const { version: { deno } } = Deno;
+
   if (DENO_VERSION !== deno) {
     console.warn(`Potentially incompatibale runtime detected (Deno v${deno})`);
     console.warn(`If you experience errors, try using Deno v${DENO_VERSION}`);
