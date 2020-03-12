@@ -8,7 +8,7 @@ interface MOSTCOMMONSOURCES {
 export function findMostCommonSources(
   providedTrivia: TRIVIA[],
 ): MOSTCOMMONSOURCES {
-  const sourceCounts = {};
+  const sourceCounts: {[index: string]:number} = {};
 
   providedTrivia.forEach(trivia => {
     const { name } = trivia.source;
@@ -20,7 +20,7 @@ export function findMostCommonSources(
     }
   });
 
-  const mostCommonSources = { names: [], count: 0 };
+  const mostCommonSources: { names: string[], count: number } = { names: [], count: 0 };
 
   for (const source in sourceCounts) {
     if (sourceCounts[source] > mostCommonSources.count) {
