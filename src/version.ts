@@ -17,8 +17,6 @@ export async function checkRuntimeVersion(): Promise<void> {
 
     if (!(await getYesNoResponse("Continue?"))) {
       Deno.exit();
-    } else {
-      console.clear();
     }
   }
 }
