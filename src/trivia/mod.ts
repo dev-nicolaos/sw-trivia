@@ -6,7 +6,7 @@ import FILMS from "./films/mod.ts";
 import GAMES from "./games/mod.ts";
 import TELEVISION from "./television/mod.ts";
 
-const ALLTRIVIA: TRIVIA[] = [
+const ALL_TRIVIA: TRIVIA[] = [
   ...BOOKS,
   ...COMICS,
   ...FILMS,
@@ -14,4 +14,4 @@ const ALLTRIVIA: TRIVIA[] = [
   ...TELEVISION,
 ];
 
-export { ALLTRIVIA, BOOKS, COMICS, FILMS, GAMES, TELEVISION };
+export { ALL_TRIVIA, BOOKS, COMICS, FILMS, GAMES, TELEVISION };

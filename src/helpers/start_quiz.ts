@@ -1,5 +1,5 @@
 import {
-  ALLTRIVIA,
+  ALL_TRIVIA,
   BOOKS,
   COMICS,
   FILMS,
@@ -30,7 +30,7 @@ export async function startQuiz() {
 
   switch (+(await getUserInput())) {
     case 1:
-      selectedSource = ALLTRIVIA;
+      selectedSource = ALL_TRIVIA;
       break;
     case 2:
       selectedSource = BOOKS;

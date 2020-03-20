@@ -9,7 +9,6 @@ import {
 } from "helpers";
 
 window.addEventListener("load", async () => {
-  console.clear();
   await checkRuntimeVersion();
 
   const { stats, version } = parse(Deno.args, {
@@ -26,6 +25,8 @@ window.addEventListener("load", async () => {
 });
 
 async function startGame(retry: boolean = false) {
+  console.clear();
+
   if (retry) {
     console.log("Please select a valid option");
   }
