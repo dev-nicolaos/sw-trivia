@@ -1,0 +1,6 @@
+{
+  "deno.enable": true,
+  "deno.import_map": "import_map.json",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}
