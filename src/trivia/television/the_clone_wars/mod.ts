@@ -6,6 +6,7 @@ import theCloneWarsSeason3 from "./season_3.ts";
 import theCloneWarsSeason4 from "./season_4.ts";
 import theCloneWarsSeason5 from "./season_5.ts";
 import theCloneWarsSeason6 from "./season_6.ts";
+import theCloneWarsSeason7 from "./season_7.ts";
 
 const trivia: TRIVIA[] = [
   ...theCloneWarsSeason1,
@@ -14,6 +15,7 @@ const trivia: TRIVIA[] = [
   ...theCloneWarsSeason4,
   ...theCloneWarsSeason5,
   ...theCloneWarsSeason6,
+  ...theCloneWarsSeason7,
 ];
 
 export default trivia;
