@@ -1,11 +1,13 @@
 import { TRIVIA } from "interfaces";
 
+import aCrashOfFate from "./a_crash_of_fate.ts";
 import aftermath from "./aftermath.ts";
 import aftermathEmpiresEnd from "./aftermath_empires_end.ts";
 import aftermathLifeDebt from "./aftermath_life_debt.ts";
 import ahsoka from "./ahsoka.ts";
 import alphabetSquadron from "./alphabet_squadron.ts";
 import beforeTheAwakening from "./before_the_awakening.ts";
+import blackSpire from "./black_spire.ts";
 import bloodline from "./bloodline.ts";
 import catalyst from "./catalyst.ts";
 import darkDisciple from "./dark_disciple.ts";
@@ -24,6 +26,7 @@ import newDawn from "./new_dawn.ts";
 import phasma from "./phasma.ts";
 import queensShadow from "./queens_shadow.ts";
 import rebelRising from "./rebel_rising.ts";
+import resistanceReborn from "./resistance_reborn.ts";
 import smugglersRun from "./smugglers_run.ts";
 import tarkin from "./tarkin.ts";
 import theWeaponOfAJedi from "./the_weapon_of_a_jedi.ts";
@@ -33,12 +36,14 @@ import thrawnTreason from "./thrawn_treason.ts";
 import twiglightCompany from "./twiglight_company.ts";
 
 const trivia: TRIVIA[] = [
+  ...aCrashOfFate,
   ...aftermath,
   ...aftermathEmpiresEnd,
   ...aftermathLifeDebt,
   ...ahsoka,
   ...alphabetSquadron,
   ...beforeTheAwakening,
+  ...blackSpire,
   ...bloodline,
   ...catalyst,
   ...darkDisciple,
@@ -57,6 +62,7 @@ const trivia: TRIVIA[] = [
   ...phasma,
   ...queensShadow,
   ...rebelRising,
+  ...resistanceReborn,
   ...smugglersRun,
   ...tarkin,
   ...theWeaponOfAJedi,
