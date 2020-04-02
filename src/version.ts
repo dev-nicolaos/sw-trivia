@@ -1,19 +1,25 @@
 import { getYesNoResponse } from "helpers";
 
-const VERSION = "0.6.0";
-const DENO_VERSION = "0.36.0";
+const SW_TRIVIA_VERSION = "0.6.0";
+const TARGET_DENO_VERSION = "0.38.0";
 
 export function printVersion(): void {
-  console.log("Star Wars Trivia:", VERSION);
-  console.log("Built on Deno:", DENO_VERSION);
+  console.log("Star Wars Trivia:", SW_TRIVIA_VERSION);
+  console.log("Built on Deno:", TARGET_DENO_VERSION);
 }
 
 export async function checkRuntimeVersion(): Promise<void> {
-  const { version: { deno } } = Deno;
+  const {
+    version: { deno: runtimeVersion },
+  } = Deno;
 
-  if (DENO_VERSION !== deno) {
-    console.warn(`Potentially incompatibale runtime detected (Deno v${deno})`);
-    console.warn(`If you experience errors, try using Deno v${DENO_VERSION}`);
+  if (TARGET_DENO_VERSION !== runtimeVersion) {
+    console.warn(
+      `Potentially incompatibale runtime detected (Deno v${runtimeVersion})`,
+    );
+    console.warn(
+      `If you experience errors, try using Deno v${TARGET_DENO_VERSION}`,
+    );
 
     if (!(await getYesNoResponse("Continue?"))) {
       Deno.exit();
