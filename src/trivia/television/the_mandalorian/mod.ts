@@ -1,4 +1,4 @@
-import { TRIVIA } from "interfaces";
+import { TRIVIA } from "types";
 
 import theMandalorianSeason1 from "./season_1.ts";
 

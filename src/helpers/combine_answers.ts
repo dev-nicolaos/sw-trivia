@@ -1,6 +1,6 @@
-import { TRIVIA } from "interfaces";
+import { TRIVIA } from "types";
 
-const isNumeric = (testValue:any) => Number.isFinite(parseFloat(testValue));
+const isNumeric = (testValue: any) => Number.isFinite(parseFloat(testValue));
 
 function shuffle(arr: any[]): any[] {
   let currentIndex: number = arr.length;

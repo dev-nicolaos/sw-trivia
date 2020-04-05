@@ -1,4 +1,4 @@
-import { TRIVIA, SOURCE } from "interfaces";
+import { TRIVIA, SOURCE } from "types";
 
 const source: SOURCE = { name: "Master and Apprentice", mediaType: "Book" };
 

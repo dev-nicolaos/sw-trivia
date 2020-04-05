@@ -1,4 +1,4 @@
-import { TRIVIA } from "interfaces";
+import { TRIVIA } from "types";
 
 import captainPhasma from "./captain_phasma.ts";
 import chewbacca from "./chewbacca.ts";

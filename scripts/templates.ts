@@ -1,7 +1,7 @@
-import { SOURCE } from "interfaces";
+import { SOURCE } from "types";
 
 export const generateBasicTriviaTemplate = ({ mediaType, name }: SOURCE) =>
-  `import { TRIVIA, SOURCE } from "interfaces";
+  `import { TRIVIA, SOURCE } from "types";
 
 const source: SOURCE = { name: "${name}", mediaType: "${mediaType}" };
 
@@ -11,7 +11,7 @@ export default trivia;
 `;
 
 export const generateTVTemplate = (seriesName: string) =>
-  `import { TRIVIA } from "interfaces";
+  `import { TRIVIA } from "types";
 import { generateTVSource } from "helpers";
 
 const genSource = (episode: string) => generateTVSource("${seriesName}", episode);
@@ -22,7 +22,7 @@ export default trivia;
 `;
 
 export const generateComicTemplate = (seriesName: string) =>
-  `import { TRIVIA } from "interfaces";
+  `import { TRIVIA } from "types";
 import { generateComicSource } from "helpers";
 
 const genSource = (issue: number) => generateComicSource("${seriesName}", issue);

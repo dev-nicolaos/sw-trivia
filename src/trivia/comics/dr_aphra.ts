@@ -1,4 +1,4 @@
-import { TRIVIA } from "interfaces";
+import { TRIVIA } from "types";
 import { generateComicSource } from "helpers";
 
 const genSource = (issue: number) => generateComicSource("Doctor Aphra", issue);

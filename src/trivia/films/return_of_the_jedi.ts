@@ -1,4 +1,4 @@
-import { TRIVIA, SOURCE } from "interfaces";
+import { TRIVIA, SOURCE } from "types";
 
 const source: SOURCE = { name: "Return of the Jedi", mediaType: "Film" };
 

@@ -1,4 +1,4 @@
-import { TRIVIA } from "interfaces";
+import { TRIVIA } from "types";
 
 export const countUniqueSources = (providedTrivia: TRIVIA[]): number =>
   providedTrivia

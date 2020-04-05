@@ -1,4 +1,4 @@
-import { TRIVIA } from "interfaces";
+import { TRIVIA } from "types";
 
 import theCloneWarsSeason1 from "./season_1.ts";
 import theCloneWarsSeason2 from "./season_2.ts";

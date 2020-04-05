@@ -1,4 +1,4 @@
-import { SOURCE } from "interfaces";
+import { MEDIA_TYPE, SOURCE } from "types";
 import { getUserInput, printPositive, printQuestion } from "helpers";
 import { generateBasicTriviaTemplate } from "./templates.ts";
 
@@ -53,7 +53,7 @@ function createSourceFile(source: SOURCE): void {
 }
 
 async function getNewSourceDetails(): Promise<SOURCE> {
-  const supportedMediaTypes = ["Book", "Film", "Game"];
+  const supportedMediaTypes: MEDIA_TYPE[] = ["Book", "Film", "Game"];
 
   printQuestion(
     "What type of source would you like to create?",

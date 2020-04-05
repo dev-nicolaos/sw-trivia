@@ -1,7 +1,9 @@
-import { TRIVIA } from "interfaces";
+import { TRIVIA } from "types";
 import { ALL_TRIVIA } from "../trivia/mod.ts";
 
-export function pickRandomTrivia(providedTrivia: TRIVIA[] = ALL_TRIVIA): TRIVIA {
+export function pickRandomTrivia(
+  providedTrivia: TRIVIA[] = ALL_TRIVIA,
+): TRIVIA {
   const selectedIndex = Math.floor(Math.random() * providedTrivia.length);
   return providedTrivia[selectedIndex];
 }

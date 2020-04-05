@@ -1,4 +1,4 @@
-import { TRIVIA } from "interfaces";
+import { TRIVIA } from "types";
 
 import rebelsSeason1 from "./season_1.ts";
 import rebelsSeason2 from "./season_2.ts";

@@ -1,5 +1,5 @@
 import { readLines } from "std/io/mod.ts";
-import { GET_NUMERIC_INPUT_OPTIONS } from "interfaces";
+import { GET_NUMERIC_INPUT_OPTIONS } from "types";
 import { printQuestion } from "./mod.ts";
 
 export async function getUserInput(prompt: string = ""): Promise<string> {

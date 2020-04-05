@@ -1,4 +1,4 @@
-import { TRIVIA } from "interfaces";
+import { TRIVIA } from "types";
 
 import aCrashOfFate from "./a_crash_of_fate.ts";
 import aftermath from "./aftermath.ts";

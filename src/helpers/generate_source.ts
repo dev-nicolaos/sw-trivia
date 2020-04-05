@@ -1,6 +1,6 @@
-import { SOURCE } from "interfaces";
+import { SOURCE, MEDIA_TYPE } from "types";
 
-const generateSource = (name: string, mediaType: string): SOURCE => ({
+const generateSource = (name: string, mediaType: MEDIA_TYPE): SOURCE => ({
   name,
   mediaType,
 });
