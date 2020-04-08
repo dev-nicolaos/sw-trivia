@@ -7,12 +7,12 @@ import aftermathLifeDebt from "./aftermath_life_debt.ts";
 import ahsoka from "./ahsoka.ts";
 import alphabetSquadron from "./alphabet_squadron.ts";
 import beforeTheAwakening from "./before_the_awakening.ts";
-import blackSpire from "./black_spire.ts";
 import bloodline from "./bloodline.ts";
 import catalyst from "./catalyst.ts";
 import darkDisciple from "./dark_disciple.ts";
 import dookuJediLost from "./dooku_jedi_lost.ts";
 import fromACertainPointOfView from "./from_a_certain_point_of_view.ts";
+import galaxysEdgeBlackSpire from "./galaxys_edge_black_spire.ts";
 import heirToTheJedi from "./heir_to_the_jedi.ts";
 import infernoSquad from "./inferno_squad.ts";
 import lastShot from "./last_shot.ts";
@@ -43,12 +43,12 @@ const trivia: TRIVIA[] = [
   ...ahsoka,
   ...alphabetSquadron,
   ...beforeTheAwakening,
-  ...blackSpire,
   ...bloodline,
   ...catalyst,
   ...darkDisciple,
   ...dookuJediLost,
   ...fromACertainPointOfView,
+  ...galaxysEdgeBlackSpire,
   ...heirToTheJedi,
   ...infernoSquad,
   ...lastShot,
