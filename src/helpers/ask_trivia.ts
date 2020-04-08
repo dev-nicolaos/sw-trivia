@@ -26,7 +26,8 @@ export async function askTriviaQuestion(
     printNegative("Incorrect 😢");
     console.log("The correct answer is:", selectedTrivia.correctAnswer);
   }
-  console.log("Source:", selectedTrivia.source.name);
+
+  console.log("Source:", selectedTrivia.source.name, "\n");
 
   return correct;
 }
