@@ -41,7 +41,7 @@ const trivia: TRIVIA[] = [
     source,
   },
   {
-    question: "Who commanded The Star Destroyer Dauntless?",
+    question: "Who commanded the Star Destroyer Dauntless?",
     correctAnswer: "Moff Raythe",
     wrongAnswers: ["Darth Vader", "Admiral Motti", "Grand Moff Tarkin"],
     source,
@@ -143,8 +143,8 @@ const trivia: TRIVIA[] = [
     question: "How did Lando shut down the weapons factory on Sullust?",
     correctAnswer: "Flooded it with lava",
     wrongAnswers: [
-      "Bombared it from a capitol ship",
-      "Y-Wing Bombing Runs",
+      "Bombarded it from a capitol ship",
+      "Y-Wing bombing runs",
       "Put detonators inside",
     ],
     source,

@@ -23,7 +23,7 @@ const trivia: TRIVIA[] = [
   },
   {
     question:
-      "How did Anakin originally try to remove the buzz droids from Obi-Wan's fighter?",
+      "How did Anakin initially try to remove the buzz droids from Obi-Wan's fighter?",
     correctAnswer: "Blasting them off",
     wrongAnswers: [
       "Scraping them off",
@@ -135,11 +135,11 @@ const trivia: TRIVIA[] = [
   {
     question:
       "Where in the Jedi Temple did Anakin tell Mace Windu of Palpatine's true identity?",
-    correctAnswer: "A Hangar",
+    correctAnswer: "A hangar",
     wrongAnswers: [
       "The Jedi Archives",
       "The Room of a Thousand Fountains",
-      "Windu's Quarters",
+      "Windu's quarters",
     ],
     source,
   },
@@ -171,7 +171,7 @@ const trivia: TRIVIA[] = [
   },
   {
     question: 'Finish the quote: "So this is how liberty dies, _____"',
-    correctAnswer: "With thunderous applause.",
+    correctAnswer: "with thunderous applause.",
     wrongAnswers: [
       "in the hands of the corrupt.",
       "in darkness of night.",

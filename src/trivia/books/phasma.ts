@@ -23,10 +23,10 @@ const trivia: TRIVIA[] = [
   },
   {
     question: "What caused Brendol Hux's ship to crash on Parnassos?",
-    correctAnswer: "Hit by an Automated Defense System",
+    correctAnswer: "Hit by an automated defense system",
     wrongAnswers: [
-      "Engine Failure",
-      "Torn apart by Buzz Droids",
+      "Engine failure",
+      "Torn apart by buzz droids",
       "Shot down in dogfight",
     ],
     source,

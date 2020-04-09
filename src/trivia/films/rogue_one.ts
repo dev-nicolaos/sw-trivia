@@ -4,22 +4,22 @@ const source: SOURCE = { name: "Rouge One", mediaType: "Film" };
 
 const trivia: TRIVIA[] = [
   {
-    question: "How many Death Troopers accompanied Krenic on Lah'mu",
+    question: "How many death troopers accompanied Krenic on Lah'mu",
     correctAnswer: "6",
     wrongAnswers: ["2", "4", "8"],
     source,
   },
   {
     question:
-      "What was the doll that a Death Trooper found while searching the Erso home on Lah'mu?",
-    correctAnswer: "A Stormtrooper",
-    wrongAnswers: ["A Jedi", "Princess Leia", "A Farmer"],
+      "What doll did a death trooper find while searching the Erso home on Lah'mu?",
+    correctAnswer: "A stormtrooper",
+    wrongAnswers: ["A Jedi", "Princess Leia", "A farmer"],
     source,
   },
   {
     question: "What was the Ring of Kafrene?",
-    correctAnswer: "A Trading Outpost",
-    wrongAnswers: ["A Cantina", "Jewlery", "A group of Smugglers"],
+    correctAnswer: "A trading outpost",
+    wrongAnswers: ["A cantina", "A piece of jewlery", "A group of smugglers"],
     source,
   },
   {
