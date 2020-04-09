@@ -19,9 +19,9 @@ export function printNegative(message: string): void {
   console.log(bgRed(white(message)));
 }
 
-export function printQuestion(question: string, options: string[] = []): void {
+export function printQuestion(question: string, answers: string[] = []): void {
   console.log(bgBlue(white(question)));
-  options.forEach((option, i) => {
+  answers.forEach((option, i) => {
     console.log(`${i + 1}) ${option}`);
   });
 }
