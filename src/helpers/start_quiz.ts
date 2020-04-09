@@ -9,7 +9,6 @@ import {
 import {
   askMultipleTrivia,
   getNumericInput,
-  getUserInput,
   getYesNoResponse,
   printQuestion,
   printScore,
@@ -28,7 +27,7 @@ export async function startQuiz() {
 
   let selectedSource = null;
 
-  switch (+(await getUserInput())) {
+  switch (await getNumericInput()) {
     case 1:
       selectedSource = ALL_TRIVIA;
       break;
@@ -57,6 +56,7 @@ export async function startQuiz() {
     console.clear();
     const quizLength = await getNumericInput({
       max: selectedSource.length,
+      min: 1,
       prompt: "How many questions would you like?",
     });
     console.clear();

@@ -13,8 +13,8 @@ export interface TRIVIA {
 }
 
 export interface GET_NUMERIC_INPUT_OPTIONS {
+  max?: number;
   min?: number;
-  max: number;
+  prompt?: string;
   round?: boolean;
-  prompt: string;
 }

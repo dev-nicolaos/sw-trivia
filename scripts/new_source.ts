@@ -1,5 +1,10 @@
 import { MEDIA_TYPE, SOURCE } from "types";
-import { getUserInput, printPositive, printQuestion } from "helpers";
+import {
+  getUserInput,
+  printPositive,
+  printQuestion,
+  getNumericInput,
+} from "helpers";
 import { generateBasicTriviaTemplate } from "./templates.ts";
 
 const formatFileName = (sourceName: string): string =>
@@ -60,20 +65,19 @@ async function getNewSourceDetails(): Promise<SOURCE> {
     supportedMediaTypes,
   );
 
-  const selectedMediaIndex = +(await getUserInput()) - 1;
+  const selectedMediaIndex =
+    (await getNumericInput({
+      max: supportedMediaTypes.length,
+      min: 1,
+    })) - 1;
 
-  const mediaType = supportedMediaTypes[selectedMediaIndex];
+  const name = await getUserInput("What is the name of the source?");
 
-  if (mediaType) {
-    const name = await getUserInput("What is the name of the source?");
-    if (name) {
-      return { name, mediaType };
-    } else {
-      console.log("An empty string is not a valid source name");
-    }
-  } else {
-    console.log("Please selected a valid option");
+  if (name) {
+    return { name, mediaType: supportedMediaTypes[selectedMediaIndex] };
   }
+
+  console.log("An empty string is not a valid source name");
   return getNewSourceDetails();
 }
 
