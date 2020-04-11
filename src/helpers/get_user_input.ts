@@ -31,7 +31,7 @@ export async function getNumericInput({
   function constructPrompt(): string {
     let constructedPrompt = prompt;
 
-    if (isDefined(min) || isDefined(max)) {
+    if (prompt && (isDefined(min) || isDefined(max))) {
       constructedPrompt += " (";
 
       if (isDefined(min)) {
@@ -67,8 +67,8 @@ export async function getNumericInput({
   }
 
   return min && response < min
-    ? handleInvalid(`Please enter a number greater than ${min}`)
+    ? handleInvalid(`Please enter a number greater than or equal to ${min}`)
     : max && response > max
-    ? handleInvalid(`Please enter a number less than ${max}`)
+    ? handleInvalid(`Please enter a number less than or equal to ${max}`)
     : response;
 }
