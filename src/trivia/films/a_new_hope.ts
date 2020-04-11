@@ -4,7 +4,7 @@ const source: SOURCE = { name: "A New Hope", mediaType: "Film" };
 
 const trivia: TRIVIA[] = [
   {
-    question: "Which ship was the first ever shown on screen in the franchise?",
+    question: "Which ship carried the stolen Death Star plans to Tatooine?",
     correctAnswer: "Tantive IV",
     wrongAnswers: ["Star Destroyer Avenger", "Millenium Falcon", "X-Wing"],
     source,

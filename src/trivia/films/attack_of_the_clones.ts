@@ -4,8 +4,7 @@ const source: SOURCE = { name: "Attack of the Clones", mediaType: "Film" };
 
 const trivia: TRIVIA[] = [
   {
-    question:
-      "During Episode II: Attack of the Clones, who was the ruler of the Naboo?",
+    question: "Who was the ruler of the Naboo at the outset of the Clone Wars?",
     correctAnswer: "Queen Jamillia",
     wrongAnswers: ["Queen Amidala", "Senator Amidala", "Boss Nass"],
     source,
