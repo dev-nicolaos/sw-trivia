@@ -9,7 +9,7 @@ import darthVaderDarkLordOfTheSith from "./darth_vader_dark_lord_of_the_sith.ts"
 import drAphra from "./dr_aphra.ts";
 import hanSolo from "./han_solo.ts";
 import hanSoloImperialCadet from "./han_solo_imperial_cadet.ts";
-import jediOfTheRepublicMaceWindu from "./captain_phasma.ts";
+import jediOfTheRepublicMaceWindu from "./jedi_of_the_republic_mace_windu.ts";
 import kanan from "./kanan.ts";
 import lando from "./lando.ts";
 import obiwanAndAnakin from "./obiwan_and_anakin.ts";
