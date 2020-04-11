@@ -3,26 +3,10 @@ import { printVersion, checkRuntimeVersion } from "./version.ts";
 import { printStats } from "./stats/mod.ts";
 import {
   askRandomTriviaQuestion,
-  getUserInput,
+  getNumericInput,
   printQuestion,
   startQuiz,
 } from "helpers";
-
-window.addEventListener("load", async () => {
-  await checkRuntimeVersion();
-
-  const { stats, version } = parse(Deno.args, {
-    alias: { s: "stats", v: "version" },
-  });
-
-  if (stats) {
-    printStats();
-  } else if (version) {
-    printVersion();
-  } else {
-    startGame();
-  }
-});
 
 async function startGame(retry: boolean = false) {
   console.clear();
@@ -36,11 +20,11 @@ async function startGame(retry: boolean = false) {
     "Multi-question quiz",
   ]);
 
-  const action = await getUserInput();
+  const action = await getNumericInput();
 
   console.clear();
 
-  switch (+action) {
+  switch (action) {
     case 1:
       askRandomTriviaQuestion();
       break;
@@ -51,4 +35,18 @@ async function startGame(retry: boolean = false) {
       startGame(true);
       break;
   }
+}
+
+await checkRuntimeVersion();
+
+const { stats, version } = parse(Deno.args, {
+  alias: { s: "stats", v: "version" },
+});
+
+if (stats) {
+  printStats();
+} else if (version) {
+  printVersion();
+} else {
+  startGame();
 }
