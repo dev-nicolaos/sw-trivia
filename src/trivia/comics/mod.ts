@@ -8,6 +8,7 @@ import darthVader from "./darth_vader.ts";
 import darthVaderDarkLordOfTheSith from "./darth_vader_dark_lord_of_the_sith.ts";
 import drAphra from "./dr_aphra.ts";
 import hanSolo from "./han_solo.ts";
+import hanSoloImperialCadet from "./han_solo_imperial_cadet.ts";
 import jediOfTheRepublicMaceWindu from "./captain_phasma.ts";
 import kanan from "./kanan.ts";
 import lando from "./lando.ts";
@@ -26,6 +27,7 @@ const trivia: TRIVIA[] = [
   ...darthVaderDarkLordOfTheSith,
   ...drAphra,
   ...hanSolo,
+  ...hanSoloImperialCadet,
   ...jediOfTheRepublicMaceWindu,
   ...kanan,
   ...lando,
