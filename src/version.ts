@@ -15,7 +15,7 @@ export async function checkRuntimeVersion(): Promise<void> {
 
   if (TARGET_DENO_VERSION !== runtimeVersion) {
     console.warn(
-      `Potentially incompatibale runtime detected (Deno v${runtimeVersion})`,
+      `Potentially incompatible runtime detected (Deno v${runtimeVersion})`,
     );
     console.warn(
       `If you experience errors, try using Deno v${TARGET_DENO_VERSION}`,
