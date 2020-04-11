@@ -20,6 +20,8 @@ Because Deno is still pre 1.0 and in rapid development, this project is built ag
 
 `-s`, `--stats`: Show statistics about trivia contents
 
-#### Scaffold New Trivia File (doesn't support tv or comics yet)
+#### Scaffold New Trivia File (doesn't support television yet)
 
-`deno --allow-write --importmap=import_map.json scripts/new_source.ts`
+`deno --importmap=import_map.json scripts/new_source.ts`
+
+Pass `deno` the `--alow-write` flag to avoid the permission prompt

@@ -1,11 +1,15 @@
+import { grantOrThrow } from "std/permissions/mod.ts";
 import { MEDIA_TYPE, SOURCE } from "types";
 import {
+  getNumericInput,
   getUserInput,
   printPositive,
   printQuestion,
-  getNumericInput,
 } from "helpers";
-import { generateBasicTriviaTemplate } from "./templates.ts";
+import {
+  generateBasicTriviaTemplate,
+  generateComicTemplate,
+} from "./templates.ts";
 
 const formatFileName = (sourceName: string): string =>
   sourceName
@@ -20,37 +24,29 @@ const getProjectRootPath = (): string =>
     import.meta.url.lastIndexOf("/", import.meta.url.lastIndexOf("/") - 1),
   );
 
-async function handleDeniedPermission(source: SOURCE): Promise<void> {
-  console.log(
-    "This script requires write access to create a new trivia source file",
-  );
-  console.log(
-    "To avoid this error in the future, run this script with the --allow-write flag",
-  );
-  const retry = await getUserInput("Retry command? y/n");
-  if (retry === "y" || retry === "yes") {
-    createSourceFile(source);
-  }
-}
-
-function createSourceFile(source: SOURCE): void {
+async function createSourceFile(source: SOURCE): Promise<void> {
   const { name, mediaType } = source;
 
   const targetDir = `${getProjectRootPath()}/src/trivia/${mediaType.toLowerCase()}s`;
+
   const fileName = formatFileName(name);
-  const encodedTemplate = new TextEncoder().encode(
-    generateBasicTriviaTemplate(source),
-  );
+
+  const template =
+    mediaType === "Comic"
+      ? generateComicTemplate(name)
+      : generateBasicTriviaTemplate(source);
+  const encodedTemplate = new TextEncoder().encode(template);
 
   try {
+    await grantOrThrow({ name: "write" });
     Deno.chdir(targetDir);
     Deno.writeFileSync(fileName, encodedTemplate);
     printPositive(
       `Success! Don't forget to import ${name} in ${targetDir}/mod.ts`,
     );
   } catch (err) {
-    if (err.name === "PermissionDenied") {
-      handleDeniedPermission(source);
+    if (err instanceof Deno.errors.PermissionDenied) {
+      console.error("Error: Write access required to create a new trivia file");
     } else {
       console.error(err);
     }
@@ -58,7 +54,7 @@ function createSourceFile(source: SOURCE): void {
 }
 
 async function getNewSourceDetails(): Promise<SOURCE> {
-  const supportedMediaTypes: MEDIA_TYPE[] = ["Book", "Film", "Game"];
+  const supportedMediaTypes: MEDIA_TYPE[] = ["Book", "Comic", "Film", "Game"];
 
   printQuestion(
     "What type of source would you like to create?",
@@ -81,7 +77,4 @@ async function getNewSourceDetails(): Promise<SOURCE> {
   return getNewSourceDetails();
 }
 
-window.addEventListener("load", async () => {
-  const newSource = await getNewSourceDetails();
-  createSourceFile(newSource);
-});
+createSourceFile(await getNewSourceDetails());
