@@ -29,7 +29,7 @@ const trivia: TRIVIA[] = [
   },
   {
     question: "What did Jace Rucklin steal from Jarek Yeager?",
-    correctAnswer: "Corellian Hyperfuel",
+    correctAnswer: "Corellian hyperfuel",
     wrongAnswers: ["A ship", "Credits", "Spice"],
     source: genSource("Fuel for the Fire"),
   },

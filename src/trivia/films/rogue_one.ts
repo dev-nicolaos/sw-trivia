@@ -149,8 +149,8 @@ const trivia: TRIVIA[] = [
   },
   {
     question: "How was the destruction of Jedha City explained to the Senate?",
-    correctAnswer: "A Mining Accident",
-    wrongAnswers: ["A Natural Disaster", "A Weapons Test", "An Alien Invasion"],
+    correctAnswer: "A mining accident",
+    wrongAnswers: ["A natural disaster", "A weapons test", "An alien invasion"],
     source,
   },
 ];

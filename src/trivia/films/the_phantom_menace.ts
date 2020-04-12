@@ -54,7 +54,7 @@ const trivia: TRIVIA[] = [
     question:
       "Padmé called him perfect, but what did R2 call C-3PO when they first met?",
     correctAnswer: "Naked",
-    wrongAnswers: ["Mindless Philosopher", "Professor", "Golden Rod"],
+    wrongAnswers: ["Mindless philosopher", "Professor", "Golden rod"],
     source,
   },
   {
