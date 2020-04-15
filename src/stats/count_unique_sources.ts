@@ -1,6 +1,9 @@
 import { TRIVIA } from "types";
 
+const addSourceIfUnique = (
+  sources: string[],
+  { source: { name } }: TRIVIA,
+): string[] => (sources.includes(name) ? sources : [...sources, name]);
+
 export const countUniqueSources = (providedTrivia: TRIVIA[]): number =>
-  providedTrivia
-    .map(trivia => trivia.source.name)
-    .filter((source, i, arr) => arr.indexOf(source) === i).length;
+  providedTrivia.reduce(addSourceIfUnique, []).length;
