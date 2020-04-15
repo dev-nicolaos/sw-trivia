@@ -1,6 +1,6 @@
 import { TRIVIA, SOURCE } from "types";
 
-const source: SOURCE = { name: "Rouge One", mediaType: "Film" };
+const source: SOURCE = { name: "Rogue One", mediaType: "Film" };
 
 const trivia: TRIVIA[] = [
   {
