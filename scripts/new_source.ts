@@ -1,15 +1,13 @@
 import { grantOrThrow } from "std/permissions/mod.ts";
 import { MEDIA_TYPE, SOURCE } from "types";
 import {
+  generateBasicTriviaTemplate,
+  generateComicTemplate,
   getNumericInput,
   getUserInput,
   printPositive,
   printQuestion,
 } from "helpers";
-import {
-  generateBasicTriviaTemplate,
-  generateComicTemplate,
-} from "./templates.ts";
 
 const formatFileName = (sourceName: string): string =>
   sourceName
