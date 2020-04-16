@@ -1,33 +1,30 @@
 import { SOURCE } from "types";
 
+const composeTemplate = (...lines: string[]): string =>
+  lines.join("\n\n") + "\n";
+
+const standardExport = [
+  "const trivia: TRIVIA[] = [];",
+  "export default trivia;",
+];
+
 export const generateBasicTriviaTemplate = ({ mediaType, name }: SOURCE) =>
-  `import { TRIVIA, SOURCE } from "types";
-
-const source: SOURCE = { name: "${name}", mediaType: "${mediaType}" };
-
-const trivia: TRIVIA[] = [];
-
-export default trivia;
-`;
+  composeTemplate(
+    'import { TRIVIA, SOURCE } from "types";',
+    `const source: SOURCE = { name: "${name}", mediaType: "${mediaType}" };`,
+    ...standardExport,
+  );
 
 export const generateTVTemplate = (seriesName: string) =>
-  `import { TRIVIA } from "types";
-import { generateTVSource } from "helpers";
-
-const genSource = (episode: string) => generateTVSource("${seriesName}", episode);
-
-const trivia: TRIVIA[] = [];
-
-export default trivia;
-`;
+  composeTemplate(
+    'import { TRIVIA } from "types";\nimport { generateTVSource } from "helpers";',
+    `const genSource = (episode: string) => generateTVSource("${seriesName}", episode);`,
+    ...standardExport,
+  );
 
 export const generateComicTemplate = (seriesName: string) =>
-  `import { TRIVIA } from "types";
-import { generateComicSource } from "helpers";
-
-const genSource = (issue: number) => generateComicSource("${seriesName}", issue);
-
-const trivia: TRIVIA[] = [];
-
-export default trivia;
-`;
+  composeTemplate(
+    'import { TRIVIA } from "types";\nimport { generateComicSource } from "helpers";',
+    `const genSource = (issue: number) => generateComicSource("${seriesName}", issue);`,
+    ...standardExport,
+  );
