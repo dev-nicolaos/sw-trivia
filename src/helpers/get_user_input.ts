@@ -2,14 +2,28 @@ import { readLines } from "std/io/mod.ts";
 import { GET_NUMERIC_INPUT_OPTIONS } from "types";
 import { printQuestion } from "./mod.ts";
 
+const encoder = new TextEncoder();
+
+function cursorUp(): void {
+  Deno.writeAllSync(Deno.stdout, encoder.encode("\x1b[1A"));
+}
+
 export async function getUserInput(prompt: string = ""): Promise<string> {
   if (prompt) {
     printQuestion(prompt);
   }
 
   const reader = readLines(Deno.stdin);
-  const { value } = await reader.next();
-  return value.trim();
+
+  async function processInput(retry = false): Promise<string> {
+    if (retry) {
+      cursorUp();
+    }
+    const userInput = (await reader.next()).value.trim();
+    return userInput || processInput(true);
+  }
+
+  return processInput();
 }
 
 export async function getYesNoResponse(question: string): Promise<boolean> {
