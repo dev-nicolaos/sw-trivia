@@ -36,6 +36,36 @@ const trivia: TRIVIA[] = [
     ],
     source,
   },
+  {
+    question: "Which relative did Greez Dritus frequently quote?",
+    correctAnswer: "Great Grandmother",
+    wrongAnswers: ["Grandfather", "Cousin", "Neice"],
+    source,
+  },
+  {
+    question: "Cal Kestis befriended which creature on Kashyyyk?",
+    correctAnswer: "Shyyyo bird",
+    wrongAnswers: ["Wyyyschokk", "Slyyyg", "Mykal"],
+    source,
+  },
+  {
+    question: "Who helped Cal Kestis defeat Taron Malicos?",
+    correctAnswer: "Merrin",
+    wrongAnswers: ["Cere Junda", "Jaro Tapal", "Saw Gerrera"],
+    source,
+  },
+  {
+    question: "Where was the Fortress Inquisitorius located?",
+    correctAnswer: "Nur",
+    wrongAnswers: ["Coruscant", "Malachor", "Korriban"],
+    source,
+  },
+  {
+    question: "Which criminal organization captured Cal Kestis?",
+    correctAnswer: "Haxion Brood",
+    wrongAnswers: ["Deathwatch", "Black Sun", "Crimson Dawn"],
+    source,
+  },
 ];
 
 export default trivia;
