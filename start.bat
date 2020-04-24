@@ -1,1 +1,1 @@
-@deno run --importmap=%~dp0/import_map.json %~dp0/src/mod.ts %*
+deno run --importmap=%~dp0import_map.json %~dp0src\mod.ts %*
