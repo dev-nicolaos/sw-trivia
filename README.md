@@ -20,7 +20,7 @@ Because Deno is still pre 1.0 and in rapid development, this project is built ag
 
 `-s`, `--stats`: Show statistics about trivia contents
 
-#### Scaffold New Trivia File (doesn't support television yet)
+#### Scaffold New Trivia File
 
 `deno --importmap=import_map.json scripts/new_source.ts`
 
