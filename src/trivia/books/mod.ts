@@ -8,6 +8,7 @@ import ahsoka from "./ahsoka.ts";
 import alphabetSquadron from "./alphabet_squadron.ts";
 import beforeTheAwakening from "./before_the_awakening.ts";
 import bloodline from "./bloodline.ts";
+import cantoBight from "./canto_bight.ts";
 import catalyst from "./catalyst.ts";
 import darkDisciple from "./dark_disciple.ts";
 import dookuJediLost from "./dooku_jedi_lost.ts";
@@ -44,6 +45,7 @@ const trivia: TRIVIA[] = [
   ...alphabetSquadron,
   ...beforeTheAwakening,
   ...bloodline,
+  ...cantoBight,
   ...catalyst,
   ...darkDisciple,
   ...dookuJediLost,
