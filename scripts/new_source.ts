@@ -2,7 +2,7 @@ import { ensureDirSync, existsSync } from "std/fs/mod.ts";
 import { dirname, relative } from "std/path/mod.ts";
 import { grantOrThrow } from "std/permissions/mod.ts";
 
-import { MEDIA_TYPE } from "types";
+import { MEDIA_TYPE, SOURCE } from "types";
 import {
   generateBasicTriviaTemplate,
   generateComicTemplate,
@@ -13,12 +13,6 @@ import {
   printQuestion,
 } from "helpers";
 import { checkRuntimeVersion } from "../src/version.ts";
-
-interface SOURCE_FILE_DETAILS {
-  name: string;
-  mediaType: MEDIA_TYPE;
-  season?: number;
-}
 
 const encoder = new TextEncoder();
 
@@ -39,27 +33,19 @@ const formatSourceName = (sourceName: string): string =>
     .join("_")
     .toLowerCase();
 
-async function createSourceFile({
-  name,
-  mediaType,
-  season,
-}: SOURCE_FILE_DETAILS): Promise<void> {
-  let targetDir: string = `${getPathToProjectRoot()}/src/trivia/`;
-  let fileName: string;
-  let template: string;
+async function createSourceFile({ name, mediaType }: SOURCE): Promise<void> {
+  const targetDir = `${getPathToProjectRoot()}/src/trivia/${mediaType.toLowerCase()}${
+    mediaType !== "Television" ? "s" : ""
+  }`;
 
-  if (season) {
-    targetDir += `television/${formatSourceName(name)}`;
-    fileName = `season_${season}.ts`;
-    template = generateTVTemplate(name);
-  } else {
-    targetDir += `${mediaType.toLowerCase()}s`;
-    fileName = `${formatSourceName(name)}.ts`;
-    template =
-      mediaType === "Comic"
-        ? generateComicTemplate(name)
-        : generateBasicTriviaTemplate({ mediaType, name });
-  }
+  const fileName = `${formatSourceName(name)}.ts`;
+
+  const template =
+    mediaType === "Television"
+      ? generateTVTemplate(name)
+      : mediaType === "Comic"
+      ? generateComicTemplate(name)
+      : generateBasicTriviaTemplate({ mediaType, name });
 
   const fullPath = `${targetDir}/${fileName}`;
   const encodedTemplate = encoder.encode(template);
@@ -71,9 +57,7 @@ async function createSourceFile({
     );
 
     if (existsSync(fullPath)) {
-      throw `Trivia file already exists for ${name}${
-        season ? ` season ${season}` : ""
-      }`;
+      throw `Trivia file already exists for ${name}`;
     }
 
     ensureDirSync(targetDir);
@@ -93,17 +77,7 @@ async function createSourceFile({
   }
 }
 
-async function getTVSourceDetails() {
-  const name = await getUserInput("What is the name of the series?");
-  const season = await getNumericInput({
-    min: 1,
-    prompt: "Which season would you like to create a file for?",
-  });
-
-  return { name, season };
-}
-
-async function getSourceDetails(): Promise<SOURCE_FILE_DETAILS> {
+async function getSourceDetails(): Promise<SOURCE> {
   const supportedMediaTypes: MEDIA_TYPE[] = [
     "Book",
     "Comic",
@@ -125,15 +99,12 @@ async function getSourceDetails(): Promise<SOURCE_FILE_DETAILS> {
       })) - 1
     ];
 
-  if (mediaType === "Television") {
-    const { name, season } = await getTVSourceDetails();
-    return { name, mediaType, season };
-  } else {
-    const name = await getUserInput(
-      `What is the name of the ${mediaType.toLowerCase()}?`,
-    );
-    return { name, mediaType };
-  }
+  const prompt = `What is the name of the ${
+    mediaType === "Television" ? "series" : mediaType.toLowerCase()
+  }?`;
+
+  const name = await getUserInput(prompt);
+  return { name, mediaType };
 }
 
 checkRuntimeVersion();

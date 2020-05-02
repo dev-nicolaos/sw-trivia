@@ -1,9 +1,9 @@
 import { TRIVIA } from "types";
 
-import rebels from "./rebels/mod.ts";
-import resistance from "./resistance/mod.ts";
-import theCloneWars from "./the_clone_wars/mod.ts";
-import theMandalorian from "./the_mandalorian/mod.ts";
+import rebels from "./rebels.ts";
+import resistance from "./resistance.ts";
+import theCloneWars from "./the_clone_wars.ts";
+import theMandalorian from "./the_mandalorian.ts";
 
 const trivia: TRIVIA[] = [
   ...rebels,
