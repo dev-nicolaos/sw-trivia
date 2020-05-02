@@ -10,9 +10,13 @@ Because Deno is still pre 1.0 and in rapid development, this project is built ag
 
 ### Scripts
 
+Commands below assume project root is the working directory
+
 #### Run Program
 
-`deno --importmap=import_map.json src/mod.ts`
+Windows: `./start` or `./start.bat`
+
+Mac/Linux: `./start.sh`
 
 ##### Flags
 
@@ -22,6 +26,6 @@ Because Deno is still pre 1.0 and in rapid development, this project is built ag
 
 #### Scaffold New Trivia File
 
-`deno --importmap=import_map.json scripts/new_source.ts`
+Windows: `./new` or `./new.bat`
 
-Pass `deno` the `--alow-write` flag to avoid the permission prompt
+Mac/Linux: `./new.sh`
