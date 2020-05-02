@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## 0.9.0 - 2020-05-02
+
+### Added
+
+- New trivia files for TV shows can now be scaffolded with the new source script
+- There are now batch (for Windows) and shell (for Mac/Linux) scripts for launching the game and creating new trivia files
+- More _Jedi: Fallen Order_ trivia
+- Added empty trivia file for _Canto Bight_ book
+
+### Changed
+
+- Accidentally hitting enter without typing anything is no longer counted as a wrong answer, just leaves you in place
+- The new source script now requires FS read access so it can verify a trivia file does not already exist
+- The new source script only requests read/write access to the specific trivia folder in question
+- TV series' trivia files are no longer split out by season
+- Some small refactors of internal code
+
+### Fixed
+
+- Continued fixing typos and capitalization mistakes
+
 ## 0.8.0 - 2020-04-11
 
 ### Added
