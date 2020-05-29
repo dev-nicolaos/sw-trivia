@@ -34,7 +34,7 @@ import theWeaponOfAJedi from "./the_weapon_of_a_jedi.ts";
 import thrawn from "./thrawn.ts";
 import thrawnAlliances from "./thrawn_alliances.ts";
 import thrawnTreason from "./thrawn_treason.ts";
-import twiglightCompany from "./twiglight_company.ts";
+import twilightCompany from "./twilight_company.ts";
 
 const trivia: TRIVIA[] = [
   ...aCrashOfFate,
@@ -71,7 +71,7 @@ const trivia: TRIVIA[] = [
   ...thrawn,
   ...thrawnAlliances,
   ...thrawnTreason,
-  ...twiglightCompany,
+  ...twilightCompany,
 ];
 
 export default trivia;
