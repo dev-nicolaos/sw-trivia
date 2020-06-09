@@ -70,6 +70,86 @@ const trivia: TRIVIA[] = [
     source: genSource("Rising Malevolence"),
   },
   {
+    question:
+      "Which bomber squadron was tasked with destroying the Malevolence",
+    correctAnswer: "Shadow",
+    wrongAnswers: ["Gold", "Blade", ""],
+    source: genSource("Shadow of Malevolence"),
+  },
+  {
+    question:
+      "What shortcut did Anakin and Shadow squadron take to cut off the Malevolence?",
+    correctAnswer: "The Balmorra Run",
+    wrongAnswers: [
+      "The Kessel Run",
+      "The Nexus Route",
+      "The Perlemian Trade Route",
+    ],
+    source: genSource("Shadow of Malevolence"),
+  },
+  {
+    question: "Whose ship was captured by the Malevolence?",
+    correctAnswer: "Padmé Amidala",
+    wrongAnswers: ["Luke Skywalker", "Ahsoka Tano", "Boba Fett"],
+    source: genSource("Destroy Malevolence"),
+  },
+  {
+    question:
+      "What substance was used as fuel to heat the Republic outpost on Rishi's moon?",
+    correctAnswer: "Liquid Tabana",
+    wrongAnswers: ["Clouzon-36", "Isotope-5", "Stygium crystals"],
+    source: genSource("Rookies"),
+  },
+  {
+    question:
+      "Which clone survived the droid infiltration of the Republic outpost outpost on Rishi's moon?",
+    correctAnswer: "Echo",
+    wrongAnswers: ["Hevy", "Droidbait", "Cutup"],
+    source: genSource("Rookies"),
+  },
+  {
+    question:
+      "Which droid temporarily replaced R2-D2 when he was lost during the Battle of Bothawui",
+    correctAnswer: "R3-S6",
+    wrongAnswers: ["4-A7", "R3-A3", "C1-10P"],
+    source: genSource("Downfall of a Droid"),
+  },
+  {
+    question: "Who did Viceroy Gunray mistake for a Jedi on Rodia?",
+    correctAnswer: "Jar Jar Binks",
+    wrongAnswers: ["Senator Amidala", "C-3PO", "Onaconda Farr"],
+    source: genSource("Bombad Jedi"),
+  },
+  {
+    question: "Where was General Grevious' Lair?",
+    correctAnswer: "The Vassek system",
+    wrongAnswers: ["The Zeffo system", "The Bith system", "The Llanic system"],
+    source: genSource("Lair of Grevious"),
+  },
+  {
+    question: "Which species was only found on Vanqor?",
+    correctAnswer: "Gundark",
+    wrongAnswers: ["Loth Wolf", "Krayt Dragon", "Terentatek"],
+    source: genSource("Dooku Captured"),
+  },
+  {
+    question: "How far apart were Vanqor and Florrum?",
+    correctAnswer: "6 parsecs",
+    wrongAnswers: ["12 parsecs", "10 parsecs", "14 parsecs"],
+    source: genSource("Dooku Captured"),
+  },
+  {
+    question:
+      'Finish the quote: "If one hostage is good, then two are better. And three, _____',
+    correctAnswer: "well, that's just good business!",
+    wrongAnswers: [
+      "well, that's a retirement plan!",
+      "well, that's just a gift from above!",
+      "well, nobody ever gets three.",
+    ],
+    source: genSource("The Gungan General"),
+  },
+  {
     question: "What planet was the homeworld of the Pyke Syndicate?",
     correctAnswer: "Oba Diah",
     wrongAnswers: ["Mustafar", "Felucia", "Kessel"],
