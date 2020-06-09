@@ -48,7 +48,7 @@ const trivia: TRIVIA[] = [
   },
   {
     question:
-      "According to R2D2, what are the odds of surviving a night on Hoth outside?",
+      "According to R2-D2, what are the odds of surviving a night on Hoth outside?",
     correctAnswer: "725 to 1",
     wrongAnswers: ["3,750 to 1", "250 to 1", "10,000 to 1"],
     source,
