@@ -25,7 +25,7 @@ const trivia: TRIVIA[] = [
     source,
   },
   {
-    question: "What rank did Panaka hold when he died?",
+    question: "What rank did Quarsh Panaka hold when he died?",
     correctAnswer: "Moff",
     wrongAnswers: ["Captain", "Colonel", "General"],
     source,

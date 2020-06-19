@@ -150,6 +150,94 @@ const trivia: TRIVIA[] = [
     source: genSource("The Gungan General"),
   },
   {
+    question: "Where was the Separtist lab on Naboo located?",
+    correctAnswer: "Eastern Swamps",
+    wrongAnswers: ["Theed", "Lake Paonga", "Western Great Grass Plains"],
+    source: genSource("Blue Shadow Virus"),
+  },
+  {
+    question: "What disease did Dr. Nuvo Vindi want to release on the galaxy?",
+    correctAnswer: "Blue Shadow virus",
+    wrongAnswers: ["Rakghoul plague", "Sand fever", "Hypoxia"],
+    source: genSource("Blue Shadow Virus"),
+  },
+  {
+    question: 'hat planet was known as "the world of a thousand moons"?',
+    correctAnswer: "Iego",
+    wrongAnswers: ["Hoth", "Yavin", "Jakku"],
+    source: genSource("Mystery of a Thousand Moons"),
+  },
+  {
+    question: "What species inhabited Orto Plutonia?",
+    correctAnswer: "Talz",
+    wrongAnswers: ["Pantorans", "Veermoks", "Humans"],
+    source: genSource("Trespass"),
+  },
+  {
+    question: "What unit did Obi-Wan lead during the Battle of Ryloth?",
+    correctAnswer: "Ghost Company",
+    wrongAnswers: ["Twilight Company", "Tango Company", "Torrent Company"],
+    source: genSource("Innocents of Ryloth"),
+  },
+  {
+    question:
+      "What creatures did the Separtists release against Ghost Company at Nabat?",
+    correctAnswer: "Gutkurrs",
+    wrongAnswers: ["Wampas", "Lyleks", "Acklays"],
+    source: genSource("Innocents of Ryloth"),
+  },
+  {
+    question: "Who convinced Cham Syndulla to help the Republic free Lessu?",
+    correctAnswer: "Mace Windu",
+    wrongAnswers: ["Anakin Skywalker", "Ahsoka Tano", "Isval"],
+    source: genSource("Liberty on Ryloth"),
+  },
+  {
+    question:
+      "Who did Darth Sideous hire to steal a holocron from the Jedi Temple",
+    correctAnswer: "Cad Bane",
+    wrongAnswers: ["Boba Fett", "Zam Wessel", "Han Solo"],
+    source: genSource("Holocron Heist"),
+  },
+  {
+    question: "How did Cad Bane get Anakin to unlock a holocron?",
+    correctAnswer: "Held Ahsoka hostage",
+    wrongAnswers: ["Held Padmé hostage", "Impersonated a Jedi", "Drugged him"],
+    source: genSource("Cargo of Doom"),
+  },
+  {
+    question:
+      "Where did Darth Sideous hold the kidnapped force sensitive children?",
+    correctAnswer: "Mustafar",
+    wrongAnswers: ["Rodia", "Coruscant", "Exegol"],
+    source: genSource("Children of the Force"),
+  },
+  {
+    question:
+      "Which bounty hunter was NOT present to help the Jedi defend a Felucian village from pirates?",
+    correctAnswer: "Jas Emari",
+    wrongAnswers: ["Sugi", "Embo", "Seripas"],
+    source: genSource("Bounty Hunters"),
+  },
+  {
+    question: "Which planet was home to the Zillo Beast?",
+    correctAnswer: "Malastare",
+    wrongAnswers: ["Eriadu", "Geonosis", "Kamino"],
+    source: genSource("The Zillo Beast"),
+  },
+  {
+    question: "Which senator represented Scipio during the Clone Wars?",
+    correctAnswer: "Rush Clovis",
+    wrongAnswers: ["Lott Dodd", "Mon Mothma", "Bail Organa"],
+    source: genSource("Senate Spy"),
+  },
+  {
+    question: "How was the Zillo Beast killed?",
+    correctAnswer: "Toxic gas",
+    wrongAnswers: ["Blaster fire", "Lightsaber strike", "Explosive bombs"],
+    source: genSource("The Zillo Beast Strikes Back"),
+  },
+  {
     question: "What planet was the homeworld of the Pyke Syndicate?",
     correctAnswer: "Oba Diah",
     wrongAnswers: ["Mustafar", "Felucia", "Kessel"],

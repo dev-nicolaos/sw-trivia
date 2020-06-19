@@ -14,7 +14,7 @@ const trivia: TRIVIA[] = [
     source,
   },
   {
-    question: "Which handmadien did Padme follow to Batuu?",
+    question: "Which handmadien did Padmé follow to Batuu?",
     correctAnswer: "Duja",
     wrongAnswers: ["Cordé", "Sabé", "Dormé"],
     source,
