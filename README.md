@@ -10,8 +10,6 @@ Although this project uses a stable version of Deno, it still makes use of the [
 
 ### Scripts
 
-Commands below assume project root is the working directory
-
 #### Run Program
 
 Windows: `./start` or `./start.bat`
