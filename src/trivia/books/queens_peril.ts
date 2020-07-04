@@ -11,7 +11,7 @@ const trivia: TRIVIA[] = [
     source,
   },
   {
-    question: "Which of Padmé's handmadiens was recruited first?",
+    question: "Which of Padmé's handmaidens was recruited first?",
     correctAnswer: "Sabé",
     wrongAnswers: ["Cordé", "Rabé", "Dormé"],
     source,
