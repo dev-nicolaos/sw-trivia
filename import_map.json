@@ -1,6 +1,6 @@
 {
   "imports": {
-    "std/": "https://deno.land/std@v0.40.0/",
+    "std/": "https://deno.land/std@v0.60.0/",
     "types": "./src/types/mod.ts",
     "helpers": "./src/helpers/mod.ts"
   }

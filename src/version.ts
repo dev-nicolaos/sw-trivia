@@ -1,7 +1,7 @@
 import { getYesNoResponse } from "helpers";
 
 const SW_TRIVIA_VERSION = "0.9.0";
-const TARGET_DENO_VERSION = "0.40.0";
+const TARGET_DENO_VERSION = "1.1.3";
 
 export function printVersion(): void {
   console.log("Star Wars Trivia:", SW_TRIVIA_VERSION);
