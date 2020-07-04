@@ -4,6 +4,38 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## Unreleased
+
+## 0.10.0 - 2020-07-04
+
+### Added
+
+- Lots of new trivia. Sources include:
+  - _Catalyst_
+  - _Dark Disciple_
+  - _From a Certain Point of View_
+  - _Master and Apprentice_
+  - _Queen's Peril_
+  - _Solo_
+  - _The Aftermath trilogy_
+  - _The Clone Wars_
+  - _Thrawn Alliances_
+  - _Thrawn Treason_
+  - _Twilight Company_
+- New empty trivia files for upcoming media:
+  - _Squadrons_
+  - _Shadow Fall_
+  - _From a Certain Point of View: The Empire Strikes Back_
+
+### Changed
+
+- Update target runtime (Deno) to v1.1.3 and dependencies (Deno Standard) to v0.60.0
+- Updated `README.md`'s blurb about runtime version
+
+### Fixed
+
+- Fixed a few more typos in trivia questions
+
 ## 0.9.0 - 2020-05-02
 
 ### Added
