@@ -1,5 +1,5 @@
 import { ensureDirSync, existsSync } from "std/fs/mod.ts";
-import { dirname, relative } from "std/path/mod.ts";
+import { dirname, relative, fromFileUrl } from "std/path/mod.ts";
 import { grantOrThrow } from "std/permissions/mod.ts";
 
 import { MEDIA_TYPE, SOURCE } from "types";
@@ -14,14 +14,8 @@ import {
 } from "helpers";
 import { checkRuntimeVersion } from "../src/version.ts";
 
-const encoder = new TextEncoder();
-
 const getPathToProjectRoot = (): string => {
-  let projectRoot = dirname(dirname(location.pathname));
-  if (Deno.build.os === "win") {
-    // location.pathname returns a leading slash on windows that breaks the relative function
-    projectRoot = projectRoot.slice(1);
-  }
+  const projectRoot = fromFileUrl(dirname(dirname(import.meta.url)));
   const path = `${relative(Deno.cwd(), projectRoot)}` || ".";
   return path.startsWith(".") ? path : `./${path}`;
 };
@@ -48,7 +42,6 @@ async function createSourceFile({ name, mediaType }: SOURCE): Promise<void> {
       : generateBasicTriviaTemplate({ mediaType, name });
 
   const fullPath = `${targetDir}/${fileName}`;
-  const encodedTemplate = encoder.encode(template);
 
   try {
     await grantOrThrow(
@@ -61,7 +54,7 @@ async function createSourceFile({ name, mediaType }: SOURCE): Promise<void> {
     }
 
     ensureDirSync(targetDir);
-    Deno.writeFileSync(fullPath, encodedTemplate);
+    Deno.writeTextFileSync(fullPath, template);
 
     printPositive(
       `Success! Don't forget to import ${fileName} in ${targetDir}/mod.ts`,
