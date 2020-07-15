@@ -226,16 +226,41 @@ const trivia: TRIVIA[] = [
     source: genSource("The Zillo Beast"),
   },
   {
+    question: "How was the Zillo Beast killed?",
+    correctAnswer: "Toxic gas",
+    wrongAnswers: ["Blaster fire", "Lightsaber strike", "Explosive bombs"],
+    source: genSource("The Zillo Beast Strikes Back"),
+  },
+  {
     question: "Which senator represented Scipio during the Clone Wars?",
     correctAnswer: "Rush Clovis",
     wrongAnswers: ["Lott Dodd", "Mon Mothma", "Bail Organa"],
     source: genSource("Senate Spy"),
   },
   {
-    question: "How was the Zillo Beast killed?",
-    correctAnswer: "Toxic gas",
-    wrongAnswers: ["Blaster fire", "Lightsaber strike", "Explosive bombs"],
-    source: genSource("The Zillo Beast Strikes Back"),
+    question:
+      "Who did Ahsoka work with to destroy the Separtist weapons factory on Geonosis?",
+    correctAnswer: "Barriss Offee",
+    wrongAnswers: ["Asajj Ventress", "Captain Rex", "Anakin Skywalker"],
+    source: genSource("Weapons Factory"),
+  },
+  {
+    question: "How did Ahsoka combat the Geonosian brain worms?",
+    correctAnswer: "Extreme cold",
+    wrongAnswers: ["Extreme heat", "Loud noise", "Lack of gravity"],
+    source: genSource("Brain Invaders"),
+  },
+  {
+    question: "Where did the deserter Cut Lawquane raise his family?",
+    correctAnswer: "Saleucami",
+    wrongAnswers: ["Tatooine", "Naboo", "Onderon"],
+    source: genSource("The Deserter"),
+  },
+  {
+    question: "How many systems were a part of The Council of Neutral Systems?",
+    correctAnswer: "1500",
+    wrongAnswers: ["500", "750", "1000"],
+    source: genSource("The Mandalore Plot"),
   },
   {
     question: "What planet was the homeworld of the Pyke Syndicate?",
