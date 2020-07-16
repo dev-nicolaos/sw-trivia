@@ -10,6 +10,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - New trivia questions from _Bloodline_ and _The Clone Wars_
 
+### Changed
+
+- Update target runtime (Deno) to v1.2.0 and dependencies (Deno Standard) to v0.61.0
+
 ### Fixed
 
 - Corrected `README.md`, scripts will run from any directory
