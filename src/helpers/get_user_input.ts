@@ -50,10 +50,10 @@ export async function getNumericInput({
 
       if (isDefined(min)) {
         constructedPrompt += `min: ${min}`;
-      }
 
-      if (isDefined(min) && isDefined(max)) {
-        constructedPrompt += ", ";
+        if (isDefined(max)) {
+          constructedPrompt += ", ";
+        }
       }
 
       if (isDefined(max)) {
