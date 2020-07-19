@@ -8,7 +8,7 @@ import {
   startQuiz,
 } from "helpers";
 
-async function startGame(retry: boolean = false) {
+async function startGame(retry = false) {
   console.clear();
 
   if (retry) {

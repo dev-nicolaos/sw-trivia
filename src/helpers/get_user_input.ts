@@ -8,7 +8,7 @@ function cursorUp(): void {
   Deno.writeAllSync(Deno.stdout, encoder.encode("\x1b[1A"));
 }
 
-export async function getUserInput(prompt: string = ""): Promise<string> {
+export async function getUserInput(prompt = ""): Promise<string> {
   if (prompt) {
     printQuestion(prompt);
   }
@@ -34,7 +34,7 @@ export async function getYesNoResponse(question: string): Promise<boolean> {
   return response === "y" || response === "yes";
 }
 
-const isDefined = (x: any): boolean => x !== undefined;
+const isDefined = (x: unknown): boolean => x !== undefined;
 
 export async function getNumericInput({
   max,

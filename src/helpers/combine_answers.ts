@@ -1,8 +1,8 @@
 import { TRIVIA } from "types";
 
-const isNumeric = (testValue: any) => Number.isFinite(parseFloat(testValue));
+const isNumeric = (testValue: string) => Number.isFinite(parseFloat(testValue));
 
-function shuffle(arr: any[]): any[] {
+function shuffle(arr: string[]): string[] {
   let currentIndex: number = arr.length;
   let tempValue;
   let randomIndex: number;
