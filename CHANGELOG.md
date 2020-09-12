@@ -12,7 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- Update target runtime (Deno) to v1.2.0 and dependencies (Deno Standard) to v0.61.0
+- Update target runtime (Deno) to v1.3.3 and dependencies (Deno Standard) to v0.68.0
 
 ### Fixed
 
