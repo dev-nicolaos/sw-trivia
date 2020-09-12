@@ -263,6 +263,13 @@ const trivia: TRIVIA[] = [
     source: genSource("The Mandalore Plot"),
   },
   {
+    question:
+      "Who was mentoring Boba Fett when he attempted to assasinate Mace Windu?",
+    correctAnswer: "Aurra Sing",
+    wrongAnswers: ["Count Dooku", "Jango Fett", "Cad Bane"],
+    source: genSource("Death Trap"),
+  },
+  {
     question: "What planet was the homeworld of the Pyke Syndicate?",
     correctAnswer: "Oba Diah",
     wrongAnswers: ["Mustafar", "Felucia", "Kessel"],
