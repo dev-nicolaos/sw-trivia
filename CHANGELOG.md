@@ -17,6 +17,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Fixed
 
 - Corrected `README.md`, scripts will run from any directory
+- New trivia script waits for a user response when the version check fails instead of continuing on
 
 ## 0.10.0 - 2020-07-04
 

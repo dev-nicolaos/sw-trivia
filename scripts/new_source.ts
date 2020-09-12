@@ -100,5 +100,5 @@ async function getSourceDetails(): Promise<SOURCE> {
   return { name, mediaType };
 }
 
-checkRuntimeVersion();
+await checkRuntimeVersion();
 createSourceFile(await getSourceDetails());
