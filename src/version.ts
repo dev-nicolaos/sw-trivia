@@ -1,6 +1,6 @@
 import { getYesNoResponse } from "helpers";
 
-const SW_TRIVIA_VERSION = "0.10.0";
+const SW_TRIVIA_VERSION = "0.11.0";
 const TARGET_DENO_VERSION = "1.3.3";
 
 export function printVersion(): void {

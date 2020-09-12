@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## Unreleased
 
+## 0.11.0 - 2020-09-12
+
 ### Added
 
 - New trivia questions from _Bloodline_ and _The Clone Wars_
