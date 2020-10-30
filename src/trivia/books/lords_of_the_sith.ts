@@ -1,4 +1,4 @@
-import { TRIVIA, SOURCE } from "types";
+import { SOURCE, TRIVIA } from "types";
 
 const source: SOURCE = { name: "Lords of the Sith", mediaType: "Book" };
 

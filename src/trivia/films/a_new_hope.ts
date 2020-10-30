@@ -1,4 +1,4 @@
-import { TRIVIA, SOURCE } from "types";
+import { SOURCE, TRIVIA } from "types";
 
 const source: SOURCE = { name: "A New Hope", mediaType: "Film" };
 
@@ -42,7 +42,8 @@ const trivia: TRIVIA[] = [
     source,
   },
   {
-    question: `Finish the quote: "Don't you call me a mindless philosopher you _____"`,
+    question:
+      `Finish the quote: "Don't you call me a mindless philosopher you _____"`,
     correctAnswer: "overweight glob of grease!",
     wrongAnswers: [
       "stupid little astromech!",
@@ -125,7 +126,8 @@ const trivia: TRIVIA[] = [
     source,
   },
   {
-    question: `Finish the quote: "It's the ship that made the Kessel run in less than _____"`,
+    question:
+      `Finish the quote: "It's the ship that made the Kessel run in less than _____"`,
     correctAnswer: "12 parsecs.",
     wrongAnswers: ["14 parsecs.", "10 parsecs.", "8 parsecs."],
     source,

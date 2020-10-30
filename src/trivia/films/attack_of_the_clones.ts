@@ -1,4 +1,4 @@
-import { TRIVIA, SOURCE } from "types";
+import { SOURCE, TRIVIA } from "types";
 
 const source: SOURCE = { name: "Attack of the Clones", mediaType: "Film" };
 

@@ -10,9 +10,9 @@ import {
   askMultipleTrivia,
   getNumericInput,
   getYesNoResponse,
+  pickTrivia,
   printQuestion,
   printScore,
-  pickTrivia,
 } from "./mod.ts";
 
 export async function startQuiz() {

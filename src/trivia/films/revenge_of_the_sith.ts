@@ -1,4 +1,4 @@
-import { TRIVIA, SOURCE } from "types";
+import { SOURCE, TRIVIA } from "types";
 
 const source: SOURCE = { name: "Revenge of the Sith", mediaType: "Film" };
 
@@ -96,7 +96,8 @@ const trivia: TRIVIA[] = [
     source,
   },
   {
-    question: `Who said "It's very dangerous putting them together. I don't think the boy can handle it."?`,
+    question:
+      `Who said "It's very dangerous putting them together. I don't think the boy can handle it."?`,
     correctAnswer: "Mace Windu",
     wrongAnswers: ["Quinlan Vos", "Obi-Wan Kenobi", "Ki-Adi-Mundi"],
     source,
@@ -144,7 +145,8 @@ const trivia: TRIVIA[] = [
     source,
   },
   {
-    question: `Finish the quote: "He has control of the Senate and the Courts, he's _____"`,
+    question:
+      `Finish the quote: "He has control of the Senate and the Courts, he's _____"`,
     correctAnswer: "to dangerous to be left alive.",
     wrongAnswers: [
       "a Sith Lord!",

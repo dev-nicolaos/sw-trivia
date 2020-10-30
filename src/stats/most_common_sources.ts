@@ -10,7 +10,7 @@ export function findMostCommonSources(
 ): MOST_COMMON_SOURCES {
   const sourceCounts: { [index: string]: number } = {};
 
-  providedTrivia.forEach(trivia => {
+  providedTrivia.forEach((trivia) => {
     const { name } = trivia.source;
 
     if (sourceCounts[name]) {

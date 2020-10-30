@@ -29,12 +29,11 @@ export function printQuestion(question: string, answers: string[] = []): void {
 export function printScore(correct: number, total: number): void {
   const percentage = Math.round((correct / total) * 100);
 
-  const printFunc =
-    percentage >= 90
-      ? printPositive
-      : percentage >= 67
-      ? printNeutral
-      : printNegative;
+  const printFunc = percentage >= 90
+    ? printPositive
+    : percentage >= 67
+    ? printNeutral
+    : printNegative;
 
   printFunc(`You got ${correct}/${total} correct (${percentage}%)`);
 }

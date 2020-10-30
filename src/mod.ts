@@ -1,5 +1,5 @@
 import { parse } from "std/flags/mod.ts";
-import { printVersion, checkRuntimeVersion } from "./version.ts";
+import { checkRuntimeVersion, printVersion } from "./version.ts";
 import { printStats } from "./stats/mod.ts";
 import {
   askRandomTriviaQuestion,

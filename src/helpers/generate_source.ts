@@ -1,4 +1,4 @@
-import { SOURCE, MEDIA_TYPE } from "types";
+import { MEDIA_TYPE, SOURCE } from "types";
 
 const generateSource = (name: string, mediaType: MEDIA_TYPE): SOURCE => ({
   name,

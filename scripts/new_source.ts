@@ -1,5 +1,5 @@
 import { ensureDirSync, existsSync } from "std/fs/mod.ts";
-import { dirname, relative, fromFileUrl } from "std/path/mod.ts";
+import { dirname, fromFileUrl, relative } from "std/path/mod.ts";
 import { grantOrThrow } from "std/permissions/mod.ts";
 
 import { MEDIA_TYPE, SOURCE } from "types";
@@ -28,18 +28,18 @@ const formatSourceName = (sourceName: string): string =>
     .toLowerCase();
 
 async function createSourceFile({ name, mediaType }: SOURCE): Promise<void> {
-  const targetDir = `${getPathToProjectRoot()}/src/trivia/${mediaType.toLowerCase()}${
-    mediaType !== "Television" ? "s" : ""
-  }`;
+  const targetDir =
+    `${getPathToProjectRoot()}/src/trivia/${mediaType.toLowerCase()}${
+      mediaType !== "Television" ? "s" : ""
+    }`;
 
   const fileName = `${formatSourceName(name)}.ts`;
 
-  const template =
-    mediaType === "Television"
-      ? generateTVTemplate(name)
-      : mediaType === "Comic"
-      ? generateComicTemplate(name)
-      : generateBasicTriviaTemplate({ mediaType, name });
+  const template = mediaType === "Television"
+    ? generateTVTemplate(name)
+    : mediaType === "Comic"
+    ? generateComicTemplate(name)
+    : generateBasicTriviaTemplate({ mediaType, name });
 
   const fullPath = `${targetDir}/${fileName}`;
 
@@ -84,13 +84,12 @@ async function getSourceDetails(): Promise<SOURCE> {
     supportedMediaTypes,
   );
 
-  const mediaType =
-    supportedMediaTypes[
-      (await getNumericInput({
-        max: supportedMediaTypes.length,
-        min: 1,
-      })) - 1
-    ];
+  const mediaType = supportedMediaTypes[
+    (await getNumericInput({
+      max: supportedMediaTypes.length,
+      min: 1,
+    })) - 1
+  ];
 
   const prompt = `What is the name of the ${
     mediaType === "Television" ? "series" : mediaType.toLowerCase()
