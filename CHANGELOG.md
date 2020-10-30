@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## Unreleased
 
+### Changed
+
+- Update target runtime (Deno) to v1.5.0 and dependencies (Deno Standard) to v0.75.0
+
 ## 0.11.0 - 2020-09-12
 
 ### Added
