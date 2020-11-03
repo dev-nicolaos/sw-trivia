@@ -9,7 +9,6 @@ import {
 import {
   askMultipleTrivia,
   getNumericInput,
-  getYesNoResponse,
   pickTrivia,
   printQuestion,
   printScore,
@@ -67,7 +66,7 @@ export async function startQuiz() {
 
     printScore(correctCount, trivia.length);
 
-    if (await getYesNoResponse("Another?")) {
+    if (confirm("Play again?")) {
       console.clear();
       startQuiz();
     }

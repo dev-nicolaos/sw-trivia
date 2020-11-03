@@ -26,14 +26,6 @@ export async function getUserInput(prompt = ""): Promise<string> {
   return processInput();
 }
 
-export async function getYesNoResponse(question: string): Promise<boolean> {
-  const response = (await getUserInput(`${question} (y/n)`))
-    .trim()
-    .toLowerCase();
-
-  return response === "y" || response === "yes";
-}
-
 const isDefined = (x: unknown): boolean => x !== undefined;
 
 export async function getNumericInput({

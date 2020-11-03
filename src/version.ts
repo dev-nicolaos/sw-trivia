@@ -1,5 +1,3 @@
-import { getYesNoResponse } from "helpers";
-
 const SW_TRIVIA_VERSION = "0.11.0";
 const TARGET_DENO_VERSION = "1.5.1";
 
@@ -21,7 +19,7 @@ export async function checkRuntimeVersion(): Promise<void> {
       `If you experience errors, try using Deno v${TARGET_DENO_VERSION}`,
     );
 
-    if (!(await getYesNoResponse("Continue?"))) {
+    if (!confirm("Continue?")) {
       Deno.exit();
     }
   }

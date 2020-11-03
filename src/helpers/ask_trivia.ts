@@ -2,7 +2,6 @@ import { TRIVIA } from "types";
 import {
   combineAnswers,
   getUserInput,
-  getYesNoResponse,
   pickRandomTrivia,
   printNegative,
   printPositive,
@@ -35,7 +34,7 @@ export async function askTriviaQuestion(
 export async function askRandomTriviaQuestion(): Promise<void> {
   await askTriviaQuestion(pickRandomTrivia());
 
-  if (await getYesNoResponse("Another?")) {
+  if (confirm("Another?")) {
     console.clear();
     askRandomTriviaQuestion();
   }
