@@ -144,7 +144,7 @@ const trivia: TRIVIA[] = [
     question:
       "What did Obi-Wan tell Luke many of the truths we cling to depend on?",
     correctAnswer: "Our own point of view",
-    wrongAnswers: ["Our family", "The force", "Our emotions"],
+    wrongAnswers: ["Our family", "The Force", "Our emotions"],
     source,
   },
   {
@@ -152,6 +152,129 @@ const trivia: TRIVIA[] = [
       "Which type of ship was NOT part of the Rebel fleet that attacked the second Death Star?",
     correctAnswer: "MC75 star cruiser",
     wrongAnswers: ["Nebulon-B frigate", "CR90 corvette", "GR-75 transport"],
+    source,
+  },
+  {
+    question:
+      "What reason did Lando Calrissian give to explain his rank of General in the Rebel Alliance?",
+    correctAnswer: "His role at the Battle of Taanab",
+    wrongAnswers: [
+      "His role in freeing Han from Jabba",
+      "He had stolen one of the Emperor's ships",
+      "He had high level connections in the Rebellion",
+    ],
+    source,
+  },
+  {
+    question:
+      "What species were the spies who provided the Rebel Alliance information regarding the second Death Star?",
+    correctAnswer: "Bothan",
+    wrongAnswers: ["Rodian", "Grysk", "Weequay"],
+    source,
+  },
+  {
+    question:
+      "What advice did Han offer Chewbaca while piloting the stolen Imperial shuttle on approach to Endor?",
+    correctAnswer: "Fly casual",
+    wrongAnswers: ["Fly fast", "Be ready to jump", "Have a drink"],
+    source,
+  },
+  {
+    question: 'Who said they thought "it would be pretty" on Endor?',
+    correctAnswer: "R2-D2",
+    wrongAnswers: ["Princess Leia", "Luke Skywalker", "Chewbacca"],
+    source,
+  },
+  {
+    question: "Which Ewok found Leia in the forest?",
+    correctAnswer: "Wicket",
+    wrongAnswers: ["Chirpa", "Logray", "Paploo"],
+    source,
+  },
+  {
+    question: "What did Emperor Palpatine tell Vader would be Luke's undoing?",
+    correctAnswer: "His compassion for Vader",
+    wrongAnswers: [
+      "His faith in his friends",
+      "His feeble grasp of the Force",
+      "His lack of discipline",
+    ],
+    source,
+  },
+  {
+    question:
+      "How did Han, Luke, Chewbacca, and the droids escape the Ewok net?",
+    correctAnswer: "R2-D2 cut the net",
+    wrongAnswers: [
+      "Han cut the net with Luke's lightsaber",
+      "The Ewok's let them down",
+      "Luke used the Force",
+    ],
+    source,
+  },
+  {
+    question:
+      "Who were the Ewok's planning to cook as the main course for their banquet to honor C-3PO?",
+    correctAnswer: "Han Solo",
+    wrongAnswers: [
+      "Leia Organa",
+      "Several scout troopers",
+      "Sinjir Rath Velus",
+    ],
+    source,
+  },
+  {
+    question:
+      'Finish the quote: "The force is strong in my family. My father has it, I have it, _____"',
+    correctAnswer: "and my sister has it.",
+    wrongAnswers: [
+      "and my mother has it.",
+      "and my son has it.",
+      "and my brother has it.",
+    ],
+    source,
+  },
+  {
+    question:
+      "How was Luke transported to Darth Vader after turning himself in on Endor?",
+    correctAnswer: "Via AT-AT",
+    wrongAnswers: [
+      "Via speeder bike",
+      "Via shuttle",
+      "Stormtroopers marched him to the Imperial base",
+    ],
+    source,
+  },
+  {
+    question:
+      "What did Luke urge Vader to let go of before sending him to the Emperor?",
+    correctAnswer: "His hate",
+    wrongAnswers: [
+      "His loyalty to his master",
+      "His lust for power",
+      "His pride",
+    ],
+    source,
+  },
+  {
+    question: "Who flew the Millenium Falcon at the Battle of Ender?",
+    correctAnswer: "Lando Calrissian and Nien Nunb",
+    wrongAnswers: [
+      "Han Solo and Chewbacca",
+      "Rey and Chewbacca",
+      "Lando Calrissian and L3-37",
+    ],
+    source,
+  },
+  {
+    question:
+      "How many Imperial troops were waiting to ambush the Rebels at the shield generator on Endor?",
+    correctAnswer: "An entire legion",
+    wrongAnswers: [
+      "An entire battalion",
+      "An entire regiment",
+      "An entire squad",
+    ],
     source,
   },
 ];
