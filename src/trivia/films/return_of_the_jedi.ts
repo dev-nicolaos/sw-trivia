@@ -277,6 +277,53 @@ const trivia: TRIVIA[] = [
     ],
     source,
   },
+  {
+    question: 'Whose call sign was "Red Leader" at the Battle of Endor?',
+    correctAnswer: "Wedge Antilles",
+    wrongAnswers: ["Luke Skywalker", "Hera Syndula", "Garven Dreis"],
+    source,
+  },
+  {
+    question: "Which Ewok tactic succeeded; in destroying an AT-ST?",
+    correctAnswer: "Swinging logs into each side of the cockpit",
+    wrongAnswers: [
+      "Dropping rocks from gliders",
+      "Using a rope as a trip wire",
+      "Battering it with rocks shot from catapults",
+    ],
+    source,
+  },
+  {
+    question: "What Imperial vehicle did Chewbacca help capture on Endor?",
+    correctAnswer: "AT-ST",
+    wrongAnswers: ["AT-AT", "Speeder bike", "Lambda-class shuttle"],
+    source,
+  },
+  {
+    question:
+      'Finish the quote: "You failed your highness. I am a Jedi, _____"',
+    correctAnswer: "like my father before me.",
+    wrongAnswers: [
+      "I will never give in to hate.",
+      "you have lost.",
+      "the dark side is no match.",
+    ],
+    source,
+  },
+  {
+    question:
+      "What type of ship crashed through the bridge of the Super Star Destroyer Executor and caused it to crash?",
+    correctAnswer: "A-wing",
+    wrongAnswers: ["Y-wing", "X-wing", "Star Destroyer"],
+    source,
+  },
+  {
+    question:
+      "Which Force ghost was NOT seen by Luke at the celebration on Endor?",
+    correctAnswer: "Qui-Gon Jinn",
+    wrongAnswers: ["Obi-Wan Kenobi", "Anakin Skywalker", "Yoda"],
+    source,
+  },
 ];
 
 export default trivia;
