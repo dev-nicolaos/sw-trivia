@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
-- Trivia from _Return of the Jedi_
+- Trivia from _The Empire Strikes Back_ and _Return of the Jedi_
 
 ### Changed
 
