@@ -270,6 +270,60 @@ const trivia: TRIVIA[] = [
     source: genSource("Death Trap"),
   },
   {
+    question:
+      "What diluting agent resulted in the poisoning of Mandalorian children?",
+    correctAnswer: "Slabin",
+    wrongAnswers: ["Barium", "Synox", "Mycotoxin"],
+    source: genSource("Corruption"),
+  },
+  {
+    question:
+      "Who controlled the black market on Mandalore during the Clone Wars?",
+    correctAnswer: "Prime Minister Almec",
+    wrongAnswers: ["Dutchess Satine", "Pre Vizsla", "Moff Gideon"],
+    source: genSource("The Academy"),
+  },
+  {
+    question:
+      "At what event did Aurra Sing attempt to assassinate Senator Amidala?",
+    correctAnswer: "A refuge conference on Alderaan",
+    wrongAnswers: [
+      "A parade on Naboo",
+      "A senate meeting on Coruscant",
+      "Peace negotiations on Cato Neimoidia",
+    ],
+    source: genSource("Assassin"),
+  },
+  {
+    question: "Who rescued Aurra Sing from the crash of Slave I on Florrum?",
+    correctAnswer: "Hondo Ohnaka",
+    wrongAnswers: ["Boba Fett", "Obi-Wan Kenobi", "General Grevious"],
+    source: genSource("Assassin"),
+  },
+  {
+    question: "Who was NOT present at the Battle of Kamino?",
+    correctAnswer: "Count Dooku",
+    wrongAnswers: ["Asajj Ventress", "General Grievous", "Anakin Skywalker"],
+    source: genSource("Arc Troopers"),
+  },
+  {
+    question: "When did Fives and Echo recieve the rank of Arc Trooper?",
+    correctAnswer: "Following the Battle of Kamino",
+    wrongAnswers: [
+      "Following the Battle of Ryloth",
+      "Following the Battle of Coruscant",
+      "Following the Battle of Naboo",
+    ],
+    source: genSource("Arc Troopers"),
+  },
+  {
+    question:
+      "Which bounty hunter was involved in kidnapping Chairman Papanoida's daughter?",
+    correctAnswer: "Greedo",
+    wrongAnswers: ["Jango Fett", "Hulas", "Calo Nord"],
+    source: genSource("Sphere of Influence"),
+  },
+  {
     question: "What planet was the homeworld of the Pyke Syndicate?",
     correctAnswer: "Oba Diah",
     wrongAnswers: ["Mustafar", "Felucia", "Kessel"],
