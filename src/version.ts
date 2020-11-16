@@ -1,4 +1,4 @@
-const SW_TRIVIA_VERSION = "0.11.0";
+const SW_TRIVIA_VERSION = "0.12.0";
 const TARGET_DENO_VERSION = "1.5.3";
 
 export function printVersion(): void {
