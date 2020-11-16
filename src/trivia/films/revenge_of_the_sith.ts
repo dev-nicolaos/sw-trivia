@@ -84,7 +84,7 @@ const trivia: TRIVIA[] = [
     wrongAnswers: [
       "He had been with Padmé",
       "He had been training",
-      "He was stuck in traffic",
+      "He had been stuck in traffic",
     ],
     source,
   },

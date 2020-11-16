@@ -30,12 +30,12 @@ const trivia: TRIVIA[] = [
   {
     question: "What did Inferno Squad fly off of Endor?",
     correctAnswer: "Tie Fighters",
-    wrongAnswers: ["The Corvus", "An Imperial Shuttle", "Stolen X-Wings"],
+    wrongAnswers: ["The Corvus", "An Imperial Shuttle", "Stolen X-wings"],
     source,
   },
   {
     question:
-      "Which star destroyer was Inferno squad sent to protect after Endor?",
+      "Which star destroyer was Inferno Squad sent to protect after Endor?",
     correctAnswer: "The Dauntless",
     wrongAnswers: ["The Avenger", "The Eclipse", "The Eviscerator"],
     source,
@@ -48,7 +48,7 @@ const trivia: TRIVIA[] = [
   },
   {
     question:
-      "Which Inferno squad member was rescued by Luke Skywalker on Pillio?",
+      "Which Inferno Squad member was rescued by Luke Skywalker on Pillio?",
     correctAnswer: "Del Meeko",
     wrongAnswers: ["Iden Versio", "Gideon Hask", "Seyn Marana"],
     source,
@@ -67,7 +67,7 @@ const trivia: TRIVIA[] = [
   },
   {
     question:
-      "Which two members of Inferno squad evacuated civilians from Vardos?",
+      "Which two members of Inferno Squad evacuated civilians from Vardos?",
     correctAnswer: "Iden and Del",
     wrongAnswers: ["Iden and Gideon", "Gideon and Del", "Seyn and Iden"],
     source,
@@ -144,15 +144,15 @@ const trivia: TRIVIA[] = [
     correctAnswer: "Flooded it with lava",
     wrongAnswers: [
       "Bombarded it from a capitol ship",
-      "Y-Wing bombing runs",
+      "Y-wing bombing runs",
       "Put detonators inside",
     ],
     source,
   },
   {
     question: "What type of ship did Iden Versio fly at the Battle of Jakku?",
-    correctAnswer: "X-Wing",
-    wrongAnswers: ["A-Wing", "Tie Fighter", "Tie Interceptor"],
+    correctAnswer: "X-wing",
+    wrongAnswers: ["A-wing", "Tie Fighter", "Tie Interceptor"],
     source,
   },
   {

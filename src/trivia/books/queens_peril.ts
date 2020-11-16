@@ -5,7 +5,7 @@ const source: SOURCE = { name: "Queen's Peril", mediaType: "Book" };
 const trivia: TRIVIA[] = [
   {
     question:
-      "Whose idea was it to put blasters in the queen's throne on Naboo?",
+      "Who had the idea to put blasters in the queen's throne on Naboo?",
     correctAnswer: "Quarsh Panaka",
     wrongAnswers: ["Padmé Amidala", "Sabé", "Sheev Palpatine"],
     source,

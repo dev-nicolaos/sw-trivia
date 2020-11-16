@@ -47,7 +47,7 @@ const trivia: TRIVIA[] = [
     question:
       "According to Qui-Gon, spaceports like Mos Espa are havens for who?",
     correctAnswer: "Those who don't wish to be found",
-    wrongAnswers: ["Scum and Villany", "Pod Racers", "Traders and Star Pilots"],
+    wrongAnswers: ["Scum and villany", "Pod racers", "Traders and star pilots"],
     source,
   },
   {
@@ -65,7 +65,7 @@ const trivia: TRIVIA[] = [
   },
   {
     question:
-      "Who's pod was the first to be destroyed in the Boonta Eve Classic?",
+      "Whose pod was the first to be destroyed in the Boonta Eve Classic?",
     correctAnswer: "Mawhonic",
     wrongAnswers: ["Ben Quadrinaros", "Clegg Holdfast", "Dud Bolt"],
     source,
@@ -100,7 +100,7 @@ const trivia: TRIVIA[] = [
     source,
   },
   {
-    question: "Which squadron fought at the Battle of Naboo?",
+    question: "Which squadron flew at the Battle of Naboo?",
     correctAnswer: "Bravo",
     wrongAnswers: ["Rogue", "Shadow", "Corona"],
     source,

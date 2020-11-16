@@ -28,7 +28,7 @@ const trivia: TRIVIA[] = [
   },
   {
     question:
-      "Which two members of Inferno squad infiltrated the Dreamers as siblings?",
+      "Which two members of Inferno Squad infiltrated the Dreamers as siblings?",
     correctAnswer: "Gideon and Del",
     wrongAnswers: ["Iden and Gideon", "Iden and Seyn", "Gideon and Seyn"],
     source,

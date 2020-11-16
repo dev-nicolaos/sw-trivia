@@ -154,7 +154,7 @@ const trivia: TRIVIA[] = [
   },
   {
     question: "What reason did Luke give Yoda for wanting to become a Jedi?",
-    correctAnswer: "Because of father",
+    correctAnswer: "Because of his father",
     wrongAnswers: [
       "To defeat evil",
       "To save his friends",

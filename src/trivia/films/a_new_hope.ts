@@ -6,7 +6,7 @@ const trivia: TRIVIA[] = [
   {
     question: "Which ship carried the stolen Death Star plans to Tatooine?",
     correctAnswer: "Tantive IV",
-    wrongAnswers: ["Star Destroyer Avenger", "Millenium Falcon", "X-Wing"],
+    wrongAnswers: ["Star Destroyer Avenger", "Millenium Falcon", "X-wing"],
     source,
   },
   {
@@ -26,10 +26,10 @@ const trivia: TRIVIA[] = [
   {
     question:
       'Where did C-3PO fear he and R2 would be taken and "smashed into who knows what"?',
-    correctAnswer: "The Spice Mines of Kessel",
+    correctAnswer: "The spice mines of Kessel",
     wrongAnswers: [
       "The Imperial Palace on Coruscant",
-      "The Shipyards above Kuat",
+      "The shipyards above Kuat",
       "A junk dealer on Tatooine",
     ],
     source,
@@ -212,7 +212,7 @@ const trivia: TRIVIA[] = [
     question:
       'What did Luke tell Wedge he used to "bullseye wamprats" with on Tatooine?',
     correctAnswer: "His T-16",
-    wrongAnswers: ["His XP-34", "His 6-2Aug2 Rifle", "His X-Wing"],
+    wrongAnswers: ["His XP-34", "His 6-2Aug2 Rifle", "His X-wing"],
     source,
   },
   {

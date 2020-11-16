@@ -20,7 +20,7 @@ const trivia: TRIVIA[] = [
     source,
   },
   {
-    question: "What material were the Separtist's mining on Mokivj?",
+    question: "What material were the Separtists mining on Mokivj?",
     correctAnswer: "Cortosis",
     wrongAnswers: ["Doonium", "Quadranium", "Electrum"],
     source,

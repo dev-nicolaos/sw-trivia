@@ -27,7 +27,7 @@ const trivia: TRIVIA[] = [
     wrongAnswers: [
       "Engine failure",
       "Torn apart by buzz droids",
-      "Shot down in dogfight",
+      "Shot down in a dogfight",
     ],
     source,
   },
