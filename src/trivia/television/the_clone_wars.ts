@@ -324,6 +324,148 @@ const trivia: TRIVIA[] = [
     source: genSource("Sphere of Influence"),
   },
   {
+    question:
+      "What were C-3P0 and R2-D2 shopping for when they were abducted by Cad Bane?",
+    correctAnswer: "Jogan fruit",
+    wrongAnswers: ["Brula fruit", "Chando pepper", "Muja fruit"],
+    source: genSource("Evil Plans"),
+  },
+  {
+    question:
+      "Which Jedi was inside the Senate building while Cad Bane held it hostage?",
+    correctAnswer: "Anakin Skywalker",
+    wrongAnswers: ["Ahsoka Tano", "Caleb Dume", "Mace Windu"],
+    source: genSource("Hostage Crisis"),
+  },
+  {
+    question: "Who killed Ziro the Hutt?",
+    correctAnswer: "Sy Snootles",
+    wrongAnswers: ["Cad Bane", "Quinlan Vos", "Gardulla the Hutt"],
+    source: genSource("Hunt for Ziro"),
+  },
+  {
+    question:
+      "What world was the capital of the Confederacy of Independent Systems?",
+    correctAnswer: "Raxus",
+    wrongAnswers: ["Serenno", "Bespin", "Malastare"],
+    source: genSource("Heroes on Both Sides"),
+  },
+  {
+    question:
+      'Which senator\'s warmongering did Senator Amidala call "unpatriotic"?',
+    correctAnswer: "Mee Deechi",
+    wrongAnswers: ["Riyo Chuchi", "Mon Mothma", "Lux Bonteri"],
+    source: genSource("Senate Murders"),
+  },
+  {
+    question: "During which battle Count Dooku betray Asajj Ventress",
+    correctAnswer: "Battle of Sullust?",
+    wrongAnswers: [
+      "Battle of Kamino",
+      "Second Battle of Geonosis",
+      "Battle of Coruscant",
+    ],
+    source: genSource("Nightsisters"),
+  },
+  {
+    question: "What was Asajj Ventress home planet?",
+    correctAnswer: "Dathomir",
+    wrongAnswers: ["Serenno", "Pantora", "Rattatak"],
+    source: genSource("Nightsisters"),
+  },
+  {
+    question:
+      "How many Nightsisters accompanied Asajj Ventress during her first attempt to assasinate Dooku?",
+    correctAnswer: "2",
+    wrongAnswers: ["3", "4", "5"],
+    source: genSource("Nightsisters"),
+  },
+  {
+    question: "What species was Savage Opress?",
+    correctAnswer: "Zabrak",
+    wrongAnswers: ["Rodian", "Bothan", "Trandoshan"],
+    source: genSource("Monster"),
+  },
+  {
+    question:
+      'According to Obi-Wan, "everyone in the galaxy knows" who/what are dominant on Dathomir?',
+    correctAnswer: "Females",
+    wrongAnswers: ["Males", "Nydaks", "Rancors"],
+    source: genSource("Witches of the Mist"),
+  },
+  {
+    question: "Who killed King Katuunko of Toydaria?",
+    correctAnswer: "Savage Opress",
+    wrongAnswers: ["Darth Maul", "General Grievous", "Asajj Ventress"],
+    source: genSource("Witches of the Mist"),
+  },
+  {
+    question: "How did Obi-Wan learn about the nature of Mortis?",
+    correctAnswer: "The Force spirit of Qui-Gon Jinn told him",
+    wrongAnswers: [
+      "Yoda told him",
+      "The Daughter told him",
+      "He read about it in an ancient Holocron",
+    ],
+    source: genSource("Overlords"),
+  },
+  {
+    question:
+      "Which type was the weapon capable of killing a Mortis force Wielder",
+    correctAnswer: "A dagger",
+    wrongAnswers: ["A cannon", "A lightsaber", "An axe"],
+    source: genSource("Altar of Mortis"),
+  },
+  {
+    question: "Where did Anakin see a vision of his future as Darth Vader?",
+    correctAnswer: "Mortis",
+    wrongAnswers: ["Korriban", "Coruscant", "Tython"],
+    source: genSource("Ghosts of Mortis"),
+  },
+  {
+    question:
+      "What information did Captain Tarkin and Master Piell have when they were captured by the Separtists?",
+    correctAnswer: "Coordinates for the Nexus Route",
+    wrongAnswers: [
+      "Coordinates for the Hydian Way",
+      "Blueprints for the Death Star",
+      "Blueprints for the Malevolence",
+    ],
+    source: genSource("The Citadel"),
+  },
+  {
+    question:
+      "Why did Captain Tarkin think the Jedi should not be leading the Clone Wars?",
+    correctAnswer:
+      "He thought the Jedi Code prevented them from going far enough to achieve victory",
+    wrongAnswers: [
+      "He thought the Jedi lacked the necessary miltary experience",
+      "He thought the Jedi were becoming too power hungry",
+      "He thought that lightsabers were ill-suited weapons for large scale battles",
+    ],
+    source: genSource("Counter Attack"),
+  },
+  {
+    question: "What killed Jedi Master Even Piell?",
+    correctAnswer: "An anooba",
+    wrongAnswers: ["A rathar", "A blaster bolt", "An explosion"],
+    source: genSource("Citadel Rescue"),
+  },
+  {
+    question:
+      "Where was Ahsoka taken to after being captured by the Trandoshans on Felucia?",
+    correctAnswer: "Wasskah",
+    wrongAnswers: ["Utapau", "Nal Hutta", "Tatooine"],
+    source: genSource("Padawan Lost"),
+  },
+  {
+    question:
+      "Who was NOT part of the team that rescued Ahsoka and the younglings from the Trandoshans?",
+    correctAnswer: "Hondo",
+    wrongAnswers: ["Sugi", "Tarfull", "Chewbacca"],
+    source: genSource("Wookie Hunt"),
+  },
+  {
     question: "What planet was the homeworld of the Pyke Syndicate?",
     correctAnswer: "Oba Diah",
     wrongAnswers: ["Mustafar", "Felucia", "Kessel"],

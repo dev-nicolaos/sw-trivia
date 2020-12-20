@@ -20,6 +20,31 @@ const trivia: TRIVIA[] = [
     wrongAnswers: ["20", "40", "50"],
     source,
   },
+  {
+    question:
+      "After forming Rogue Sqaudron, who did Luke Skywalker designate Rouge One?",
+    correctAnswer: "No one, he retired the call sign",
+    wrongAnswers: ["Zev Senesca", "Wedge Antilles", "Hobbie"],
+    source,
+  },
+  {
+    question:
+      "What were Dak Ralter's parents doing when they were caught by the Empire?",
+    correctAnswer: "Smuggling Jedi Knights to sanctuary",
+    wrongAnswers: [
+      "Smuggling spice for Jabba the Hutt",
+      "Spying for the Rebel Alliance",
+      "Selling Kyber crystals",
+    ],
+    source,
+  },
+  {
+    question:
+      "What was the name of the Imperial armored unit which attacked the rebels on Hoth?",
+    correctAnswer: "Blizzard Force",
+    wrongAnswers: ["Death Squadron", "Emperor's Sword", "First Legion"],
+    source,
+  },
 ];
 
 export default trivia;
