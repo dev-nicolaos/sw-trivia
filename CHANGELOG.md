@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Fixed
 
 - Fixed many grammatical and capitalization errors
+- Fixed spelling of General Grievous in several questions
 
 ## 0.12.0 - 2020-11-16
 

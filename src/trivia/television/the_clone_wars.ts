@@ -8,7 +8,7 @@ const trivia: TRIVIA[] = [
   {
     question: "Who commanded the Sepatist blockade of Christophsis?",
     correctAnswer: "Admiral Trench",
-    wrongAnswers: ["General Grevious", "Asajj Ventress", "General Loathsom"],
+    wrongAnswers: ["General Grievous", "Asajj Ventress", "General Loathsom"],
     source: genSource("Cat and Mouse"),
   },
   {
@@ -44,7 +44,7 @@ const trivia: TRIVIA[] = [
   {
     question: "Who kidnapped Jabba the Hutt's son Rotta?",
     correctAnswer: "Asajj Ventress",
-    wrongAnswers: ["Aurra Sing", "Bossk", "General Grevious"],
+    wrongAnswers: ["Aurra Sing", "Bossk", "General Grievous"],
     source: genSource("Theatrical Release"),
   },
   {
@@ -121,7 +121,7 @@ const trivia: TRIVIA[] = [
     source: genSource("Bombad Jedi"),
   },
   {
-    question: "Where was General Grevious' Lair?",
+    question: "Where was General Grievous' Lair?",
     correctAnswer: "The Vassek system",
     wrongAnswers: ["The Zeffo system", "The Bith system", "The Llanic system"],
     source: genSource("Lair of Grevious"),
@@ -297,7 +297,7 @@ const trivia: TRIVIA[] = [
   {
     question: "Who rescued Aurra Sing from the crash of Slave I on Florrum?",
     correctAnswer: "Hondo Ohnaka",
-    wrongAnswers: ["Boba Fett", "Obi-Wan Kenobi", "General Grevious"],
+    wrongAnswers: ["Boba Fett", "Obi-Wan Kenobi", "General Grievous"],
     source: genSource("Assassin"),
   },
   {

@@ -25,7 +25,7 @@ const trivia: TRIVIA[] = [
   {
     question: "Who led the ground assult on Echo Base?",
     correctAnswer: "General Veers",
-    wrongAnswers: ["General Grievious", "General Krell", "General Hux"],
+    wrongAnswers: ["General Grievous", "General Krell", "General Hux"],
     source,
   },
   {
