@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## Unreleased
 
+### Added
+
+- New trivia from
+  - _The Clone Wars_
+  - _From A Certain Point of View: The Empire Strikes Back_
+
+### Changed
+
+- Update target runtime (Deno) to v1.6.1 and dependencies (Deno Standard) to v0.81.0
+
 ### Fixed
 
 - Fixed many grammatical and capitalization errors
@@ -24,7 +34,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- Update target runtime (Deno) to v1.6.1 and dependencies (Deno Standard) to v0.81.0
+- Update target runtime (Deno) to v1.5.3 and dependencies (Deno Standard) to v0.78.0
 - Migrate from prettier to `deno fmt` for code formatting
 
 ## 0.11.0 - 2020-09-12
