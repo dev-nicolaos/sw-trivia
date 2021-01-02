@@ -466,10 +466,335 @@ const trivia: TRIVIA[] = [
     source: genSource("Wookie Hunt"),
   },
   {
+    question: "What species was the Separtist commandeer Riff Tamson?",
+    correctAnswer: "Karkarodon",
+    wrongAnswers: ["Mon Calamari", "Quarren", "Nautolan"],
+    source: genSource("Water War"),
+  },
+  {
+    question:
+      "Who led the Republic's clone SCUBA trooper reniforcements into battle on Mon Cala?",
+    correctAnswer: "Kit Fisto",
+    wrongAnswers: ["Mace Windu", "Obi-Wan Kenobi", "Quinlan Vos"],
+    source: genSource("Water War"),
+  },
+  {
+    question:
+      "Which type of weapon was NOT used by the Separtists during the Battle of Mon Cala?",
+    correctAnswer: "Defoliator",
+    wrongAnswers: ["Aqua Droid", "Trident assault ship", "Hydroid Medusa"],
+    source: genSource("Gungan Attack"),
+  },
+  {
+    question: "Who killed Riff Tamson?",
+    correctAnswer: "Prince Lee-Char",
+    wrongAnswers: ["Anakin Skywalker", "Captain Ackbar", "Nossor Ri"],
+    source: genSource("Prisoners"),
+  },
+  {
+    question: "How did the Gungan General Tarpals die?",
+    correctAnswer: "Sacrificing himself to help capture General Grievous",
+    wrongAnswers: [
+      "Cut down by Darth Maul during the Battle of Naboo",
+      "As a New Republic Senator in the Napkin Bombing",
+      "Killed by one of Operation Cinder's satellites on Naboo",
+    ],
+    source: genSource("Shadow Warrior"),
+  },
+  {
+    question:
+      "What type of droids used a hologram illusion to rule over Balnab?",
+    correctAnswer: "Pit droids",
+    wrongAnswers: ["Astromech droids", "Battle droids", "Protocol droids"],
+    source: genSource("Nomad Droids"),
+  },
+  {
+    question:
+      "Who took command of the 501st Legion on Umbara after Anakin was recalled to Coruscant?",
+    correctAnswer: "General Krell",
+    wrongAnswers: ["General Tiin", "General Kenobi", "General Organa"],
+    source: genSource("Darkness on Umbara"),
+  },
+  {
+    question: "How did the 501st destroy the Umbaran mobile heavy canons?",
+    correctAnswer: "Using stolen Umbaran starfighters",
+    wrongAnswers: [
+      "Using anti-armor infantry rockets",
+      "Using buried thermal detonaters",
+      "The Jedi Generals sliced it apart with lightsabers",
+    ],
+    source: genSource("The General"),
+  },
+  {
+    question:
+      "Which clone was NOT part of the unsanctioned attack on a supply ship above Umbara?",
+    correctAnswer: "Dogma",
+    wrongAnswers: ["Fives", "Hardcase", "Jesse"],
+    source: genSource("Plan of Dissent"),
+  },
+  {
+    question:
+      "What action of General Krell prompted his clone troopers to arrest him?",
+    correctAnswer: "Manipulating clone units into battle against one another",
+    wrongAnswers: [
+      "Ordering the execution of Fives and Jesse",
+      "Ordering a full frontal assult on the Umbaran capital",
+      "Taking over command of the 501st Legion from General Skywalker",
+    ],
+    source: genSource("Carnage of Krell"),
+  },
+  {
+    question: "What species did the Zygerrians kidnap from the planet Kiros?",
+    correctAnswer: "Togrutas",
+    wrongAnswers: ["Rodians", "Humans", "Twi'leks"],
+    source: genSource("Kidnapped"),
+  },
+  {
+    question:
+      "What material did the Wookie youngling Gungi choose for his lightsaber?",
+    correctAnswer: "Brylark wood",
+    wrongAnswers: ["Electrum", "Doonium", "Cerakote"],
+    source: genSource("A Test of Strength"),
+  },
+  {
+    question:
+      "What did the Jedi younglings pose as in order to get into Hondo's compound?",
+    correctAnswer: "Acrobats",
+    wrongAnswers: ["Food vendors", "Traders", "Slaves"],
+    source: genSource("Bound for Rescue"),
+  },
+  {
+    question:
+      'Finish the quote: "The thanklessness, what an accusation! I am gone, _____"',
+    correctAnswer: "I will send you my bill!",
+    wrongAnswers: [
+      "I will never return!",
+      "you will regret this!",
+      "you have failed for the last time!",
+    ],
+    source: genSource("A Necessary Bond"),
+  },
+  {
+    question:
+      "What unit was sent to steal an encryption module from a Separtist dreadnaught?",
+    correctAnswer: "D-Sqaud",
+    wrongAnswers: ["Coruscant Honor Guard", "Aegis Company", ""],
+    source: genSource("Secret Weapons"),
+  },
+  {
+    question:
+      "What planet did D-Squad crash land on after escaping the Separtist dreadnaught?",
+    correctAnswer: "Abafar",
+    wrongAnswers: ["Mandalore", "Arkanis", "Vallt"],
+    source: genSource("A Sunny Day in the Void"),
+  },
+  {
+    question: "What type of clone was Captain Gregor?",
+    correctAnswer: "A commando",
+    wrongAnswers: ["An ARC trooper", "A jetpack trooper", "A medic"],
+    source: genSource("Missing in Action"),
+  },
+  {
+    question:
+      "What was the target of the sabotaged Venator loaded with rhydonium?",
+    correctAnswer: "A Republic strategy conference",
+    wrongAnswers: ["The Republic Senate", "The Jedi Temple", "The Death Star"],
+    source: genSource("Point of No Return"),
+  },
+  {
+    question:
+      "What group rescued Maul and Savage when they were stranded in space?",
+    correctAnswer: "Death Watch",
+    wrongAnswers: [
+      "Crimson Dawn",
+      "Protectors of Concord Dawn",
+      "The Pyke Syndicate",
+    ],
+    source: genSource("Eminence"),
+  },
+  {
+    question:
+      "Who did Maul select to be Prime Minister of Mandalore after Pre Vizla betrayed him?",
+    correctAnswer: "Almec",
+    wrongAnswers: ["Satine", "Bo-Katan", "Gar Saxon"],
+    source: genSource("Shades of Reason"),
+  },
+  {
+    question:
+      "Where were Anakin and Ahsoka when they were recalled due to the Jedi Temple bombing?",
+    correctAnswer: "Cato Neimoidia",
+    wrongAnswers: ["Christophsis", "Geonosis", "Felucia"],
+    source: genSource("Sabotage"),
+  },
+  {
+    question:
+      "What rank did Wilhuff Tarkin hold during the investigation of Letta Turmond?",
+    correctAnswer: "Admiral",
+    wrongAnswers: ["Captain", "Moff", "General"],
+    source: genSource("The Jedi Who Knew Too Much"),
+  },
+  {
+    question:
+      "What level of Coruscant was the abandoned warehouse Barriss directed Ahsoka to?",
+    correctAnswer: "1315",
+    wrongAnswers: ["1313", "1312", "5127"],
+    source: genSource("To Catch a Jedi"),
+  },
+  {
+    question:
+      "Who perpetrated the crimes against the Republic Ahsoka was accused of?",
+    correctAnswer: "Barriss Offee",
+    wrongAnswers: ["Asajj Ventress", "Cad Bane", "Pong Krell"],
+    source: genSource("The Wrong Jedi"),
+  },
+  {
+    question: "Why did the clone trooper Tup execute Jedi General Tiplar?",
+    correctAnswer: "The programming Palpatine had implated within the clones",
+    wrongAnswers: [
+      "He wanted to collect a bounty",
+      "He felt the clones had been enslaved",
+      "He was being manipulated with the Force",
+    ],
+    source: genSource("The Unknown"),
+  },
+  {
+    question:
+      "Who provided the inhibtor chips placed inside the minds of the clone troopers?",
+    correctAnswer: "Count Dooku",
+    wrongAnswers: ["Sifo-Dyas", "Lama Su", "Jango Fett"],
+    source: genSource("Conspiracy"),
+  },
+  {
+    question:
+      "At what developmental stage were inhibitor chips placed inside clone trooper embryos?",
+    correctAnswer: "3",
+    wrongAnswers: ["1", "2", "4"],
+    source: genSource("Fugitive"),
+  },
+  {
+    question:
+      "Where did Fives go after escaping the Grand Republic Medical Center?",
+    correctAnswer: "79's",
+    wrongAnswers: ["The Jedi Temple", "Coruscant Spaceport", "B'ankor Refuge"],
+    source: genSource("Orders"),
+  },
+  {
+    question: "Where was the InterGalactic Banking Clan's vault located?",
+    correctAnswer: "Scipio",
+    wrongAnswers: ["Skako Minor", "Cato Neimoidia", "Coruscant"],
+    source: genSource("An Old Friend"),
+  },
+  {
+    question:
+      "Anakin kept a model of what type of craft in his quarters at the Jedi Temple?",
+    correctAnswer: "Starfighter",
+    wrongAnswers: ["Star Destroyer", "Speeder", "Tank"],
+    source: genSource("The Rise of Clovis"),
+  },
+  {
+    question:
+      "Which Separtist senator was present when Rush Clovis was given control of the banks?",
+    correctAnswer: "Bec Lawise",
+    wrongAnswers: ["Mina Bonteri", "Voe Atell", "Amita Fonti"],
+    source: genSource("Crisis at the Heart"),
+  },
+  {
+    question: "Who accompanied Jar Jar Binks to Bardotta?",
+    correctAnswer: "Mace Windu",
+    wrongAnswers: ["Yoda", "Senator Kharrus", "Captain Rex"],
+    source: genSource("The Disappeared: Part 1"),
+  },
+  {
+    question: "Who did the Frangawl cultists serve?",
+    correctAnswer: "Mother Talzin",
+    wrongAnswers: ["Count Dooku", "Darth Sideous", "Moff Gideon"],
+    source: genSource("The Disappeared: Part 2"),
+  },
+  {
+    question:
+      "What type of ship was the crash where Plo Koon found Sifo-Dyas' lightsaber?",
+    correctAnswer: "T-6 shuttle",
+    wrongAnswers: [
+      "Lambda-class shuttle",
+      "Eta-class shuttle",
+      "Delta-class shuttle",
+    ],
+    source: genSource("The Lost One"),
+  },
+  {
     question: "What planet was the homeworld of the Pyke Syndicate?",
     correctAnswer: "Oba Diah",
     wrongAnswers: ["Mustafar", "Felucia", "Kessel"],
     source: genSource("The Lost One"),
+  },
+  {
+    question:
+      "Where did the spirit of Qui-Gon Jinn tell Yoda to go during the deprivation ritual?",
+    correctAnswer: "Dagobah",
+    wrongAnswers: ["Kashyyyk", "Moraband", "Polis Massa"],
+    source: genSource("Voices"),
+  },
+  {
+    question: "What did Yoda say set Anakin apart from other Jedi?",
+    correctAnswer: "His spontaneity",
+    wrongAnswers: ["His power", "His focus", "His compassion"],
+    source: genSource("Voices"),
+  },
+  {
+    question:
+      "Which was NOT an emotion represented by the priestesses Yoda met at the Wellspring of Life?",
+    correctAnswer: "Fear",
+    wrongAnswers: ["Confusion", "Joy", "Serenity"],
+    source: genSource("Destiny"),
+  },
+  {
+    question: 'Who created the Sith\'s "Rule of Two"',
+    correctAnswer: "Darth Bane",
+    wrongAnswers: ["Darth Sideous", "Dath Plagueis", "Darth Malak"],
+    source: genSource("Sacrifice"),
+  },
+  {
+    question: "What did Trace Martez name her ship?",
+    correctAnswer: "Silver Angel",
+    wrongAnswers: ["Twilight", "Invictus", "Broken Horn"],
+    source: genSource("Deal No Deal"),
+  },
+  {
+    question: "Trace and Rafa Martez parents were killed during which event?",
+    correctAnswer: "Ziro the Hutt's escape from prison",
+    wrongAnswers: [
+      "Onderonian Civil War",
+      "Bombing of the Coruscant's power grid",
+      "Maul's takeover of Mandalore",
+    ],
+    source: genSource("Dangerous Debt"),
+  },
+  {
+    question: "What was the nickname of Clone Force 99?",
+    correctAnswer: "The Bad Batch",
+    wrongAnswers: ["Havoc Squad", "Safecrackers", "Pathfinders"],
+    source: genSource("The Bad Batch"),
+  },
+  {
+    question:
+      "Who helped Anakin discretely communicate with Padmé during the Outer Rim Seiges?",
+    correctAnswer: "Captain Rex",
+    wrongAnswers: ["Obi-Wan", "Fives", "Bo-Katan Kryze"],
+    source: genSource("A Distant Echo"),
+  },
+  {
+    question:
+      "What piece of technology replaced Echo's right arm after he was turned into a cyborg?",
+    correctAnswer: "Scomp link",
+    wrongAnswers: ["Buzz saw", "Holocam", "Electro-shock prod"],
+    source: genSource("A Distant Echo"),
+  },
+  {
+    question:
+      "How many B1 battle droids had Mace Windu destroyed by the Battle of Anaxes?",
+    correctAnswer: "One hundred thousand",
+    wrongAnswers: ["Ten thousand", "One million", "Five hundred thousand"],
+    source: genSource("Unfinished Business"),
   },
 ];
 
