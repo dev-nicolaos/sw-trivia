@@ -36,6 +36,7 @@ import tarkin from "./tarkin.ts";
 import theWeaponOfAJedi from "./the_weapon_of_a_jedi.ts";
 import thrawn from "./thrawn.ts";
 import thrawnAlliances from "./thrawn_alliances.ts";
+import thrawnAscendancyChaosRising from "./thrawn_ascendancy_chaos_rising.ts";
 import thrawnTreason from "./thrawn_treason.ts";
 import twilightCompany from "./twilight_company.ts";
 
@@ -76,6 +77,7 @@ const trivia: TRIVIA[] = [
   ...theWeaponOfAJedi,
   ...thrawn,
   ...thrawnAlliances,
+  ...thrawnAscendancyChaosRising,
   ...thrawnTreason,
   ...twilightCompany,
 ];

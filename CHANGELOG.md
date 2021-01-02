@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - New trivia from
   - _The Clone Wars_
+  - _Thrawn Ascendancy: Chaos Rising_
 
 ## 0.13.0 - 2020-12-23
 
