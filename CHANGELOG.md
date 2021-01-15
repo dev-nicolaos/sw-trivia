@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - New trivia from
+  - _Ahsoka_
   - _The Clone Wars_
   - _Thrawn Ascendancy: Chaos Rising_
 
