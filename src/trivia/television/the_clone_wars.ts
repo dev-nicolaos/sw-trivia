@@ -796,6 +796,33 @@ const trivia: TRIVIA[] = [
     wrongAnswers: ["Ten thousand", "One million", "Five hundred thousand"],
     source: genSource("Unfinished Business"),
   },
+  {
+    question:
+      "Clone Captain Rex was promoted to Commander ahead of which operation?",
+    correctAnswer: "The Siege of Mandalore",
+    wrongAnswers: [
+      "The Second Battle of Geonosis",
+      "The Onderonian Civil War",
+      "The Battle of Kadavo",
+    ],
+    source: genSource("Old Friends Not Forgotten"),
+  },
+  {
+    question: "Which clone did Maul interrogate to find out about Ahsoka Tano?",
+    correctAnswer: "Jesse",
+    wrongAnswers: ["Rex", "Cody", "Fives"],
+    source: genSource("The Phantom Apprentice"),
+  },
+  {
+    question: "Where was Maul captured by Ahsoka, Bo Katan, and the clones?",
+    correctAnswer: "The support beams of Sundari's dome",
+    wrongAnswers: [
+      "The Mandalore Royal Academy of Government",
+      "The Sundari Royal Palace",
+      "The Death Watch base on Concordia",
+    ],
+    source: genSource("The Phantom Apprentice"),
+  },
 ];
 
 export default trivia;

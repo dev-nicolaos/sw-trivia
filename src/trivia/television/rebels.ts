@@ -5,7 +5,19 @@ const genSource = (episode: string) => generateTVSource("Rebels", episode);
 
 const trivia: TRIVIA[] = [
   {
-    question: "All Imperial Super Commandos come from what race of people?",
+    question: "Which member of the Ghost crew had the codename Spectre 1?",
+    correctAnswer: "Kanan Jarus",
+    wrongAnswers: ["Sabine Wren", "Hera Syndulla", "Garazeb Orrelios"],
+    source: genSource("Spark of Rebellion: Part 1"),
+  },
+  {
+    question: "Where did the Spectres rescue a group of wookies from?",
+    correctAnswer: "Kessel",
+    wrongAnswers: ["Kadavo", "Trandosha", "Lothal"],
+    source: genSource("Spark of Rebellion: Part 2"),
+  },
+  {
+    question: "All Imperial Super Commandos came from what race of people?",
     correctAnswer: "Mandalorians",
     wrongAnswers: ["Echani", "Corellians", "Pamarthens"],
     source: genSource("Imperial Super Commandos"),
