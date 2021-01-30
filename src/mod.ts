@@ -1,6 +1,6 @@
 import { parse } from "std/flags/mod.ts";
 import { checkRuntimeVersion, printVersion } from "./version.ts";
-import { printStats } from "./stats/mod.ts";
+import printStats from "./print_stats.ts";
 import {
   askRandomTriviaQuestion,
   getNumericInput,
