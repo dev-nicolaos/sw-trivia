@@ -6,7 +6,6 @@ labels: content
 assignees: ''
 ---
 
-<!-- prettier-ignore -->
 **Question**
 
 - ...
@@ -27,4 +26,5 @@ assignees: ''
 - Name: ...
 
 **Additional Info**
+
 Add any other information you feel is relevant here.
