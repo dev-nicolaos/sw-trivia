@@ -72,10 +72,10 @@ const trivia: TRIVIA[] = [
     source,
   },
   {
-    question: "What action promted Jabba to drop Luke into the rancor's den?",
-    correctAnswer: "Luke stole a blaster from a guard",
+    question: "What promted Jabba to drop Luke into the rancor's den?",
+    correctAnswer: "Luke stealing a blaster from a guard",
     wrongAnswers: [
-      "Luke insultedd Jabba",
+      "Luke insulting Jabba",
       "Luke attempting to free Leia",
       "Jabba getting angry with C-3PO",
     ],
