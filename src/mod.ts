@@ -37,7 +37,7 @@ async function startGame(retry = false) {
   }
 }
 
-await checkRuntimeVersion();
+checkRuntimeVersion();
 
 const { stats, version } = parse(Deno.args, {
   alias: { s: "stats", v: "version" },

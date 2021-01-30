@@ -8,7 +8,7 @@ function cursorUp(): void {
   Deno.writeAllSync(Deno.stdout, encoder.encode("\x1b[1A"));
 }
 
-export async function getUserInput(prompt = ""): Promise<string> {
+export function getUserInput(prompt = ""): Promise<string> {
   if (prompt) {
     printQuestion(prompt);
   }

@@ -6,7 +6,7 @@ export function printVersion(): void {
   console.log("Built on Deno:", TARGET_DENO_VERSION);
 }
 
-export async function checkRuntimeVersion(): Promise<void> {
+export function checkRuntimeVersion(): void {
   const {
     version: { deno: runtimeVersion },
   } = Deno;
