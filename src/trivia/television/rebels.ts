@@ -17,6 +17,16 @@ const trivia: TRIVIA[] = [
     source: genSource("Spark of Rebellion: Part 2"),
   },
   {
+    question: "Which group was known for wielding bo-rifles?",
+    correctAnswer: "Lasan Honor Guard",
+    wrongAnswers: [
+      "Wookie Chieftans",
+      "Imperial Death Troopers",
+      "MagnaGuards",
+    ],
+    source: genSource("Droids in Distress"),
+  },
+  {
     question: "All Imperial Super Commandos came from what race of people?",
     correctAnswer: "Mandalorians",
     wrongAnswers: ["Echani", "Corellians", "Pamarthens"],
