@@ -20,7 +20,7 @@ const trivia: TRIVIA[] = [
     question: "How did the New Republic destroy the Ravager?",
     correctAnswer: "Used a tractor beam to pull it into Jakku's atmosphere",
     wrongAnswers: [
-      "Destroyed it with turbo laser fire",
+      "Destroyed it with turbolaser fire",
       "Crashed another capital ship into it",
       "Set charges in its hyperdrive chamber",
     ],

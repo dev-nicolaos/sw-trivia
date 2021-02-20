@@ -16,12 +16,14 @@ import galaxysEdgeBlackSpire from "./galaxys_edge_black_spire.ts";
 import heirToTheJedi from "./heir_to_the_jedi.ts";
 import infernoSquad from "./inferno_squad.ts";
 import leiaPrincessOfAlderaan from "./leia_princess_of_alderaan.ts";
+import lightOfTheJedi from "./light_of_the_jedi.ts";
 import lordsOfTheSith from "./lords_of_the_sith.ts";
 import masterAndApprentice from "./master_and_apprentice.ts";
 import phasma from "./phasma.ts";
 import queensPeril from "./queens_peril.ts";
 import rebelRising from "./rebel_rising.ts";
 import resistanceReborn from "./resistance_reborn.ts";
+import smugglersRun from "./smugglers_run.ts";
 import tarkin from "./tarkin.ts";
 import theWeaponOfAJedi from "./the_weapon_of_a_jedi.ts";
 import thrawn from "./thrawn.ts";
@@ -47,12 +49,14 @@ const trivia: TRIVIA[] = [
   ...heirToTheJedi,
   ...infernoSquad,
   ...leiaPrincessOfAlderaan,
+  ...lightOfTheJedi,
   ...lordsOfTheSith,
   ...masterAndApprentice,
   ...phasma,
   ...queensPeril,
   ...rebelRising,
   ...resistanceReborn,
+  ...smugglersRun,
   ...tarkin,
   ...theWeaponOfAJedi,
   ...thrawn,
