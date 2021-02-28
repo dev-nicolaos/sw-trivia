@@ -8,12 +8,11 @@ on:
 
 env:
   # Should match TARGET_DENO_VERSION in src/version.ts
-  DENO_VERSION: "v1.7.1"
-  OS: "ubuntu-latest"
+  DENO_VERSION: "v1.7.5"
 
 jobs:
   format:
-    runs-on: ${{ env.OS }}
+    runs-on: ubuntu-latest
 
     steps:
       - name: Setup repo
@@ -28,7 +27,7 @@ jobs:
         run: deno fmt --check src
 
   lint:
-    runs-on: ${{ env.OS }}
+    runs-on: ubuntu-latest
 
     steps:
       - name: Setup repo
