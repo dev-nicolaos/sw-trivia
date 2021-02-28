@@ -9,11 +9,11 @@ on:
 env:
   # Should match TARGET_DENO_VERSION in src/version.ts
   DENO_VERSION: "v1.7.1"
-  OS: ubuntu-latest
+  OS: "ubuntu-latest"
 
 jobs:
   format:
-    runs-on: env.OS
+    runs-on: ${{ env.OS }}
 
     steps:
       - name: Setup repo
@@ -22,13 +22,13 @@ jobs:
       - name: Setup Deno
         uses: denolib/setup-deno@c7d7968ad4a59c159a777f79adddad6872ee8d96
         with:
-          deno-version: env.DENO_VERSION
+          deno-version: ${{ env.DENO_VERSION }}
 
       - name: Run formatter check
         run: deno fmt --check src
 
   lint:
-    runs-on: env.OS
+    runs-on: ${{ env.OS }}
 
     steps:
       - name: Setup repo
@@ -37,7 +37,7 @@ jobs:
       - name: Setup Deno
         uses: denolib/setup-deno@c7d7968ad4a59c159a777f79adddad6872ee8d96
         with:
-          deno-version: env.DENO_VERSION
+          deno-version: ${{ env.DENO_VERSION }}
 
       - name: Run linter
         run: deno lint --unstable
