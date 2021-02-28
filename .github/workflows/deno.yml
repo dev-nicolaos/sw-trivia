@@ -18,12 +18,12 @@ jobs:
       - name: Setup repo
         uses: actions/checkout@v2
 
-      - name: Setup Deno
-        uses: denolib/setup-deno@c7d7968ad4a59c159a777f79adddad6872ee8d96
-        with:
-          deno-version: ${{ env.DENO_VERSION }}
+      - name: Install Deno
+        run: |-
+          curl -fsSL https://deno.land/x/install/install.sh | sh -s ${{ env.DENO_VERSION }}
+          echo "$HOME/.deno/bin" >> $GITHUB_PATH
 
-      - name: Run formatter check
+      - name: Check formatting
         run: deno fmt --check src
 
   lint:
@@ -33,10 +33,10 @@ jobs:
       - name: Setup repo
         uses: actions/checkout@v2
 
-      - name: Setup Deno
-        uses: denolib/setup-deno@c7d7968ad4a59c159a777f79adddad6872ee8d96
-        with:
-          deno-version: ${{ env.DENO_VERSION }}
+      - name: Install Deno
+        run: |-
+          curl -fsSL https://deno.land/x/install/install.sh | sh -s ${{ env.DENO_VERSION }}
+          echo "$HOME/.deno/bin" >> $GITHUB_PATH
 
       - name: Run linter
         run: deno lint --unstable
