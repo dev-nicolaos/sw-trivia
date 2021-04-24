@@ -358,7 +358,7 @@ const trivia: TRIVIA[] = [
     source: genSource("Senate Murders"),
   },
   {
-    question: "During which battle Count Dooku betray Asajj Ventress",
+    question: "During which battle Count Dooku betray Asajj Ventress?",
     correctAnswer: "Battle of Sullust?",
     wrongAnswers: [
       "Battle of Kamino",

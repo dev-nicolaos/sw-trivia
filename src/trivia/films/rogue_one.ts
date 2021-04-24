@@ -4,7 +4,7 @@ const source: SOURCE = { name: "Rogue One", mediaType: "Film" };
 
 const trivia: TRIVIA[] = [
   {
-    question: "How many death troopers accompanied Krenic on Lah'mu",
+    question: "How many death troopers accompanied Krenic on Lah'mu?",
     correctAnswer: "6",
     wrongAnswers: ["2", "4", "8"],
     source,

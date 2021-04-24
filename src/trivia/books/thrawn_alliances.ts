@@ -4,7 +4,7 @@ const source: SOURCE = { name: "Thrawn: Alliances", mediaType: "Book" };
 
 const trivia: TRIVIA[] = [
   {
-    question: "Why did Palpatine send Thrawn and Vader to Batuu",
+    question: "Why did Palpatine send Thrawn and Vader to Batuu?",
     correctAnswer: "To investigate a disturbance in the force",
     wrongAnswers: [
       "To destroy a rebel base",
@@ -26,7 +26,7 @@ const trivia: TRIVIA[] = [
     source,
   },
   {
-    question: "What was the Separtist factory on Mokivj producing? ",
+    question: "What was the Separtist factory on Mokivj producing?",
     correctAnswer: "Battle droids",
     wrongAnswers: ["Lightsabers", "Heavy blasers", "Hyena bombers"],
     source,
