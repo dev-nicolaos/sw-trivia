@@ -19,7 +19,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- Update target runtime (Deno) to v1.7.1 and dependencies (Deno Standard) to v0.85.0
+- Update target runtime (Deno) to v1.9.2 and dependencies (Deno Standard) to v0.95.0
 
 ## 0.13.0 - 2020-12-23
 

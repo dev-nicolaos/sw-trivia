@@ -1,5 +1,5 @@
 const SW_TRIVIA_VERSION = "0.13.0";
-const TARGET_DENO_VERSION = "1.7.1";
+const TARGET_DENO_VERSION = "1.9.2";
 
 export function printVersion(): void {
   console.log("Star Wars Trivia:", SW_TRIVIA_VERSION);
