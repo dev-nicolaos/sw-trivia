@@ -1,11 +1,11 @@
-import { readLines } from "std/io/mod.ts";
+import { readLines, writeAllSync } from "std/io/mod.ts";
 import { GET_NUMERIC_INPUT_OPTIONS } from "types";
 import { printQuestion } from "./mod.ts";
 
 const encoder = new TextEncoder();
 
 function cursorUp(): void {
-  Deno.writeAllSync(Deno.stdout, encoder.encode("\x1b[1A"));
+  writeAllSync(Deno.stdout, encoder.encode("\x1b[1A"));
 }
 
 export function getUserInput(prompt = ""): Promise<string> {

@@ -24,6 +24,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Fixed
 
 - Add missing question marks to a few questions
+- Replace deprecated use of `Deno.writeAllSync` w/same function from Deno Standard Modules
 
 ## 0.13.0 - 2020-12-23
 
