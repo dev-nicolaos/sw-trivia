@@ -10,20 +10,8 @@ Although this project uses a stable version of Deno, it still makes use of the [
 
 ### Scripts
 
-#### Run Program
-
-Windows: `./start` or `./start.bat`
-
-Mac/Linux: `./start.sh`
-
-##### Flags
-
-`-v`, `--version`: Show application version
-
-`-s`, `--stats`: Show statistics about trivia contents
-
-#### Scaffold New Trivia File
-
-Windows: `./new` or `./new.bat`
-
-Mac/Linux: `./new.sh`
+| Action | Windows Command | Mac/Linux Command | Flags |
+|-|-|-|-|
+| Run Program | `./start` or `./start.bat` | `./start.sh` | `-v`, `--version`: Show app version info<br>`-s`, `--stats`: Show statistics about trivia content |
+| Scaffold New Trivia File | `./new` or `./new.bat` | `./new.sh` | NA |
+| Build Exectuable | `./build` or `./build.bat` | `./build.sh` | NA |
