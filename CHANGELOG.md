@@ -21,7 +21,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- Update target runtime (Deno) to v1.9.2 and dependencies (Deno Standard) to v0.95.0
+- Update target runtime (Deno) to v1.11.0 and dependencies (Deno Standard) to v0.98.0
 - Edited [README.md](./README.md) for clarity
 
 ### Fixed
