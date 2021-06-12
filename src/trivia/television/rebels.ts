@@ -1,5 +1,5 @@
 import { TRIVIA } from "types";
-import { generateTVSource } from "helpers";
+import { generateTVSource } from "../generate_source.ts";
 
 const genSource = (episode: string) => generateTVSource("Rebels", episode);
 

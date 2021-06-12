@@ -1,5 +1,5 @@
 import { TRIVIA } from "types";
-import { generateComicSource } from "helpers";
+import { generateComicSource } from "../generate_source.ts";
 
 const genSource = (issue: number) =>
   generateComicSource("Princess Leia", issue);

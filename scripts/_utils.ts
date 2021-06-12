@@ -33,14 +33,14 @@ export const generateBasicTriviaTemplate = ({ mediaType, name }: SOURCE) =>
 
 export const generateTVTemplate = (seriesName: string) =>
   composeTemplate(
-    'import { TRIVIA } from "types";\nimport { generateTVSource } from "helpers";',
+    'import { TRIVIA } from "types";\nimport { generateTVSource } from "../generate_source.ts";',
     `const genSource = (episode: string) => generateTVSource("${seriesName}", episode);`,
     ...standardExport,
   );
 
 export const generateComicTemplate = (seriesName: string) =>
   composeTemplate(
-    'import { TRIVIA } from "types";\nimport { generateComicSource } from "helpers";',
+    'import { TRIVIA } from "types";\nimport { generateComicSource } from "../generate_source.ts";',
     `const genSource = (issue: number) => generateComicSource("${seriesName}", issue);`,
     ...standardExport,
   );
