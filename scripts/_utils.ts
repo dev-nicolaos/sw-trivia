@@ -1,8 +1,4 @@
-import {
-  dirname,
-  fromFileUrl,
-  relative,
-} from "https://deno.land/std@0.98.0/path/mod.ts";
+import { dirname, fromFileUrl } from "https://deno.land/std@0.98.0/path/mod.ts";
 
 export { parse } from "https://deno.land/std@0.98.0/flags/mod.ts";
 export {
@@ -26,7 +22,7 @@ const standardExport = [
 
 export const generateBasicTriviaTemplate = ({ mediaType, name }: SOURCE) =>
   composeTemplate(
-    'import { TRIVIA, SOURCE } from "types";',
+    'import { SOURCE, TRIVIA } from "types";',
     `const source: SOURCE = { name: "${name}", mediaType: "${mediaType}" };`,
     ...standardExport,
   );
@@ -45,8 +41,5 @@ export const generateComicTemplate = (seriesName: string) =>
     ...standardExport,
   );
 
-export const getPathToProjectRoot = (): string => {
-  const projectRoot = fromFileUrl(dirname(dirname(import.meta.url)));
-  const path = relative(Deno.cwd(), projectRoot) || ".";
-  return path.startsWith(".") ? path : `./${path}`;
-};
+export const getPathToProjectRoot = (): string =>
+  fromFileUrl(dirname(dirname(import.meta.url)));

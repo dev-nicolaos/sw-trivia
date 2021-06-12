@@ -17,11 +17,10 @@ const formatSourceName = (sourceName: string): string =>
     .toLowerCase();
 
 async function createSourceFile({ name, mediaType }: SOURCE): Promise<void> {
-  const targetDir = `${
-    getPathToProjectRoot()
-  }/src/trivia/${mediaType.toLowerCase()}${
-    mediaType !== "Television" ? "s" : ""
-  }`;
+  const targetDir =
+    `${getPathToProjectRoot()}/src/trivia/${mediaType.toLowerCase()}${
+      mediaType !== "Television" ? "s" : ""
+    }`;
 
   const fileName = `${formatSourceName(name)}.ts`;
 
@@ -69,20 +68,31 @@ function getSourceDetails(): SOURCE {
     "Television",
   ];
 
-  supportedMediaTypes.forEach((mediaType, i) => console.log(`${i + 1}) ${mediaType}`));
-  const mediaTypeResponse = prompt("Which of the above source types would you like to create?");
+  supportedMediaTypes.forEach((mediaType, i) =>
+    console.log(`${i + 1}) ${mediaType}`)
+  );
+  const mediaTypeResponse = prompt(
+    "Which of the above source types would you like to create?",
+  );
 
-  if (!mediaTypeResponse || +mediaTypeResponse < 1 || +mediaTypeResponse > supportedMediaTypes.length) {
-    throw new Error('Please select a valid number');
+  if (
+    !mediaTypeResponse || +mediaTypeResponse < 1 ||
+    +mediaTypeResponse > supportedMediaTypes.length
+  ) {
+    throw new Error("Please select a valid number");
   }
 
   const mediaType = supportedMediaTypes[+mediaTypeResponse - 1];
 
-  const name = prompt(`What is the name of the ${
-    mediaType === "Television" ? "series" : mediaType.toLowerCase()
-  }?`);
+  const name = prompt(
+    `What is the name of the ${
+      mediaType === "Television"
+        ? "series"
+        : mediaType.toLowerCase()
+    }?`,
+  );
 
-  if (!name) throw new Error('Please enter a valid name');
+  if (!name) throw new Error("Please enter a valid name");
 
   return { name, mediaType };
 }
