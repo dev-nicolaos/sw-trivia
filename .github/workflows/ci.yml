@@ -40,3 +40,18 @@ jobs:
 
       - name: Run linter
         run: deno lint
+
+  start:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup repo
+        uses: actions/checkout@v2
+
+      - name: Install Deno
+        run: |-
+          curl -fsSL https://deno.land/x/install/install.sh | sh -s ${{ env.DENO_VERSION }}
+          echo "$HOME/.deno/bin" >> $GITHUB_PATH
+
+      - name: Run linter
+        run: ./start -v
