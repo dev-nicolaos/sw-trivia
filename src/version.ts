@@ -1,5 +1,7 @@
 const SW_TRIVIA_VERSION = "0.13.0";
-const TARGET_DENO_VERSION = "1.9.2";
+
+// Should match DENO_VERSION in .github/workflows/ci.yml
+const TARGET_DENO_VERSION = "1.11.0";
 
 export function printVersion(): void {
   console.log("Star Wars Trivia:", SW_TRIVIA_VERSION);
