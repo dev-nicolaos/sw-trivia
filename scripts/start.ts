@@ -8,7 +8,6 @@ const process = Deno.run({
   cmd: [
     "deno",
     "run",
-    "--unstable",
     `--import-map=${importMapPath}`,
     sourcePath,
     ...Deno.args,

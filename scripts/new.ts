@@ -1,24 +1,13 @@
-import { ensureDirSync, existsSync } from "std/fs/mod.ts";
-import { dirname, fromFileUrl, relative } from "std/path/mod.ts";
-import { grantOrThrow } from "std/permissions/mod.ts";
-
-import { MEDIA_TYPE, SOURCE } from "types";
 import {
+  ensureDirSync,
+  existsSync,
   generateBasicTriviaTemplate,
   generateComicTemplate,
   generateTVTemplate,
-  getNumericInput,
-  getUserInput,
-  printPositive,
-  printQuestion,
-} from "helpers";
-import { checkRuntimeVersion } from "../src/version.ts";
-
-const getPathToProjectRoot = (): string => {
-  const projectRoot = fromFileUrl(dirname(dirname(import.meta.url)));
-  const path = `${relative(Deno.cwd(), projectRoot)}` || ".";
-  return path.startsWith(".") ? path : `./${path}`;
-};
+  getPathToProjectRoot,
+  grantOrThrow,
+  SOURCE,
+} from "./_utils.ts";
 
 const formatSourceName = (sourceName: string): string =>
   sourceName
@@ -28,10 +17,11 @@ const formatSourceName = (sourceName: string): string =>
     .toLowerCase();
 
 async function createSourceFile({ name, mediaType }: SOURCE): Promise<void> {
-  const targetDir =
-    `${getPathToProjectRoot()}/src/trivia/${mediaType.toLowerCase()}${
-      mediaType !== "Television" ? "s" : ""
-    }`;
+  const targetDir = `${
+    getPathToProjectRoot()
+  }/src/trivia/${mediaType.toLowerCase()}${
+    mediaType !== "Television" ? "s" : ""
+  }`;
 
   const fileName = `${formatSourceName(name)}.ts`;
 
@@ -56,7 +46,7 @@ async function createSourceFile({ name, mediaType }: SOURCE): Promise<void> {
     ensureDirSync(targetDir);
     Deno.writeTextFileSync(fullPath, template);
 
-    printPositive(
+    console.log(
       `Success! Don't forget to import ${fileName} in ${targetDir}/mod.ts`,
     );
   } catch (err) {
@@ -70,8 +60,8 @@ async function createSourceFile({ name, mediaType }: SOURCE): Promise<void> {
   }
 }
 
-async function getSourceDetails(): Promise<SOURCE> {
-  const supportedMediaTypes: MEDIA_TYPE[] = [
+function getSourceDetails(): SOURCE {
+  const supportedMediaTypes = [
     "Book",
     "Comic",
     "Film",
@@ -79,25 +69,22 @@ async function getSourceDetails(): Promise<SOURCE> {
     "Television",
   ];
 
-  printQuestion(
-    "What type of source would you like to create?",
-    supportedMediaTypes,
-  );
+  supportedMediaTypes.forEach((mediaType, i) => console.log(`${i + 1}) ${mediaType}`));
+  const mediaTypeResponse = prompt("Which of the above source types would you like to create?");
 
-  const mediaType = supportedMediaTypes[
-    (await getNumericInput({
-      max: supportedMediaTypes.length,
-      min: 1,
-    })) - 1
-  ];
+  if (!mediaTypeResponse || +mediaTypeResponse < 1 || +mediaTypeResponse > supportedMediaTypes.length) {
+    throw new Error('Please select a valid number');
+  }
 
-  const prompt = `What is the name of the ${
+  const mediaType = supportedMediaTypes[+mediaTypeResponse - 1];
+
+  const name = prompt(`What is the name of the ${
     mediaType === "Television" ? "series" : mediaType.toLowerCase()
-  }?`;
+  }?`);
 
-  const name = await getUserInput(prompt);
+  if (!name) throw new Error('Please enter a valid name');
+
   return { name, mediaType };
 }
 
-await checkRuntimeVersion();
-createSourceFile(await getSourceDetails());
+createSourceFile(getSourceDetails());

@@ -11,7 +11,10 @@ export {
 } from "https://deno.land/std@0.98.0/fs/mod.ts";
 export { grantOrThrow } from "https://deno.land/std@0.98.0/permissions/mod.ts";
 
-import { SOURCE } from "../src/types.ts";
+export interface SOURCE {
+  name: string;
+  mediaType: string;
+}
 
 const composeTemplate = (...lines: string[]): string =>
   lines.join("\n\n") + "\n";
