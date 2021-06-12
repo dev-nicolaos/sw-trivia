@@ -2,14 +2,14 @@ import {
   dirname,
   fromFileUrl,
   relative,
-} from "https://deno.land/std@0.95.0/path/mod.ts";
+} from "https://deno.land/std@0.98.0/path/mod.ts";
 
-export { parse } from "https://deno.land/std@0.95.0/flags/mod.ts";
+export { parse } from "https://deno.land/std@0.98.0/flags/mod.ts";
 export {
   ensureDirSync,
   existsSync,
-} from "https://deno.land/std@0.95.0/fs/mod.ts";
-export { grantOrThrow } from "https://deno.land/std@0.95.0/permissions/mod.ts";
+} from "https://deno.land/std@0.98.0/fs/mod.ts";
+export { grantOrThrow } from "https://deno.land/std@0.98.0/permissions/mod.ts";
 
 import { SOURCE } from "../src/types.ts";
 
