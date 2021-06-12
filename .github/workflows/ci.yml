@@ -53,5 +53,5 @@ jobs:
           curl -fsSL https://deno.land/x/install/install.sh | sh -s ${{ env.DENO_VERSION }}
           echo "$HOME/.deno/bin" >> $GITHUB_PATH
 
-      - name: Run linter
-        run: ./start -v
+      - name: Print version
+        run: ./start.sh -v
