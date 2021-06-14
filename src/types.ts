@@ -1,4 +1,4 @@
-export type MEDIA_TYPE = "Book" | "Comic" | "Film" | "Game" | "Television";
+export type MEDIA_TYPE = "book" | "comic" | "film" | "game" | "television";
 
 export interface SOURCE {
   name: string;
