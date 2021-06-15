@@ -18,7 +18,9 @@ try {
   await process.status();
 } catch (err) {
   if (err instanceof Deno.errors.PermissionDenied) {
-    console.error(`Error: this script requires permission to spawn a subprocess in order to run ${cmd}`);
+    console.error(
+      `Error: this script requires permission to spawn a subprocess in order to run ${cmd}`,
+    );
     Deno.exit(1);
   } else {
     throw err;
