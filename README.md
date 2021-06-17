@@ -59,7 +59,7 @@ For more info on how script permissions work in Deno, check out the
 
 `deno run --unstable scripts/build.ts`
 
-By default the executable will be output to `target/debug/`.
+By default the executable will be output to `target/debug`.
 If the release argument is passed, the executables will be output to `target/release/[platform-name]`.
 
 ##### Optional Arguments
