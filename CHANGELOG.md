@@ -8,8 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
-- Build scripts to create executables
-
+- Build script to create executables
 - New trivia from
   - _Ahsoka_
   - _The Clone Wars_
@@ -21,13 +20,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- Update target runtime (Deno) to v1.11.0 and dependencies (Deno Standard) to v0.98.0
-- Edited [README.md](./README.md) for clarity
+- Update target runtime (Deno) to v1.11.0 and dependencies (Deno Standard) to
+  v0.98.0
+- Rewrite [README.md](./README.md)
+- Scripts (run program, scaffold new trivia source file, build executables) are
+  now written in TS to be run with Deno
 
 ### Fixed
 
 - Add missing question marks to a few questions
-- Replace deprecated use of `Deno.writeAllSync` w/same function from Deno Standard Modules
+- Replace deprecated use of `Deno.writeAllSync` w/same function from Deno
+  Standard Modules
 
 ## 0.13.0 - 2020-12-23
 
@@ -39,7 +42,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- Update target runtime (Deno) to v1.6.1 and dependencies (Deno Standard) to v0.81.0
+- Update target runtime (Deno) to v1.6.1 and dependencies (Deno Standard) to
+  v0.81.0
 
 ### Fixed
 
@@ -59,7 +63,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- Update target runtime (Deno) to v1.5.3 and dependencies (Deno Standard) to v0.78.0
+- Update target runtime (Deno) to v1.5.3 and dependencies (Deno Standard) to
+  v0.78.0
 - Migrate from prettier to `deno fmt` for code formatting
 
 ## 0.11.0 - 2020-09-12
@@ -72,12 +77,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- Update target runtime (Deno) to v1.3.3 and dependencies (Deno Standard) to v0.68.0
+- Update target runtime (Deno) to v1.3.3 and dependencies (Deno Standard) to
+  v0.68.0
 
 ### Fixed
 
 - Corrected `README.md`, scripts will run from any directory
-- New trivia script waits for a user response when the version check fails instead of continuing on
+- New trivia script waits for a user response when the version check fails
+  instead of continuing on
 
 ## 0.10.0 - 2020-07-04
 
@@ -102,7 +109,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- Update target runtime (Deno) to v1.1.3 and dependencies (Deno Standard) to v0.60.0
+- Update target runtime (Deno) to v1.1.3 and dependencies (Deno Standard) to
+  v0.60.0
 - Updated `README.md`'s blurb about runtime version
 
 ### Fixed
@@ -114,15 +122,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - New trivia files for TV shows can now be scaffolded with the new source script
-- There are now batch (for Windows) and shell (for Mac/Linux) scripts for launching the game and creating new trivia files
+- There are now batch (for Windows) and shell (for Mac/Linux) scripts for
+  launching the game and creating new trivia files
 - More _Jedi: Fallen Order_ trivia
 - Added empty trivia file for _Canto Bight_ book
 
 ### Changed
 
-- Accidentally hitting enter without typing anything is no longer counted as a wrong answer, just leaves you in place
-- The new source script now requires FS read access so it can verify a trivia file does not already exist
-- The new source script only requests read/write access to the specific trivia folder in question
+- Accidentally hitting enter without typing anything is no longer counted as a
+  wrong answer, just leaves you in place
+- The new source script now requires FS read access so it can verify a trivia
+  file does not already exist
+- The new source script only requests read/write access to the specific trivia
+  folder in question
 - TV series' trivia files are no longer split out by season
 - Some small refactors of internal code
 
@@ -139,15 +151,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- Running the new source script no longer requires the `--allow-write` flag. The script will request write permission if it is omitted.
+- Running the new source script no longer requires the `--allow-write` flag. The
+  script will request write permission if it is omitted.
 - A couple trivia questions have been reworded to be "in universe"
 - Update target runtime (Deno) and dependencies (Deno Standard) to v0.40.0
 - Some small refactors of internal code
 
 ### Fixed
 
-- Corrected a typo in the log message displayed when the program is run with the wrong version of Deno
-- The import of _Jedi of the Republic—Mace Windu_ is now pointing to the correct file
+- Corrected a typo in the log message displayed when the program is run with the
+  wrong version of Deno
+- The import of _Jedi of the Republic—Mace Windu_ is now pointing to the correct
+  file
 - Several trivia questions have been edited for capitalization and spelling
 
 ## 0.7.0 - 2020-04-08
@@ -162,8 +177,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   - Clone Wars Season 7
   - Vader Immortal
   - A Crash of Fate
-- To improve readability, an extra line break has been added after a question's source is printed
-- Added VS Code snippet "New Question" to reduce amount of typing when adding trivia
+- To improve readability, an extra line break has been added after a question's
+  source is printed
+- Added VS Code snippet "New Question" to reduce amount of typing when adding
+  trivia
 
 ### Changed
 
@@ -174,8 +191,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- The console only clears when the game is actually run, not when displaying version info, stats, or a runtime version warning
-- Improved detection of numeric answer sets when choosing whether to shuffle or sort answers
+- The console only clears when the game is actually run, not when displaying
+  version info, stats, or a runtime version warning
+- Improved detection of numeric answer sets when choosing whether to shuffle or
+  sort answers
 - Update target runtime (Deno) and dependencies (Deno Standard) to v0.36.0
 
 ## 0.5.0 - 2020-01-29
@@ -188,7 +207,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - Improved how answers are sorted
   - Numeric answers are now sorted lowest to highest
-  - For non-numeric answers, all answers are sorted randomly instead of just the correct answer
+  - For non-numeric answers, all answers are sorted randomly instead of just the
+    correct answer
 - Update target runtime (Deno) and dependencies (Deno Standard) to v0.30.0
 
 ### Fixed
