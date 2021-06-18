@@ -1,4 +1,4 @@
-const SW_TRIVIA_VERSION = "0.13.0";
+const SW_TRIVIA_VERSION = "0.14.0";
 
 // Should match DENO_VERSION in .github/workflows/ci.yml
 const TARGET_DENO_VERSION = "1.11.1";
