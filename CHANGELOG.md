@@ -20,8 +20,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- Update target runtime (Deno) to v1.11.0 and dependencies (Deno Standard) to
-  v0.98.0
+- Update target runtime (Deno) to v1.11.1 and dependencies (Deno Standard) to
+  v0.99.0
 - Rewrite [README.md](./README.md)
 - Scripts (run program, scaffold new trivia source file, build executables) are
   now written in TS to be run with Deno
