@@ -1,6 +1,7 @@
-import { SOURCE, TRIVIA } from "types";
+import { TRIVIA } from "types";
+import { generateFilmSource } from "../generate_source.ts";
 
-const source: SOURCE = { name: "Revenge of the Sith", mediaType: "Film" };
+const source = generateFilmSource("Revenge of the Sith");
 
 const trivia: TRIVIA[] = [
   {

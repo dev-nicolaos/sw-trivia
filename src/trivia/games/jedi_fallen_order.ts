@@ -1,6 +1,7 @@
-import { SOURCE, TRIVIA } from "types";
+import { TRIVIA } from "types";
+import { generateGameSource } from "../generate_source.ts";
 
-const source: SOURCE = { name: "Jedi: Fallen Order", mediaType: "Game" };
+const source = generateGameSource("Jedi: Fallen Order");
 
 const trivia: TRIVIA[] = [
   {

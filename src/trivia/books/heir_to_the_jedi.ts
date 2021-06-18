@@ -1,6 +1,7 @@
-import { SOURCE, TRIVIA } from "types";
+import { TRIVIA } from "types";
+import { generateBookSource } from "../generate_source.ts";
 
-const source: SOURCE = { name: "Heir to the Jedi", mediaType: "Book" };
+const source = generateBookSource("Heir to the Jedi");
 
 const trivia: TRIVIA[] = [
   {

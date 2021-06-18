@@ -24,7 +24,7 @@ jobs:
           echo "$HOME/.deno/bin" >> $GITHUB_PATH
 
       - name: Check formatting
-        run: deno fmt --check src
+        run: deno fmt --check src scripts
 
   lint:
     runs-on: ubuntu-latest
@@ -39,7 +39,7 @@ jobs:
           echo "$HOME/.deno/bin" >> $GITHUB_PATH
 
       - name: Run linter
-        run: deno lint
+        run: deno lint src scripts
 
   start:
     runs-on: ubuntu-latest
@@ -54,4 +54,4 @@ jobs:
           echo "$HOME/.deno/bin" >> $GITHUB_PATH
 
       - name: Print version
-        run: ./start.sh -v
+        run: deno run -A --unstable scripts/start.ts -v

@@ -1,0 +1,133 @@
+import {
+  ensureDirSync,
+  existsSync,
+  getPathToProjectRoot,
+  grantOrThrow,
+  parse,
+} from "./_utils.ts";
+
+export interface SOURCE {
+  name: string;
+  mediaType: string;
+}
+
+const capitalize = (myString: string) =>
+  myString.charAt(0).toUpperCase() + myString.slice(1);
+
+const composeTemplate = (...lines: string[]): string =>
+  lines.join("\n\n") + "\n";
+
+const standardExport = [
+  "const trivia: TRIVIA[] = [];",
+  "export default trivia;",
+];
+
+const generateBasicTriviaTemplate = ({ mediaType, name }: SOURCE) =>
+  composeTemplate(
+    `import { TRIVIA } from "types";\nimport { generate${
+      capitalize(mediaType)
+    }Source } from "../generate_source.ts";`,
+    `const source = generate${capitalize(mediaType)}Source("${name}");`,
+    ...standardExport,
+  );
+
+const generateTVTemplate = (seriesName: string) =>
+  composeTemplate(
+    'import { TRIVIA } from "types";\nimport { generateTVSource } from "../generate_source.ts";',
+    `const genSource = (episode: string) => generateTVSource("${seriesName}", episode);`,
+    ...standardExport,
+  );
+
+const generateComicTemplate = (seriesName: string) =>
+  composeTemplate(
+    'import { TRIVIA } from "types";\nimport { generateComicSource } from "../generate_source.ts";',
+    `const genSource = (issue: number) => generateComicSource("${seriesName}", issue);`,
+    ...standardExport,
+  );
+
+const formatSourceName = (sourceName: string): string =>
+  sourceName
+    .replace(/'/g, "")
+    .split(/[- _,:—]+/)
+    .join("_")
+    .toLowerCase();
+
+async function createSourceFile({ name, mediaType }: SOURCE): Promise<void> {
+  const targetDir = `${getPathToProjectRoot()}/src/trivia/${mediaType}${
+    mediaType !== "television" ? "s" : ""
+  }`;
+
+  const fileName = `${formatSourceName(name)}.ts`;
+
+  const template = mediaType === "television"
+    ? generateTVTemplate(name)
+    : mediaType === "comic"
+    ? generateComicTemplate(name)
+    : generateBasicTriviaTemplate({ mediaType, name });
+
+  const fullPath = `${targetDir}/${fileName}`;
+
+  try {
+    await grantOrThrow(
+      { name: "read", path: targetDir },
+      { name: "write", path: targetDir },
+    );
+
+    if (existsSync(fullPath)) {
+      throw `Trivia file already exists for ${name}`;
+    }
+
+    ensureDirSync(targetDir);
+    Deno.writeTextFileSync(fullPath, template);
+
+    console.log(
+      `Success! Don't forget to import ${fileName} in ${targetDir}/mod.ts`,
+    );
+  } catch (err) {
+    if (err instanceof Deno.errors.PermissionDenied) {
+      console.error(
+        `Error: This script requires permission to read from (to ensure a trivia file doesn't already exist) and write to (to create a new trivia file) ${targetDir}`,
+      );
+      Deno.exit(2);
+    } else {
+      throw err;
+    }
+  }
+}
+
+const supportedMediaTypes = [
+  "book",
+  "comic",
+  "film",
+  "game",
+  "television",
+];
+
+const { name, type } = parse(Deno.args, {
+  alias: { n: "name", t: "type" },
+  string: ["name", "type"],
+});
+
+const errorMessages = [];
+
+if (!name) {
+  errorMessages.push(
+    "Please include the name of the trivia source using the --name (-n for short) argument",
+  );
+}
+
+if (!type) {
+  errorMessages.push(
+    "Please include the media type of the trivia source using the --type (-t for short) argument",
+    `Valid media types are ${supportedMediaTypes.join(", ")}`,
+  );
+} else if (!supportedMediaTypes.includes(type.toLowerCase())) {
+  errorMessages.push(`${type} is not a supported media type`);
+}
+
+if (errorMessages.length) {
+  for (const err of errorMessages) console.error(err);
+  Deno.exit(1);
+} else {
+  createSourceFile({ name, mediaType: type });
+}

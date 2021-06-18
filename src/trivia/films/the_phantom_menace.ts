@@ -1,6 +1,7 @@
-import { SOURCE, TRIVIA } from "types";
+import { TRIVIA } from "types";
+import { generateFilmSource } from "../generate_source.ts";
 
-const source: SOURCE = { name: "The Phantom Menace", mediaType: "Film" };
+const source = generateFilmSource("The Phantom Menace");
 
 const trivia: TRIVIA[] = [
   {
