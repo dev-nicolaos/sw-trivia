@@ -6,12 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## Unreleased
 
-## Added
+### Added
 
 - New trivia from
   - _The Bad Batch_
   - _Rebels_
   - _Shadow Fall_
+
+### Changed
+
+- Updated target runtime (Deno) to v1.12.2 and dependencies (Deno Standard) to
+  v0.103.0
 
 ## 0.14.0 - 2021-6-18
 
