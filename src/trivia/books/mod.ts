@@ -23,6 +23,7 @@ import phasma from "./phasma.ts";
 import queensPeril from "./queens_peril.ts";
 import rebelRising from "./rebel_rising.ts";
 import resistanceReborn from "./resistance_reborn.ts";
+import shadowFall from "./shadow_fall.ts";
 import smugglersRun from "./smugglers_run.ts";
 import tarkin from "./tarkin.ts";
 import theWeaponOfAJedi from "./the_weapon_of_a_jedi.ts";
@@ -56,6 +57,7 @@ const trivia: TRIVIA[] = [
   ...queensPeril,
   ...rebelRising,
   ...resistanceReborn,
+  ...shadowFall,
   ...smugglersRun,
   ...tarkin,
   ...theWeaponOfAJedi,
