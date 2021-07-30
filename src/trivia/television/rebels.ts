@@ -27,6 +27,35 @@ const trivia: TRIVIA[] = [
     source: genSource("Droids in Distress"),
   },
   {
+    question:
+      "How many Inquisitors did Kanan, Ahsoka, Ezra, and Maul battle on Malachor?",
+    correctAnswer: "3",
+    wrongAnswers: ["2", "5", "8"],
+    source: genSource("Twilight of the Apprentice: Part 1"),
+  },
+  {
+    question: "Who retrieved a Sith Holocron from the temple on Malachor?",
+    correctAnswer: "Ezra Bridger",
+    wrongAnswers: ["Yoda", "Luke Skywalker", "Ahsoka Tano"],
+    source: genSource("Twilight of the Apprentice: Part 1"),
+  },
+  {
+    question: "How was Kanan Jarrus blinded?",
+    correctAnswer: "Lightsaber strike",
+    wrongAnswers: ["Chemical spill", "Explosion", "Old age"],
+    source: genSource("Twilight of the Apprentice: Part 2"),
+  },
+  {
+    question: "How did Maul escape the planet Malachor?",
+    correctAnswer: "He stole an Inquisitor's TIE Fighter",
+    wrongAnswers: [
+      "He was pulled through the World Between Worlds",
+      "He stowed away aboard a ship",
+      "He was picked up by his brother",
+    ],
+    source: genSource("Twilight of the Apprentice: Part 2"),
+  },
+  {
     question: "All Imperial Super Commandos came from what race of people?",
     correctAnswer: "Mandalorians",
     wrongAnswers: ["Echani", "Corellians", "Pamarthens"],
