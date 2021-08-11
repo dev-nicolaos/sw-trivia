@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   - _The Bad Batch_
   - _Rebels_
   - _Shadow Fall_
+  - _Victory's Price_
 
 ### Changed
 
