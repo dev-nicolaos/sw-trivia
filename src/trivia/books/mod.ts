@@ -32,6 +32,7 @@ import thrawnAlliances from "./thrawn_alliances.ts";
 import thrawnAscendancyChaosRising from "./thrawn_ascendancy_chaos_rising.ts";
 import thrawnTreason from "./thrawn_treason.ts";
 import twilightCompany from "./twilight_company.ts";
+import victorysPrice from "./victorys_price.ts";
 
 const trivia: TRIVIA[] = [
   ...aftermath,
@@ -66,6 +67,7 @@ const trivia: TRIVIA[] = [
   ...thrawnAscendancyChaosRising,
   ...thrawnTreason,
   ...twilightCompany,
+  ...victorysPrice,
 ];
 
 export default trivia;
