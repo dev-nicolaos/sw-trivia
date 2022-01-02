@@ -29,6 +29,16 @@ const trivia: TRIVIA[] = [
     wrongAnswers: ["Thalias", "Ar'alani", "Ba'kif"],
     source,
   },
+  {
+    question: "What was a defining feature of Nicardun capital ships?",
+    correctAnswer: "Oversized bridge viewport",
+    wrongAnswers: [
+      "Asymetrical design",
+      "Massive cannons on the underside",
+      "Storm clouds painted on the nose",
+    ],
+    source,
+  },
 ];
 
 export default trivia;
