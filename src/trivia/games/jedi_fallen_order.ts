@@ -17,6 +17,29 @@ const trivia: TRIVIA[] = [
     source,
   },
   {
+    question: "Which droid did Cal Kestis meet on Bogano?",
+    correctAnswer: "BD-1",
+    wrongAnswers: ["HK-47", "Chopper", "Dio"],
+    source,
+  },
+  {
+    question: "What species was Jedi Master Jaro Tapal?",
+    correctAnswer: "Lasat",
+    wrongAnswers: ["Abednedo", "Rodian", "Dowutin"],
+    source,
+  },
+  {
+    question:
+      "What information was stored on the holocron Eno Cordova hid in the Zeffo Vault?",
+    correctAnswer: "A list of force sensitive children",
+    wrongAnswers: [
+      "Plans to the Death Star",
+      "Plans for a First Order Dreadnaught",
+      "Coordinates for the Nexus Route",
+    ],
+    source,
+  },
+  {
     question:
       "Which Imperial program involved collecting artifacts from Zeffo tombs?",
     correctAnswer: "Project Auger",
@@ -24,6 +47,30 @@ const trivia: TRIVIA[] = [
       "Project Celestial Power",
       "Project Blackwing",
       "The Cylo Directive",
+    ],
+    source,
+  },
+  {
+    question:
+      "What ability did Cal Kestis relearn while exploring the Tomb of Eilram?",
+    correctAnswer: "Force push",
+    wrongAnswers: ["Wall-run", "Force lightning", ""],
+    source,
+  },
+  {
+    question: "Which species was NOT found on Zeffo?",
+    correctAnswer: "Krayt Dragon",
+    wrongAnswers: ["Scazz", "Jotaz", "Phillak"],
+    source,
+  },
+  {
+    question:
+      "What type of Imperial vehicle did Cal Kestis hijack on Kashyyyk?",
+    correctAnswer: "AT-AT Walker",
+    wrongAnswers: [
+      "AT-ST Walker",
+      "Zeta-class Heavy Cargo Shuttle",
+      "TIE Striker",
     ],
     source,
   },
