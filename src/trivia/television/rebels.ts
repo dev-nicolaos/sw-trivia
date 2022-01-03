@@ -34,7 +34,7 @@ const trivia: TRIVIA[] = [
     source: genSource("Twilight of the Apprentice: Part 1"),
   },
   {
-    question: "Who retrieved a Sith Holocron from the temple on Malachor?",
+    question: "Who retrieved a Sith holocron from the temple on Malachor?",
     correctAnswer: "Ezra Bridger",
     wrongAnswers: ["Yoda", "Luke Skywalker", "Ahsoka Tano"],
     source: genSource("Twilight of the Apprentice: Part 1"),

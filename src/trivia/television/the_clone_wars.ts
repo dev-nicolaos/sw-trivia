@@ -405,7 +405,7 @@ const trivia: TRIVIA[] = [
     wrongAnswers: [
       "Yoda told him",
       "The Daughter told him",
-      "He read about it in an ancient Holocron",
+      "He read about it in an ancient holocron",
     ],
     source: genSource("Overlords"),
   },
