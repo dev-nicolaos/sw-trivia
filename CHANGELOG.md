@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## Unreleased
 
+## 0.15.0 - 2022-1-2
+
 ### Added
 
 - New trivia from
@@ -19,8 +21,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- Updated target runtime (Deno) to v1.12.2 and dependencies (Deno Standard) to
-  v0.103.0
+- Updated target runtime (Deno) to v1.17.1 and dependencies (Deno Standard) to
+  v0.119.0
 
 ## 0.14.0 - 2021-6-18
 
