@@ -30,7 +30,7 @@ const trivia: TRIVIA[] = [
   },
   {
     question: "What did Inferno Squad fly off of Endor?",
-    correctAnswer: "Tie Fighters",
+    correctAnswer: "TIE Fighters",
     wrongAnswers: ["The Corvus", "An Imperial Shuttle", "Stolen X-wings"],
     source,
   },
@@ -153,7 +153,7 @@ const trivia: TRIVIA[] = [
   {
     question: "What type of ship did Iden Versio fly at the Battle of Jakku?",
     correctAnswer: "X-wing",
-    wrongAnswers: ["A-wing", "Tie Fighter", "Tie Interceptor"],
+    wrongAnswers: ["A-wing", "TIE Fighter", "Tie Interceptor"],
     source,
   },
   {

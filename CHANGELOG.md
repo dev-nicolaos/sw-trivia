@@ -13,6 +13,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   - _Rebels_
   - _Shadow Fall_
   - _Victory's Price_
+  - _Thrawn Ascendancy: Lesser Evil_
+  - _Thrawn Ascendancy: Chaos Rising_
+  - _Jedi: Fallen Order_
 
 ### Changed
 
