@@ -54,7 +54,7 @@ const trivia: TRIVIA[] = [
     question:
       "What ability did Cal Kestis relearn while exploring the Tomb of Eilram?",
     correctAnswer: "Force push",
-    wrongAnswers: ["Wall-run", "Force lightning", ""],
+    wrongAnswers: ["Wall-run", "Force lightning", "Force stasis"],
     source,
   },
   {
