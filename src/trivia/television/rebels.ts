@@ -56,6 +56,34 @@ const trivia: TRIVIA[] = [
     source: genSource("Twilight of the Apprentice: Part 2"),
   },
   {
+    question: "Who did the crew of the Ghost break out of prison on Naraka?",
+    correctAnswer: "Hondo Ohnaka",
+    wrongAnswers: ["Aayla Secura", "Wilhuff Tarkin", "A family of Wookies"],
+    source: genSource("Steps into Shadow: Part 1"),
+  },
+  {
+    question: "What color were the Mining Guild TIE fighters?",
+    correctAnswer: "Gold",
+    wrongAnswers: ["Red", "Green", "White"],
+    source: genSource("Steps into Shadow: Part 1"),
+  },
+  {
+    question: "Where was the Phantom (the Ghost's shuttle) destroyed?",
+    correctAnswer: "Reklam Station",
+    wrongAnswers: ["Atollon", "Scarif", "Orbital Foundry 7"],
+    source: genSource("Steps into Shadow: Part 1"),
+  },
+  {
+    question: "How did Maul find Obi-Wan on Tatooine?",
+    correctAnswer: "By having Jedi and Sith holocrons opened together",
+    wrongAnswers: [
+      "One of Jabba's informants told him",
+      "He sensed him through the Force",
+      "He intercepted a message Obi-Wan sent",
+    ],
+    source: genSource("The Holocrons of Fate"),
+  },
+  {
     question: "All Imperial Super Commandos came from what race of people?",
     correctAnswer: "Mandalorians",
     wrongAnswers: ["Echani", "Corellians", "Pamarthens"],
