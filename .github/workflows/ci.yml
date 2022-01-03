@@ -8,7 +8,7 @@ on:
 
 env:
   # Should match TARGET_DENO_VERSION in src/version.ts
-  DENO_VERSION: "v1.12.2"
+  DENO_VERSION: "v1.17.1"
 
 jobs:
   format:
