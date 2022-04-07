@@ -14,8 +14,7 @@ export interface SOURCE {
 const capitalize = (myString: string) =>
   myString.charAt(0).toUpperCase() + myString.slice(1);
 
-const composeTemplate = (...lines: string[]): string =>
-  lines.join("\n\n") + "\n";
+const composeTemplate = (...lines: string[]) => lines.join("\n\n") + "\n";
 
 const standardExport = [
   "const trivia: TRIVIA[] = [];",
@@ -45,14 +44,14 @@ const generateComicTemplate = (seriesName: string) =>
     ...standardExport,
   );
 
-const formatSourceName = (sourceName: string): string =>
+const formatSourceName = (sourceName: string) =>
   sourceName
     .replace(/'/g, "")
     .split(/[- _,:—]+/)
     .join("_")
     .toLowerCase();
 
-async function createSourceFile({ name, mediaType }: SOURCE): Promise<void> {
+async function createSourceFile({ name, mediaType }: SOURCE) {
   const targetDir = `${getPathToProjectRoot()}/src/trivia/${mediaType}${
     mediaType !== "television" ? "s" : ""
   }`;
