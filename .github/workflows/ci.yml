@@ -54,4 +54,4 @@ jobs:
           echo "$HOME/.deno/bin" >> $GITHUB_PATH
 
       - name: Print version
-        run: deno run -A --unstable scripts/start.ts -v
+        run: deno task start -- -v
