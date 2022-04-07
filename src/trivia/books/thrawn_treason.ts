@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
 const source = generateBookSource("Thrawn: Treason");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "Which Imperial Star Destroyer was NOT part of the Third Fleet?",
     correctAnswer: "Avenger",

@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
 const source = generateBookSource("Catalyst");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "What planet was Jyn Erso born on?",
     correctAnswer: "Vallt",

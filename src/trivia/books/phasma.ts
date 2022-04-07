@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
 const source = generateBookSource("Phasma");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "Who captured and tortured Vi Moradi?",
     correctAnswer: "Captain Cardinal",

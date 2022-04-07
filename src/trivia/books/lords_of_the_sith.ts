@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
 const source = generateBookSource("Lords of the Sith");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "Which species was the apex predator on Ryloth?",
     correctAnswer: "Lylek",

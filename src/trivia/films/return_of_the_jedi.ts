@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateFilmSource } from "../generate_source.ts";
 
 const source = generateFilmSource("Return of the Jedi");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question:
       "How many TIE Fighters escorted Vader's shuttle to the second Death Star?",

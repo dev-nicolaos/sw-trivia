@@ -1,17 +1,17 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { ALL_TRIVIA } from "../trivia/mod.ts";
 
 export function pickRandomTrivia(
-  providedTrivia: TRIVIA[] = ALL_TRIVIA,
-): TRIVIA {
+  providedTrivia: Trivia[] = ALL_TRIVIA,
+) {
   const selectedIndex = Math.floor(Math.random() * providedTrivia.length);
   return providedTrivia[selectedIndex];
 }
 
 export function pickTrivia(
   numberOfTrivia: number,
-  providedTrivia: TRIVIA[] = ALL_TRIVIA,
-): TRIVIA[] {
+  providedTrivia: Trivia[] = ALL_TRIVIA,
+) {
   const triviaList = [];
 
   const unusedTrivia = [...providedTrivia];

@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
 const source = generateBookSource("Rebel Rising");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "Where did Jyn and Saw go after leaving Lah'mu?",
     correctAnswer: "Wrea",

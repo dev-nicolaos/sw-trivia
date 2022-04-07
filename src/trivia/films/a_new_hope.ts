@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateFilmSource } from "../generate_source.ts";
 
 const source = generateFilmSource("A New Hope");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "Which ship carried the stolen Death Star plans to Tatooine?",
     correctAnswer: "Tantive IV",

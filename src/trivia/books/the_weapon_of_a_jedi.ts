@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
 const source = generateBookSource("The Weapon of a Jedi");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "Who became Red Leader after the Battle of Yavin?",
     correctAnswer: "Commander Narra",

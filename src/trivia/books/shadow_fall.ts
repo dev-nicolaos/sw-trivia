@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
 const source = generateBookSource("Shadow Fall");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "Which planet orbited a black hole?",
     correctAnswer: "Troithe",

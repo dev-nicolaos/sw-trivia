@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
 const source = generateBookSource("Before the Awakening");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "How did Rey learn to fly?",
     correctAnswer: "By mastering a flight simulator she found while scavenging",

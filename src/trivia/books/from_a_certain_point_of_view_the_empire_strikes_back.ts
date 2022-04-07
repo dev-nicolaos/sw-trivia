@@ -1,11 +1,11 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
 const source = generateBookSource(
   "From a Certain Point of View: The Empire Strikes Back",
 );
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question:
       "Which planet's Viper probe droid footage did Maela delete from Project Swarm?",

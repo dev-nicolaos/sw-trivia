@@ -1,5 +1,3 @@
-import { TRIVIA } from "types";
-
 import aftermath from "./aftermath.ts";
 import aftermathEmpiresEnd from "./aftermath_empires_end.ts";
 import aftermathLifeDebt from "./aftermath_life_debt.ts";
@@ -34,7 +32,7 @@ import thrawnTreason from "./thrawn_treason.ts";
 import twilightCompany from "./twilight_company.ts";
 import victorysPrice from "./victorys_price.ts";
 
-const trivia: TRIVIA[] = [
+export default [
   ...aftermath,
   ...aftermathEmpiresEnd,
   ...aftermathLifeDebt,
@@ -69,5 +67,3 @@ const trivia: TRIVIA[] = [
   ...twilightCompany,
   ...victorysPrice,
 ];
-
-export default trivia;

@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateFilmSource } from "../generate_source.ts";
 
 const source = generateFilmSource("Rogue One");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "How many death troopers accompanied Krenic on Lah'mu?",
     correctAnswer: "6",

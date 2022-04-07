@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateGameSource } from "../generate_source.ts";
 
 const source = generateGameSource("Battlefront II");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question:
       "What was the code Iden Versio used to activate the ID-10 on board the Invincible Faith?",

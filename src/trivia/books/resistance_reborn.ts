@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
 const source = generateBookSource("Resistance Reborn");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "Where did the Resistance seek refuge after the Battle of Crait?",
     correctAnswer: "Ryloth",

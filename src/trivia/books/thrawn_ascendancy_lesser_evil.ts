@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
 const source = generateBookSource("Thrawn Ascendancy: Lesser Evil");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "What Chiss family was Supreme General Ba'kif originally from?",
     correctAnswer: "Stybla",

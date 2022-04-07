@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateGameSource } from "../generate_source.ts";
 
 const source = generateGameSource("Jedi: Fallen Order");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "Whose life did Cal Kestis save on Bracca?",
     correctAnswer: "Prauf",

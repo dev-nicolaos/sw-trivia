@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateTVSource } from "../generate_source.ts";
 
 const genSource = (episode: string) => generateTVSource("Resistance", episode);
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "Where did Poe leave Kazuda Xiono on his first assignment?",
     correctAnswer: "The Colossus",

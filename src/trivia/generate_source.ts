@@ -1,21 +1,21 @@
-import { MEDIA_TYPE, SOURCE } from "types";
+import { MediaType, Source } from "types";
 
-const generateSource = (name: string, mediaType: MEDIA_TYPE): SOURCE => ({
+const generateSource = (name: string, mediaType: MediaType): Source => ({
   name,
   mediaType,
 });
 
-export const generateBookSource = (name: string): SOURCE =>
+export const generateBookSource = (name: string) =>
   generateSource(name, "book");
 
-export const generateComicSource = (series: string, issue: number): SOURCE =>
+export const generateComicSource = (series: string, issue: number) =>
   generateSource(`${series}, Issue ${issue}`, "comic");
 
-export const generateFilmSource = (name: string): SOURCE =>
+export const generateFilmSource = (name: string) =>
   generateSource(name, "film");
 
-export const generateGameSource = (name: string): SOURCE =>
+export const generateGameSource = (name: string) =>
   generateSource(name, "game");
 
-export const generateTVSource = (series: string, episode: string): SOURCE =>
+export const generateTVSource = (series: string, episode: string) =>
   generateSource(`${series}: ${episode}`, "television");

@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateTVSource } from "../generate_source.ts";
 
 const genSource = (episode: string) => generateTVSource("Rebels", episode);
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "Which member of the Ghost crew had the codename Spectre 1?",
     correctAnswer: "Kanan Jarus",

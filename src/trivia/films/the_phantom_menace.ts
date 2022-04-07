@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateFilmSource } from "../generate_source.ts";
 
 const source = generateFilmSource("The Phantom Menace");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "Who dispatched Qui-Gon and Obi-Wan to Naboo?",
     correctAnswer: "The Supreme Chancellor",

@@ -7,7 +7,7 @@ import {
 } from "std/fs/mod.ts";
 import { grantOrThrow } from "std/permissions/mod.ts";
 
-import { SUPPORTED_MEDIA_TYPES, SOURCE } from "types";
+import { SUPPORTED_MEDIA_TYPES, Source } from "types";
 
 const getPathToProjectRoot = () =>
   fromFileUrl(dirname(dirname(import.meta.url)));
@@ -19,13 +19,13 @@ const composeTemplate = (...lines: string[]) =>
   lines.join("\n\n") + "\n";
 
 const standardExport = [
-  "const trivia: TRIVIA[] = [];",
+  "const trivia: Trivia[] = [];",
   "export default trivia;",
 ];
 
-const generateBasicTriviaTemplate = ({ mediaType, name }: SOURCE) =>
+const generateBasicTriviaTemplate = ({ mediaType, name }: Source) =>
   composeTemplate(
-    `import { TRIVIA } from "types";\nimport { generate${
+    `import { Trivia } from "types";\nimport { generate${
       capitalize(mediaType)
     }Source } from "../generate_source.ts";`,
     `const source = generate${capitalize(mediaType)}Source("${name}");`,
@@ -34,14 +34,14 @@ const generateBasicTriviaTemplate = ({ mediaType, name }: SOURCE) =>
 
 const generateTVTemplate = (seriesName: string) =>
   composeTemplate(
-    'import { TRIVIA } from "types";\nimport { generateTVSource } from "../generate_source.ts";',
+    'import { Trivia } from "types";\nimport { generateTVSource } from "../generate_source.ts";',
     `const genSource = (episode: string) => generateTVSource("${seriesName}", episode);`,
     ...standardExport,
   );
 
 const generateComicTemplate = (seriesName: string) =>
   composeTemplate(
-    'import { TRIVIA } from "types";\nimport { generateComicSource } from "../generate_source.ts";',
+    'import { Trivia } from "types";\nimport { generateComicSource } from "../generate_source.ts";',
     `const genSource = (issue: number) => generateComicSource("${seriesName}", issue);`,
     ...standardExport,
   );
@@ -53,7 +53,7 @@ const formatSourceName = (sourceName: string) =>
     .join("_")
     .toLowerCase();
 
-async function createSourceFile({ name, mediaType }: SOURCE) {
+async function createSourceFile({ name, mediaType }: Source) {
   const targetDir = `${getPathToProjectRoot()}/src/trivia/${mediaType}${
     mediaType !== "television" ? "s" : ""
   }`;
