@@ -1,4 +1,6 @@
-export type MEDIA_TYPE = "book" | "comic" | "film" | "game" | "television";
+export const SUPPORTED_MEDIA_TYPES = ['book', 'comic', 'film', 'game', 'television'] as const;
+
+export type MEDIA_TYPE = typeof SUPPORTED_MEDIA_TYPES[number];
 
 export interface SOURCE {
   name: string;
