@@ -1,0 +1,13 @@
+{
+  "importMap": "import_map.json",
+  "tasks": {
+    "start": "deno run src/mod.ts",
+    "new": "deno run --unstable --allow-read=. --allow-write=. scripts/new.ts",
+    "compile-debug": "deno compile --import-map=import_map.json -o target/debug/sw-trivia src/mod.ts",
+    "compile-release": "deno task compile-linux & deno task compile-windows & deno task compile-macos-x86 & deno task compile-macos-arm",
+    "compile-linux": "deno compile --import-map=import_map.json --target x86_64-unknown-linux-gnu -o target/release/linux/sw-trivia src/mod.ts",
+    "compile-windows": "deno compile --import-map=import_map.json --target x86_64-pc-windows-msvc -o target/release/windows/sw-trivia src/mod.ts",
+    "compile-macos-x86": "deno compile --import-map=import_map.json --target x86_64-apple-darwin -o target/release/macos-intel/sw-trivia src/mod.ts",
+    "compile-macos-arm": "deno compile --import-map=import_map.json --target aarch64-apple-darwin -o target/release/macos-apple/sw-trivia src/mod.ts"
+  }
+}
