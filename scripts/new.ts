@@ -1,13 +1,10 @@
 import { dirname, fromFileUrl } from "std/path/mod.ts";
 import { parse } from "std/flags/mod.ts";
 
-import {
-  ensureDirSync,
-  existsSync,
-} from "std/fs/mod.ts";
+import { ensureDirSync, existsSync } from "std/fs/mod.ts";
 import { grantOrThrow } from "std/permissions/mod.ts";
 
-import { SUPPORTED_MEDIA_TYPES, Source } from "types";
+import { Source, SUPPORTED_MEDIA_TYPES } from "types";
 
 const getPathToProjectRoot = () =>
   fromFileUrl(dirname(dirname(import.meta.url)));
@@ -15,8 +12,7 @@ const getPathToProjectRoot = () =>
 const capitalize = (myString: string) =>
   myString.charAt(0).toUpperCase() + myString.slice(1);
 
-const composeTemplate = (...lines: string[]) =>
-  lines.join("\n\n") + "\n";
+const composeTemplate = (...lines: string[]) => lines.join("\n\n") + "\n";
 
 const standardExport = [
   "const trivia: Trivia[] = [];",

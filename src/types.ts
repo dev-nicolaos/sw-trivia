@@ -1,4 +1,10 @@
-export const SUPPORTED_MEDIA_TYPES = ['book', 'comic', 'film', 'game', 'television'] as const;
+export const SUPPORTED_MEDIA_TYPES = [
+  "book",
+  "comic",
+  "film",
+  "game",
+  "television",
+] as const;
 
 export type MediaType = typeof SUPPORTED_MEDIA_TYPES[number];
 
