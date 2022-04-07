@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## Unreleased
 
+### Changed
+
+- Updated target runtime (Deno) to v1.20.4 and dependencies (Deno Standard) to
+  v0.133.0
+- Migrate dev scripts to use `deno task`
+- Minor code/type refactors
+
 ## 0.15.0 - 2022-1-2
 
 ### Added

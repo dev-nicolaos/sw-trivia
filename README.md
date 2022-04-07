@@ -31,14 +31,11 @@ The program will warn the user if the version of Deno being run does not match t
 
 ### Scripts
 
-By default these scripts will prompt for various permissions, such as reading/writing to the filesystem or spawning a subprocess.
-To bypass these prompts, add Deno's `-A` flag to the command.
-For more info on how script permissions work in Deno, check out the
-[permissions page in the manual](https://deno.land/manual@main/getting_started/permissions).
+**Note:** Unlike the final executable, arguments to dev scripts must be passed after an additional `--` (e.g. `deno task start -- --version`)
 
 #### Run Program
 
-`deno run --unstable scripts/start.ts`
+`deno task start`
 
 ##### Optional Arguments
 
@@ -47,7 +44,7 @@ For more info on how script permissions work in Deno, check out the
 
 #### Scaffold New Trivia Source File
 
-`deno run --unstable scripts/new.ts`
+`deno task new`
 
 ##### Required Arguments
 
@@ -55,13 +52,14 @@ For more info on how script permissions work in Deno, check out the
 - `-t`, `--type`: The media type of the new trivia source
   - valid types: book, comic, film, game, television
 
-#### Build Executable
+#### Build Debug Executable
 
-`deno run --unstable scripts/build.ts`
+`deno task compile-debug`
 
-By default the executable will be output to `target/debug`.
-If the release argument is passed, the executables will be output to `target/release/[platform-name]`.
+Will create an executable for the current platform in `target/debug`.
 
-##### Optional Arguments
+#### Build Release Executables
 
-- `-r`, `--release`: Build production executables for all platforms
+`deno task compile-release`
+
+Will create executables for all platforms in `target/release/[platform-name]`.
