@@ -1,4 +1,5 @@
 .vscode/**/*
 !.vscode/extensions.json
+!.vscode/sw-trivia.code-snippets
 
 /target
