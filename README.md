@@ -21,6 +21,10 @@ A command line trivia game with content from all types of Star Wars cannon media
    - add the `--stats` flag (`-s` for short) to see statistics about the game's trivia content
 3. Type the number of the option you'd like to select and press `Enter` to proceed
 
+## How to Contribute to the project
+
+You can submit a new trivia question or report a bug [using one of our issue templates](https://github.com/dev-nicolaos/sw-trivia/issues/new/choose).
+
 ## Development
 
 This project is built with [Deno](https://deno.land)
