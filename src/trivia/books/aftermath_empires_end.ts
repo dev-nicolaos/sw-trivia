@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
 const source = generateBookSource("Aftermath: Empire's End");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "What was Chewbacca's son's name?",
     correctAnswer: "Lumpawaroo",

@@ -1,10 +1,10 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateTVSource } from "../generate_source.ts";
 
 const genSource = (episode: string) =>
   generateTVSource("The Clone Wars", episode);
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "Who commanded the Sepatist blockade of Christophsis?",
     correctAnswer: "Admiral Trench",

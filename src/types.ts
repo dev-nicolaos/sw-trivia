@@ -1,15 +1,23 @@
-export type MEDIA_TYPE = "book" | "comic" | "film" | "game" | "television";
+export const SUPPORTED_MEDIA_TYPES = [
+  "book",
+  "comic",
+  "film",
+  "game",
+  "television",
+] as const;
 
-export interface SOURCE {
+export type MediaType = typeof SUPPORTED_MEDIA_TYPES[number];
+
+export interface Source {
   name: string;
-  mediaType: MEDIA_TYPE;
+  mediaType: MediaType;
 }
 
-export interface TRIVIA {
+export interface Trivia {
   question: string;
   correctAnswer: string;
   wrongAnswers: [string, string, string];
-  source: SOURCE;
+  source: Source;
 }
 
 export interface GET_NUMERIC_INPUT_OPTIONS {

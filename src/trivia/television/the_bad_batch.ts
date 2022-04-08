@@ -1,10 +1,10 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateTVSource } from "../generate_source.ts";
 
 const genSource = (episode: string) =>
   generateTVSource("The Bad Batch", episode);
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question:
       "Which Jedi was on the same planet as Clone Force 99 when Order 66 was given?",

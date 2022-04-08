@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateFilmSource } from "../generate_source.ts";
 
 const source = generateFilmSource("Attack of the Clones");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "Who was the ruler of the Naboo at the outset of the Clone Wars?",
     correctAnswer: "Queen Jamillia",

@@ -1,30 +1,27 @@
-import {
-  ensureDirSync,
-  existsSync,
-  getPathToProjectRoot,
-  grantOrThrow,
-  parse,
-} from "./_utils.ts";
+import { dirname, fromFileUrl } from "std/path/mod.ts";
+import { parse } from "std/flags/mod.ts";
 
-export interface SOURCE {
-  name: string;
-  mediaType: string;
-}
+import { ensureDirSync, existsSync } from "std/fs/mod.ts";
+import { grantOrThrow } from "std/permissions/mod.ts";
+
+import { Source, SUPPORTED_MEDIA_TYPES } from "types";
+
+const getPathToProjectRoot = () =>
+  fromFileUrl(dirname(dirname(import.meta.url)));
 
 const capitalize = (myString: string) =>
   myString.charAt(0).toUpperCase() + myString.slice(1);
 
-const composeTemplate = (...lines: string[]): string =>
-  lines.join("\n\n") + "\n";
+const composeTemplate = (...lines: string[]) => lines.join("\n\n") + "\n";
 
 const standardExport = [
-  "const trivia: TRIVIA[] = [];",
+  "const trivia: Trivia[] = [];",
   "export default trivia;",
 ];
 
-const generateBasicTriviaTemplate = ({ mediaType, name }: SOURCE) =>
+const generateBasicTriviaTemplate = ({ mediaType, name }: Source) =>
   composeTemplate(
-    `import { TRIVIA } from "types";\nimport { generate${
+    `import { Trivia } from "types";\nimport { generate${
       capitalize(mediaType)
     }Source } from "../generate_source.ts";`,
     `const source = generate${capitalize(mediaType)}Source("${name}");`,
@@ -33,26 +30,26 @@ const generateBasicTriviaTemplate = ({ mediaType, name }: SOURCE) =>
 
 const generateTVTemplate = (seriesName: string) =>
   composeTemplate(
-    'import { TRIVIA } from "types";\nimport { generateTVSource } from "../generate_source.ts";',
+    'import { Trivia } from "types";\nimport { generateTVSource } from "../generate_source.ts";',
     `const genSource = (episode: string) => generateTVSource("${seriesName}", episode);`,
     ...standardExport,
   );
 
 const generateComicTemplate = (seriesName: string) =>
   composeTemplate(
-    'import { TRIVIA } from "types";\nimport { generateComicSource } from "../generate_source.ts";',
+    'import { Trivia } from "types";\nimport { generateComicSource } from "../generate_source.ts";',
     `const genSource = (issue: number) => generateComicSource("${seriesName}", issue);`,
     ...standardExport,
   );
 
-const formatSourceName = (sourceName: string): string =>
+const formatSourceName = (sourceName: string) =>
   sourceName
     .replace(/'/g, "")
     .split(/[- _,:—]+/)
     .join("_")
     .toLowerCase();
 
-async function createSourceFile({ name, mediaType }: SOURCE): Promise<void> {
+async function createSourceFile({ name, mediaType }: Source) {
   const targetDir = `${getPathToProjectRoot()}/src/trivia/${mediaType}${
     mediaType !== "television" ? "s" : ""
   }`;
@@ -73,6 +70,7 @@ async function createSourceFile({ name, mediaType }: SOURCE): Promise<void> {
       { name: "write", path: targetDir },
     );
 
+    // TODO: refactor this not to use exists
     if (existsSync(fullPath)) {
       throw `Trivia file already exists for ${name}`;
     }
@@ -95,14 +93,6 @@ async function createSourceFile({ name, mediaType }: SOURCE): Promise<void> {
   }
 }
 
-const supportedMediaTypes = [
-  "book",
-  "comic",
-  "film",
-  "game",
-  "television",
-];
-
 const { name, type } = parse(Deno.args, {
   alias: { n: "name", t: "type" },
   string: ["name", "type"],
@@ -119,9 +109,9 @@ if (!name) {
 if (!type) {
   errorMessages.push(
     "Please include the media type of the trivia source using the --type (-t for short) argument",
-    `Valid media types are ${supportedMediaTypes.join(", ")}`,
+    `Valid media types are ${SUPPORTED_MEDIA_TYPES.join(", ")}`,
   );
-} else if (!supportedMediaTypes.includes(type.toLowerCase())) {
+} else if (!SUPPORTED_MEDIA_TYPES.includes(type.toLowerCase())) {
   errorMessages.push(`${type} is not a supported media type`);
 }
 

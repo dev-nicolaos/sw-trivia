@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
 const source = generateBookSource("Light of the Jedi");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "What was the highest rank within the Nihil?",
     correctAnswer: "Tempest",

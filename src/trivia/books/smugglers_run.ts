@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
 const source = generateBookSource("Smuggler's Run");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question:
       "Where did Han Solo and Chewbacca travel to immediately following the Battle of Yavin?",

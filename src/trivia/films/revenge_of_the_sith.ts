@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateFilmSource } from "../generate_source.ts";
 
 const source = generateFilmSource("Revenge of the Sith");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question:
       "How did Anakin describe General Grievous's ship at the Battle of Coruscant?",

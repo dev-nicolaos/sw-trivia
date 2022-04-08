@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
 const source = generateBookSource("Aftermath: Life Debt");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "Who gave Temmin Wexley the nickname Snap?",
     correctAnswer: "Wedge Antilles",

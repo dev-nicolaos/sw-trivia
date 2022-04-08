@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateFilmSource } from "../generate_source.ts";
 
 const source = generateFilmSource("Solo");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "What gang were Han and Qi'ra part of on Corellia?",
     correctAnswer: "White Worms",

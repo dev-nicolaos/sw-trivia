@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
 const source = generateBookSource("Dooku: Jedi Lost");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "Where did Dooku find Asajj Ventress?",
     correctAnswer: "Rattatak",

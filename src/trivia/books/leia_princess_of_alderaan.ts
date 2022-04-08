@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
 const source = generateBookSource("Leia, Princess of Alderaan");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "Which planet was Leia's first humanitarian mission to?",
     correctAnswer: "Wobani",

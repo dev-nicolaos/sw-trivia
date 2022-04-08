@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
 const source = generateBookSource("Ahsoka");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question:
       "What assumed name did Ahsoka Tano use while on Thabeska and Raada?",

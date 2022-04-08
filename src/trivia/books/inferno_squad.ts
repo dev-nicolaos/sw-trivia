@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
 const source = generateBookSource("Battlefront II: Inferno Squad");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question:
       "What rank was Garrick Versio at the time of the Battle of Yavin?",

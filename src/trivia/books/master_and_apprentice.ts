@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
 const source = generateBookSource("Master and Apprentice");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "Who was Dooku's apprentice before Qui-Gon Jinn?",
     correctAnswer: "Rael Aveross",

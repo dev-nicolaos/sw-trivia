@@ -7,19 +7,19 @@ import {
   TELEVISION,
 } from "./trivia/mod.ts";
 
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 
-const countUniqueSources = (providedTrivia: TRIVIA[]): number =>
-  providedTrivia.reduce((acc: string[], curr: TRIVIA) => (
+const countUniqueSources = (providedTrivia: Trivia[]) =>
+  providedTrivia.reduce((acc: string[], curr: Trivia) => (
     acc.includes(curr.source.name) ? acc : [...acc, curr.source.name]
   ), []).length;
 
-interface MOST_COMMON_SOURCES {
+interface MostCommonSources {
   names: string[];
   count: number;
 }
 
-function findMostCommonSources(providedTrivia: TRIVIA[]): MOST_COMMON_SOURCES {
+function findMostCommonSources(providedTrivia: Trivia[]) {
   const sourceCounts: { [index: string]: number } = {};
 
   providedTrivia.forEach((trivia) => {
@@ -32,7 +32,7 @@ function findMostCommonSources(providedTrivia: TRIVIA[]): MOST_COMMON_SOURCES {
     }
   });
 
-  const mostCommonSources: { names: string[]; count: number } = {
+  const mostCommonSources: MostCommonSources = {
     names: [],
     count: 0,
   };
@@ -52,7 +52,7 @@ function findMostCommonSources(providedTrivia: TRIVIA[]): MOST_COMMON_SOURCES {
 const formatMostCommonSources = ({
   names,
   count,
-}: MOST_COMMON_SOURCES): string =>
+}: MostCommonSources) =>
   names.length === 1
     ? `Source with the most questions: ${names[0]} - ${count} questions`
     : `Sources with the most questions: ${

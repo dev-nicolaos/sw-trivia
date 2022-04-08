@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
 const source = generateBookSource("Aftermath");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "What planet was Norra Wexley from?",
     correctAnswer: "Akiva",

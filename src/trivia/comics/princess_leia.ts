@@ -1,10 +1,10 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateComicSource } from "../generate_source.ts";
 
 const genSource = (issue: number) =>
   generateComicSource("Princess Leia", issue);
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "What was the name of Nien Nunb's starship?",
     correctAnswer: "Mellcrawler",

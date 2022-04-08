@@ -1,4 +1,4 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import {
   combineAnswers,
   getUserInput,
@@ -8,9 +8,7 @@ import {
   printQuestion,
 } from "./mod.ts";
 
-export async function askTriviaQuestion(
-  selectedTrivia: TRIVIA,
-): Promise<boolean> {
+export async function askTriviaQuestion(selectedTrivia: Trivia) {
   const possibleAnswers = combineAnswers(selectedTrivia);
   printQuestion(selectedTrivia.question, possibleAnswers);
 
@@ -31,7 +29,7 @@ export async function askTriviaQuestion(
   return correct;
 }
 
-export async function askRandomTriviaQuestion(): Promise<void> {
+export async function askRandomTriviaQuestion() {
   await askTriviaQuestion(pickRandomTrivia());
 
   if (confirm("Another?")) {
@@ -40,12 +38,10 @@ export async function askRandomTriviaQuestion(): Promise<void> {
   }
 }
 
-export async function askMultipleTrivia(trivia: TRIVIA[]): Promise<number> {
+export async function askMultipleTrivia(trivia: Trivia[]) {
   let score = 0;
   for (let i = 0; i < trivia.length; i++) {
-    if (await askTriviaQuestion(trivia[i])) {
-      score++;
-    }
+    if (await askTriviaQuestion(trivia[i])) score++;
   }
   return score;
 }

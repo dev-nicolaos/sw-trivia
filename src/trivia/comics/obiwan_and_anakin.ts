@@ -1,10 +1,10 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateComicSource } from "../generate_source.ts";
 
 const genSource = (issue: number) =>
   generateComicSource("Obi-Wan and Anakin", issue);
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question:
       "Who put out the call for Jedi assistance on Carnelion IV that Anakin and Obi-Wan responded to?",

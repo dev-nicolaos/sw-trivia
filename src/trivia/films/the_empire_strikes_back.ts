@@ -1,9 +1,9 @@
-import { TRIVIA } from "types";
+import { Trivia } from "types";
 import { generateFilmSource } from "../generate_source.ts";
 
 const source = generateFilmSource("The Empire Strikes Back");
 
-const trivia: TRIVIA[] = [
+const trivia: Trivia[] = [
   {
     question: "What creatures did the rebels ride on Hoth?",
     correctAnswer: "Tauntauns",
