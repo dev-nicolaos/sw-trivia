@@ -3,6 +3,7 @@ import aftermathEmpiresEnd from "./aftermath_empires_end.ts";
 import aftermathLifeDebt from "./aftermath_life_debt.ts";
 import ahsoka from "./ahsoka.ts";
 import alphabetSquadron from "./alphabet_squadron.ts";
+import aTestOfCourage from "./a_test_of_courage.ts";
 import beforeTheAwakening from "./before_the_awakening.ts";
 import bloodline from "./bloodline.ts";
 import catalyst from "./catalyst.ts";
@@ -38,6 +39,7 @@ export default [
   ...aftermathLifeDebt,
   ...ahsoka,
   ...alphabetSquadron,
+  ...aTestOfCourage,
   ...beforeTheAwakening,
   ...bloodline,
   ...catalyst,

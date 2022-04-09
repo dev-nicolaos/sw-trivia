@@ -12,7 +12,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "What vehicle did Han and Qi'ra use in thier attempt to escape the White Worms?",
+      "What vehicle did Han and Qi'ra use in their attempt to escape the White Worms?",
     correctAnswer: "M-68 landspeeder",
     wrongAnswers: [
       "A-A4B truckspeeder",

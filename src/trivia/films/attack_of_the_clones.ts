@@ -139,7 +139,7 @@ const trivia: Trivia[] = [
   {
     question:
       "Which of the following did Jango Fett not use against Obi-Wan above Geonosis?",
-    correctAnswer: "Proton torpedos",
+    correctAnswer: "Proton torpedoes",
     wrongAnswers: ["Seismic charges", "Laser cannons", "Homing missile"],
     source,
   },

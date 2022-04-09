@@ -20,7 +20,7 @@ const trivia: Trivia[] = [
     question:
       "What document were members of the Galactic Republic's Special Weapons Group required to sign?",
     correctAnswer: "Official Secrets Act",
-    wrongAnswers: ["White Book", "Galatic Concordance", "Senatorial Oath"],
+    wrongAnswers: ["White Book", "Galactic Concordance", "Senatorial Oath"],
     source,
   },
   {

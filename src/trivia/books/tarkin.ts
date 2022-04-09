@@ -11,7 +11,7 @@ const trivia: Trivia[] = [
     source,
   },
   {
-    question: "How many Moffs did the Emperor initially apoint?",
+    question: "How many Moffs did the Emperor initially appoint?",
     correctAnswer: "20",
     wrongAnswers: ["10", "50", "100"],
     source,

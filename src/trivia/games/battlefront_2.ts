@@ -17,7 +17,7 @@ const trivia: Trivia[] = [
     wrongAnswers: [
       "Stealing a shuttle",
       "Taking over the ship",
-      "Pretending to join the rebelion",
+      "Pretending to join the rebellion",
     ],
     source,
   },
@@ -135,7 +135,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "Who accomponied Lando on the mission to destroy a weapons cache on Sullust?",
+      "Who accompanied Lando on the mission to destroy a weapons cache on Sullust?",
     correctAnswer: "Shriv",
     wrongAnswers: ["Del", "Han", "Lobot"],
     source,

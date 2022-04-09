@@ -73,7 +73,7 @@ const trivia: Trivia[] = [
     source,
   },
   {
-    question: "What promted Jabba to drop Luke into the rancor's den?",
+    question: "What prompted Jabba to drop Luke into the rancor's den?",
     correctAnswer: "Luke stealing a blaster from a guard",
     wrongAnswers: [
       "Luke insulting Jabba",
@@ -175,7 +175,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "What advice did Han offer Chewbaca while piloting the stolen Imperial shuttle on approach to Endor?",
+      "What advice did Han offer Chewbacca while piloting the stolen Imperial shuttle on approach to Endor?",
     correctAnswer: "Fly casual",
     wrongAnswers: ["Fly fast", "Be ready to jump", "Have a drink"],
     source,

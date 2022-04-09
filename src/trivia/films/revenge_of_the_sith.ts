@@ -43,7 +43,7 @@ const trivia: Trivia[] = [
   {
     question: 'Who said "Twice the pride, double the fall"?',
     correctAnswer: "Count Dooku",
-    wrongAnswers: ["Yoda", "Darth Sideous", "Obi-Wan Kenobi"],
+    wrongAnswers: ["Yoda", "Darth Sidious", "Obi-Wan Kenobi"],
     source,
   },
   {
@@ -58,7 +58,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "What allowed the Separtist Dreadnought to level out after being damaged in the Battle of Coruscant?",
+      "What allowed the Separatist Dreadnought to level out after being damaged in the Battle of Coruscant?",
     correctAnswer: "Firing the emergency booster engines",
     wrongAnswers: [
       "Reversing stabilizers",
@@ -162,7 +162,7 @@ const trivia: Trivia[] = [
     wrongAnswers: [
       "they will hunt us down.",
       "the Senate will side with them.",
-      "the Separtist Army will be defeated.",
+      "the Separatist Army will be defeated.",
     ],
     source,
   },
@@ -183,9 +183,9 @@ const trivia: Trivia[] = [
     source,
   },
   {
-    question: "Who destroyed the Separtist leaders to end the Clone Wars?",
+    question: "Who destroyed the Separatist leaders to end the Clone Wars?",
     correctAnswer: "Darth Vader",
-    wrongAnswers: ["Darth Sideous", "The Clone Army", "Mace Windu"],
+    wrongAnswers: ["Darth Sidious", "The Clone Army", "Mace Windu"],
     source,
   },
   {
@@ -199,7 +199,7 @@ const trivia: Trivia[] = [
     source,
   },
   {
-    question: "Where did Yoda duel Darth Sideous?",
+    question: "Where did Yoda duel Darth Sidious?",
     correctAnswer: "The Senate Chambers",
     wrongAnswers: ["The Chancellor's Office", "The Jedi Temple", "Mustafar"],
     source,

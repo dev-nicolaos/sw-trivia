@@ -34,7 +34,7 @@ const trivia: Trivia[] = [
     correctAnswer: "A list of force sensitive children",
     wrongAnswers: [
       "Plans to the Death Star",
-      "Plans for a First Order Dreadnaught",
+      "Plans for a First Order Dreadnought",
       "Coordinates for the Nexus Route",
     ],
     source,

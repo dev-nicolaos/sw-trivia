@@ -54,7 +54,7 @@ const trivia: Trivia[] = [
     source,
   },
   {
-    question: "Where was R2-D2 when the Jawas captured him?",
+    question: "Where was R2-D2 when the jawas captured him?",
     correctAnswer: "A rocky canyon",
     wrongAnswers: ["A sand dune", "A desert oasis", "On a speeder"],
     source,
@@ -164,7 +164,7 @@ const trivia: Trivia[] = [
     source,
   },
   {
-    question: "Which dentention block was Princess Leia held in?",
+    question: "Which detention block was Princess Leia held in?",
     correctAnswer: "AA23",
     wrongAnswers: ["AA24", "BB22", "BB225"],
     source,
@@ -201,7 +201,7 @@ const trivia: Trivia[] = [
   {
     question:
       "Why did the Millenium Falcon encounter minimal pursuit after escaping the first Death Star?",
-    correctAnswer: "The Imperials intened to track them",
+    correctAnswer: "The Imperials intended to track them",
     wrongAnswers: [
       "The Imperials were caught off guard",
       "The Imperials did not realize that the Falcon had left",

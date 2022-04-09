@@ -20,7 +20,7 @@ const trivia: Trivia[] = [
   {
     question: "What was the Ring of Kafrene?",
     correctAnswer: "A trading outpost",
-    wrongAnswers: ["A cantina", "A piece of jewlery", "A group of smugglers"],
+    wrongAnswers: ["A cantina", "A piece of jewelry", "A group of smugglers"],
     source,
   },
   {
@@ -42,7 +42,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "What did Mon Mothma want to do if the Rebelion located Galen Erso?",
+      "What did Mon Mothma want to do if the Rebellion located Galen Erso?",
     correctAnswer: "Return him to testify in the Senate",
     wrongAnswers: [
       "Kill him",

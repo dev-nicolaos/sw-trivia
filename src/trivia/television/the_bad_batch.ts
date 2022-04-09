@@ -16,7 +16,7 @@ const trivia: Trivia[] = [
     question:
       "What unit was sent to hunt down Saw Gerrera's Republic fighters shortly after Order 66?",
     correctAnswer: "Clone Force 99",
-    wrongAnswers: ["Twighlight Company", "Death Watch", "First Legion"],
+    wrongAnswers: ["Twilight Company", "Death Watch", "First Legion"],
     source: genSource("Aftermath"),
   },
   {
@@ -123,7 +123,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "Ord Mantell's Irling creature were particullarly sensitive to what?",
+      "Ord Mantell's Irling creature were particularly sensitive to what?",
     correctAnswer: "Light",
     wrongAnswers: ["Radiation", "Heat", "Air"],
     source: genSource("Infested"),
@@ -136,7 +136,7 @@ const trivia: Trivia[] = [
     source: genSource("War-Mantle"),
   },
   {
-    question: "How was Kamino's captial (Tipoca City) destroyed?",
+    question: "How was Kamino's capital (Tipoca City) destroyed?",
     correctAnswer: "Capital ship bombardment",
     wrongAnswers: [
       "A giant tsunami",

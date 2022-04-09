@@ -9,6 +9,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - Instructions for contributing
+- New trivia from
+  - _A Test of Courage_
+  - _Squadrons_
+  - _The Force Awakens_
 
 ### Changed
 
@@ -16,6 +20,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   v0.133.0
 - Migrate dev scripts to use `deno task`
 - Minor code/type refactors
+
+### Fixed
+
+- Numerous spelling and grammatical fixes
 
 ## 0.15.0 - 2022-1-2
 

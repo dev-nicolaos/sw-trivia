@@ -15,7 +15,7 @@
       "  correctAnswer: \"$2\",",
       "  wrongAnswers: [\"$3\", \"$4\", \"$5\"],",
       "  source,",
-      "}",
+      "},",
 		],
 	},
 	"Add TV/Comic Trivia Question": {
@@ -27,7 +27,7 @@
       "  correctAnswer: \"$2\",",
       "  wrongAnswers: [\"$3\", \"$4\", \"$5\"],",
       "  source: genSource(\"$6\"),",
-      "}",
+      "},",
 		],
 	}
 }

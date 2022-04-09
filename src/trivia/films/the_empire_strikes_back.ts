@@ -24,7 +24,7 @@ const trivia: Trivia[] = [
     source,
   },
   {
-    question: "Who led the ground assult on Echo Base?",
+    question: "Who led the ground assault on Echo Base?",
     correctAnswer: "General Veers",
     wrongAnswers: ["General Grievous", "General Krell", "General Hux"],
     source,
@@ -137,7 +137,7 @@ const trivia: Trivia[] = [
     source,
   },
   {
-    question: "Who interupted Han and Leia's first kiss?",
+    question: "Who interrupted Han and Leia's first kiss?",
     correctAnswer: "C-3PO",
     wrongAnswers: ["Chewbacca", "R2-D2", "A stormtrooper"],
     source,
@@ -263,7 +263,7 @@ const trivia: Trivia[] = [
     wrongAnswers: [
       "An elevator",
       "A lifeform scanner",
-      "A communications satelite",
+      "A communications satellite",
     ],
     source,
   },
