@@ -1,13 +1,13 @@
 import { Trivia } from "types";
 import { generateBookSource } from "../generate_source.ts";
 
-const source = generateBookSource("Battlefront: Twighlight Company");
+const source = generateBookSource("Battlefront: Twilight Company");
 
 const trivia: Trivia[] = [
   {
     question:
       "Which unit became the rear guard for the Rebel Alliance's Mid Rim Retreat?",
-    correctAnswer: "Twighlight Company",
+    correctAnswer: "Twilight Company",
     wrongAnswers: ["212 Attack Battalion", "Torrent Company", "Havoc Squad"],
     source,
   },

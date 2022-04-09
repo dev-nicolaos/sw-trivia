@@ -12,7 +12,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "What was Jar Jar Bink's occupation during the Galatic Civil War? ",
+      "What was Jar Jar Binks' occupation during the Galactic Civil War? ",
     correctAnswer: "Clown",
     wrongAnswers: ["Senator", "Fisherman", "Warrior"],
     source,

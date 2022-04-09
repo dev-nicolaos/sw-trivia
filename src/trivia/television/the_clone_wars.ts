@@ -6,14 +6,14 @@ const genSource = (episode: string) =>
 
 const trivia: Trivia[] = [
   {
-    question: "Who commanded the Sepatist blockade of Christophsis?",
+    question: "Who commanded the Separatist blockade of Christophsis?",
     correctAnswer: "Admiral Trench",
     wrongAnswers: ["General Grievous", "Asajj Ventress", "General Loathsom"],
     source: genSource("Cat and Mouse"),
   },
   {
     question:
-      "Which clone trooper was feeding intelligence to the Separtists on Christophsis?",
+      "Which clone trooper was feeding intelligence to the Separatists on Christophsis?",
     correctAnswer: "Slick",
     wrongAnswers: ["Chopper", "Rex", "Fives"],
     source: genSource("The Hidden Enemy"),
@@ -48,13 +48,14 @@ const trivia: Trivia[] = [
     source: genSource("Theatrical Release"),
   },
   {
-    question: "Where did Anakin and Ahsoka find the Twighlight?",
+    question: "Where did Anakin and Ahsoka find the Twilight?",
     correctAnswer: "Teth",
     wrongAnswers: ["Tatooine", "Mustafar", "Mandalore"],
     source: genSource("Theatrical Release"),
   },
   {
-    question: "Which Hutt conspired to help the Separtists kidnap Jabba's son?",
+    question:
+      "Which Hutt conspired to help the Separatists kidnap Jabba's son?",
     correctAnswer: "Ziro",
     wrongAnswers: ["Nashi", "Marlo", "Toborro"],
     source: genSource("Theatrical Release"),
@@ -150,7 +151,7 @@ const trivia: Trivia[] = [
     source: genSource("The Gungan General"),
   },
   {
-    question: "Where was the Separtist lab on Naboo located?",
+    question: "Where was the Separatist lab on Naboo located?",
     correctAnswer: "Eastern Swamps",
     wrongAnswers: ["Theed", "Lake Paonga", "Western Great Grass Plains"],
     source: genSource("Blue Shadow Virus"),
@@ -181,7 +182,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "What creatures did the Separtists release against Ghost Company at Nabat?",
+      "What creatures did the Separatists release against Ghost Company at Nabat?",
     correctAnswer: "Gutkurrs",
     wrongAnswers: ["Wampas", "Lyleks", "Acklays"],
     source: genSource("Innocents of Ryloth"),
@@ -194,7 +195,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "Who did Darth Sideous hire to steal a holocron from the Jedi Temple",
+      "Who did Darth Sidious hire to steal a holocron from the Jedi Temple",
     correctAnswer: "Cad Bane",
     wrongAnswers: ["Boba Fett", "Zam Wessel", "Han Solo"],
     source: genSource("Holocron Heist"),
@@ -207,7 +208,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "Where did Darth Sideous hold the kidnapped force sensitive children?",
+      "Where did Darth Sidious hold the kidnapped force sensitive children?",
     correctAnswer: "Mustafar",
     wrongAnswers: ["Rodia", "Coruscant", "Exegol"],
     source: genSource("Children of the Force"),
@@ -239,7 +240,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "Who did Ahsoka work with to destroy the Separtist weapons factory on Geonosis?",
+      "Who did Ahsoka work with to destroy the Separatist weapons factory on Geonosis?",
     correctAnswer: "Barriss Offee",
     wrongAnswers: ["Asajj Ventress", "Captain Rex", "Anakin Skywalker"],
     source: genSource("Weapons Factory"),
@@ -264,7 +265,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "Who was mentoring Boba Fett when he attempted to assasinate Mace Windu?",
+      "Who was mentoring Boba Fett when he attempted to assassinate Mace Windu?",
     correctAnswer: "Aurra Sing",
     wrongAnswers: ["Count Dooku", "Jango Fett", "Cad Bane"],
     source: genSource("Death Trap"),
@@ -307,7 +308,7 @@ const trivia: Trivia[] = [
     source: genSource("Arc Troopers"),
   },
   {
-    question: "When did Fives and Echo recieve the rank of Arc Trooper?",
+    question: "When did Fives and Echo receive the rank of Arc Trooper?",
     correctAnswer: "Following the Battle of Kamino",
     wrongAnswers: [
       "Following the Battle of Ryloth",
@@ -375,7 +376,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "How many Nightsisters accompanied Asajj Ventress during her first attempt to assasinate Dooku?",
+      "How many Nightsisters accompanied Asajj Ventress during her first attempt to assassinate Dooku?",
     correctAnswer: "2",
     wrongAnswers: ["3", "4", "5"],
     source: genSource("Nightsisters"),
@@ -424,7 +425,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "What information did Captain Tarkin and Master Piell have when they were captured by the Separtists?",
+      "What information did Captain Tarkin and Master Piell have when they were captured by the Separatists?",
     correctAnswer: "Coordinates for the Nexus Route",
     wrongAnswers: [
       "Coordinates for the Hydian Way",
@@ -439,7 +440,7 @@ const trivia: Trivia[] = [
     correctAnswer:
       "He thought the Jedi Code prevented them from going far enough to achieve victory",
     wrongAnswers: [
-      "He thought the Jedi lacked the necessary miltary experience",
+      "He thought the Jedi lacked the necessary military experience",
       "He thought the Jedi were becoming too power hungry",
       "He thought that lightsabers were ill-suited weapons for large scale battles",
     ],
@@ -466,7 +467,7 @@ const trivia: Trivia[] = [
     source: genSource("Wookie Hunt"),
   },
   {
-    question: "What species was the Separtist commandeer Riff Tamson?",
+    question: "What species was the Separatist commandeer Riff Tamson?",
     correctAnswer: "Karkarodon",
     wrongAnswers: ["Mon Calamari", "Quarren", "Nautolan"],
     source: genSource("Water War"),
@@ -480,7 +481,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "Which type of weapon was NOT used by the Separtists during the Battle of Mon Cala?",
+      "Which type of weapon was NOT used by the Separatists during the Battle of Mon Cala?",
     correctAnswer: "Defoliator",
     wrongAnswers: ["Aqua Droid", "Trident assault ship", "Hydroid Medusa"],
     source: genSource("Gungan Attack"),
@@ -538,7 +539,7 @@ const trivia: Trivia[] = [
     correctAnswer: "Manipulating clone units into battle against one another",
     wrongAnswers: [
       "Ordering the execution of Fives and Jesse",
-      "Ordering a full frontal assult on the Umbaran capital",
+      "Ordering a full frontal assault on the Umbaran capital",
       "Taking over command of the 501st Legion from General Skywalker",
     ],
     source: genSource("Carnage of Krell"),
@@ -576,14 +577,14 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "What unit was sent to steal an encryption module from a Separtist dreadnaught?",
+      "What unit was sent to steal an encryption module from a Separatist dreadnought?",
     correctAnswer: "D-Sqaud",
     wrongAnswers: ["Coruscant Honor Guard", "Aegis Company", ""],
     source: genSource("Secret Weapons"),
   },
   {
     question:
-      "What planet did D-Squad crash land on after escaping the Separtist dreadnaught?",
+      "What planet did D-Squad crash land on after escaping the Separatist dreadnought?",
     correctAnswer: "Abafar",
     wrongAnswers: ["Mandalore", "Arkanis", "Vallt"],
     source: genSource("A Sunny Day in the Void"),
@@ -659,7 +660,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "Who provided the inhibtor chips placed inside the minds of the clone troopers?",
+      "Who provided the inhibitor chips placed inside the minds of the clone troopers?",
     correctAnswer: "Count Dooku",
     wrongAnswers: ["Sifo-Dyas", "Lama Su", "Jango Fett"],
     source: genSource("Conspiracy"),
@@ -693,7 +694,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "Which Separtist senator was present when Rush Clovis was given control of the banks?",
+      "Which Separatist senator was present when Rush Clovis was given control of the banks?",
     correctAnswer: "Bec Lawise",
     wrongAnswers: ["Mina Bonteri", "Voe Atell", "Amita Fonti"],
     source: genSource("Crisis at the Heart"),
@@ -707,7 +708,7 @@ const trivia: Trivia[] = [
   {
     question: "Who did the Frangawl cultists serve?",
     correctAnswer: "Mother Talzin",
-    wrongAnswers: ["Count Dooku", "Darth Sideous", "Moff Gideon"],
+    wrongAnswers: ["Count Dooku", "Darth Sidious", "Moff Gideon"],
     source: genSource("The Disappeared: Part 2"),
   },
   {
@@ -750,7 +751,7 @@ const trivia: Trivia[] = [
   {
     question: 'Who created the Sith\'s "Rule of Two"',
     correctAnswer: "Darth Bane",
-    wrongAnswers: ["Darth Sideous", "Dath Plagueis", "Darth Malak"],
+    wrongAnswers: ["Darth Sidious", "Dath Plagueis", "Darth Malak"],
     source: genSource("Sacrifice"),
   },
   {
@@ -777,7 +778,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "Who helped Anakin discretely communicate with Padmé during the Outer Rim Seiges?",
+      "Who helped Anakin discretely communicate with Padmé during the Outer Rim Sieges?",
     correctAnswer: "Captain Rex",
     wrongAnswers: ["Obi-Wan", "Fives", "Bo-Katan Kryze"],
     source: genSource("A Distant Echo"),

@@ -44,7 +44,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "What type of ship did Talus group and Vangaurd squadron sieze above Yavin?",
+      "What type of ship did Talus group and Vanguard squadron seize above Yavin?",
     correctAnswer: "Star Destroyer",
     wrongAnswers: [
       "Gozanti-class Cruiser",

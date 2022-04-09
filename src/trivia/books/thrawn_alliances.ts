@@ -21,13 +21,13 @@ const trivia: Trivia[] = [
     source,
   },
   {
-    question: "What material were the Separtists mining on Mokivj?",
+    question: "What material were the Separatists mining on Mokivj?",
     correctAnswer: "Cortosis",
     wrongAnswers: ["Doonium", "Quadranium", "Electrum"],
     source,
   },
   {
-    question: "What was the Separtist factory on Mokivj producing?",
+    question: "What was the Separatist factory on Mokivj producing?",
     correctAnswer: "Battle droids",
     wrongAnswers: ["Lightsabers", "Heavy blasers", "Hyena bombers"],
     source,

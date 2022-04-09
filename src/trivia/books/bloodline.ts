@@ -20,7 +20,7 @@ const trivia: Trivia[] = [
     question: "What body was the target of the Napkin Bombing?",
     correctAnswer: "The New Republic Senate",
     wrongAnswers: [
-      "The Galatic Republic Senate",
+      "The Galactic Republic Senate",
       "The Imperial Senate",
       "The Dark Council",
     ],

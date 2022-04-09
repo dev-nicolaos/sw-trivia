@@ -12,7 +12,7 @@ const trivia: Trivia[] = [
     source,
   },
   {
-    question: "Which Shadow Wing engagement occured last?",
+    question: "Which Shadow Wing engagement occurred last?",
     correctAnswer: "The Battle at Chadawa",
     wrongAnswers: [
       "The Attack on Troithe",

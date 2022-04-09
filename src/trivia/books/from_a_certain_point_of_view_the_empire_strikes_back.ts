@@ -22,7 +22,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "After forming Rogue Sqaudron, who did Luke Skywalker designate Rouge One?",
+      "After forming Rogue Squadron, who did Luke Skywalker designate Rouge One?",
     correctAnswer: "No one, he retired the call sign",
     wrongAnswers: ["Zev Senesca", "Wedge Antilles", "Hobbie"],
     source,

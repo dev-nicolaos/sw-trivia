@@ -48,7 +48,11 @@ const trivia: Trivia[] = [
     question:
       "According to Qui-Gon, spaceports like Mos Espa are havens for who?",
     correctAnswer: "Those who don't wish to be found",
-    wrongAnswers: ["Scum and villany", "Pod racers", "Traders and star pilots"],
+    wrongAnswers: [
+      "Scum and villainy",
+      "Pod racers",
+      "Traders and star pilots",
+    ],
     source,
   },
   {
@@ -85,7 +89,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "Who joined the Trade Federation in pushing for a commision to be sent to Naboo?",
+      "Who joined the Trade Federation in pushing for a commission to be sent to Naboo?",
     correctAnswer: "The Congress of Malastare",
     wrongAnswers: [
       "The Represtative from Ryloth",

@@ -6,7 +6,7 @@ const source = generateBookSource("Thrawn");
 const trivia: Trivia[] = [
   {
     question:
-      "Which language did Thrawn communicate with Eli Vanto in when they first met?",
+      "Which language did Thrawn use to communicate with Eli Vanto when they first met?",
     correctAnswer: "Sy Bisti",
     wrongAnswers: ["Basic", "Huttesse", "Shyriiwook"],
     source,
@@ -17,7 +17,7 @@ const trivia: Trivia[] = [
     wrongAnswers: [
       "To translate for him",
       "Because of Vanto's tactical skills",
-      "To teach him the politcal hierachy of the Empire",
+      "To teach him the political hierarchy of the Empire",
     ],
     source,
   },

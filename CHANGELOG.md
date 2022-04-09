@@ -21,6 +21,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Migrate dev scripts to use `deno task`
 - Minor code/type refactors
 
+### Fixed
+
+- Numerous spelling and grammatical fixes
+
 ## 0.15.0 - 2022-1-2
 
 ### Added
