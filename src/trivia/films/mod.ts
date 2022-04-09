@@ -5,6 +5,7 @@ import revengeOfTheSith from "./revenge_of_the_sith.ts";
 import rogueOne from "./rogue_one.ts";
 import solo from "./solo.ts";
 import theEmpireStrikesBack from "./the_empire_strikes_back.ts";
+import theForceAwakens from "./the_force_awakens.ts";
 import thePhantomMenace from "./the_phantom_menace.ts";
 
 export default [
@@ -15,5 +16,6 @@ export default [
   ...rogueOne,
   ...solo,
   ...theEmpireStrikesBack,
+  ...theForceAwakens,
   ...thePhantomMenace,
 ];

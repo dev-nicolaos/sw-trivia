@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - New trivia from
   - _A Test of Courage_
   - _Squadrons_
+  - _The Force Awakens_
 
 ### Changed
 
