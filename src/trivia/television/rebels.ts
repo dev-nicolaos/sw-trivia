@@ -11,7 +11,7 @@ const trivia: Trivia[] = [
     source: genSource("Spark of Rebellion: Part 1"),
   },
   {
-    question: "Where did the Spectres rescue a group of wookies from?",
+    question: "Where did the Spectres rescue a group of Wookies from?",
     correctAnswer: "Kessel",
     wrongAnswers: ["Kadavo", "Trandosha", "Lothal"],
     source: genSource("Spark of Rebellion: Part 2"),
@@ -20,7 +20,7 @@ const trivia: Trivia[] = [
     question: "Which group was known for wielding bo-rifles?",
     correctAnswer: "Lasan Honor Guard",
     wrongAnswers: [
-      "Wookie Chieftans",
+      "Wookie Chieftains",
       "Imperial Death Troopers",
       "MagnaGuards",
     ],

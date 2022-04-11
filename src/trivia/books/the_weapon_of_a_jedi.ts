@@ -16,7 +16,7 @@ const trivia: Trivia[] = [
     wrongAnswers: [
       "An X-wing Fighter",
       "The Desert Jewel",
-      "The Millenium Falcon",
+      "The Millennium Falcon",
     ],
     source,
   },

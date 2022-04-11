@@ -88,7 +88,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "What ship model did Han claim he owned during the Sabaac game on Vandor?",
+      "What ship model did Han claim he owned during the sabacc game on Vandor?",
     correctAnswer: "VCX-100",
     wrongAnswers: ["YT-1300", "T-16", "GR-75"],
     source,

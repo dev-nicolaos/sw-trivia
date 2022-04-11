@@ -15,7 +15,7 @@ const trivia: Trivia[] = [
     source,
   },
   {
-    question: "Which handmadien did Padmé follow to Batuu?",
+    question: "Which handmaiden did Padmé follow to Batuu?",
     correctAnswer: "Duja",
     wrongAnswers: ["Cordé", "Sabé", "Dormé"],
     source,
@@ -29,7 +29,7 @@ const trivia: Trivia[] = [
   {
     question: "What was the Separatist factory on Mokivj producing?",
     correctAnswer: "Battle droids",
-    wrongAnswers: ["Lightsabers", "Heavy blasers", "Hyena bombers"],
+    wrongAnswers: ["Lightsabers", "Heavy blasters", "Hyena bombers"],
     source,
   },
 

@@ -19,7 +19,7 @@ const trivia: Trivia[] = [
   {
     question: "What planet did Admiral Holdo grow up on?",
     correctAnswer: "Gatalenta",
-    wrongAnswers: ["Chandrilla", "Iloh", "Coruscant"],
+    wrongAnswers: ["Chandrila", "Iloh", "Coruscant"],
     source,
   },
   {

@@ -521,7 +521,7 @@ const trivia: Trivia[] = [
     correctAnswer: "Using stolen Umbaran starfighters",
     wrongAnswers: [
       "Using anti-armor infantry rockets",
-      "Using buried thermal detonaters",
+      "Using buried thermal detonators",
       "The Jedi Generals sliced it apart with lightsabers",
     ],
     source: genSource("The General"),
