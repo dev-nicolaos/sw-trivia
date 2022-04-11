@@ -39,7 +39,7 @@ const trivia: Trivia[] = [
     source,
   },
   {
-    question: "What was Captain Cardinal's orginal name?",
+    question: "What was Captain Cardinal's original name?",
     correctAnswer: "Archex",
     wrongAnswers: ["Wullf", "Churkk", "Rae"],
     source,

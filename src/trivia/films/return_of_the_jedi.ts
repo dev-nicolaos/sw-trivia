@@ -15,7 +15,7 @@ const trivia: Trivia[] = [
     question:
       "Which Imperial officer greeted Darth Vader aboard the second Death Star?",
     correctAnswer: "Moff Jerjerrod",
-    wrongAnswers: ["Grand Moff Tarken", "Admiral Piett", "General Veers"],
+    wrongAnswers: ["Grand Moff Tarkin", "Admiral Piett", "General Veers"],
     source,
   },
   {
@@ -102,7 +102,7 @@ const trivia: Trivia[] = [
   {
     question: "Who killed Jabba the Hutt?",
     correctAnswer: "Leia Organa",
-    wrongAnswers: ["Bobba Fett", "Luke Skywalker", "Han Solo"],
+    wrongAnswers: ["Boba Fett", "Luke Skywalker", "Han Solo"],
     source,
   },
   {
@@ -258,7 +258,7 @@ const trivia: Trivia[] = [
     source,
   },
   {
-    question: "Who flew the Millenium Falcon at the Battle of Ender?",
+    question: "Who flew the Millennium Falcon at the Battle of Ender?",
     correctAnswer: "Lando Calrissian and Nien Nunb",
     wrongAnswers: [
       "Han Solo and Chewbacca",
@@ -281,7 +281,7 @@ const trivia: Trivia[] = [
   {
     question: 'Whose call sign was "Red Leader" at the Battle of Endor?',
     correctAnswer: "Wedge Antilles",
-    wrongAnswers: ["Luke Skywalker", "Hera Syndula", "Garven Dreis"],
+    wrongAnswers: ["Luke Skywalker", "Hera Syndulla", "Garven Dreis"],
     source,
   },
   {

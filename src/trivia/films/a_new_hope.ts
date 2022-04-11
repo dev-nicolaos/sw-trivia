@@ -7,7 +7,7 @@ const trivia: Trivia[] = [
   {
     question: "Which ship carried the stolen Death Star plans to Tatooine?",
     correctAnswer: "Tantive IV",
-    wrongAnswers: ["Star Destroyer Avenger", "Millenium Falcon", "X-wing"],
+    wrongAnswers: ["Star Destroyer Avenger", "Millennium Falcon", "X-wing"],
     source,
   },
   {
@@ -200,7 +200,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "Why did the Millenium Falcon encounter minimal pursuit after escaping the first Death Star?",
+      "Why did the Millennium Falcon encounter minimal pursuit after escaping the first Death Star?",
     correctAnswer: "The Imperials intended to track them",
     wrongAnswers: [
       "The Imperials were caught off guard",

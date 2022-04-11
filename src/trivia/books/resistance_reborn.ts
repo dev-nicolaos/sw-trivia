@@ -12,7 +12,7 @@ const trivia: Trivia[] = [
   },
   {
     question: "Who did Wedge Antilles marry?",
-    correctAnswer: "Norra Wexely",
+    correctAnswer: "Norra Wexley",
     wrongAnswers: ["Hera Syndulla", "Mon Mothma", "Iden Versio"],
     source,
   },

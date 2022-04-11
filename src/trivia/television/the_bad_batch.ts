@@ -66,7 +66,7 @@ const trivia: Trivia[] = [
     question:
       "What was the source of the severe facial burns Crosshair suffered?",
     correctAnswer: "A Venator's ion engines",
-    wrongAnswers: ["Lava", "Blaster bolts", "A thermal detonater explosion"],
+    wrongAnswers: ["Lava", "Blaster bolts", "A thermal detonator explosion"],
     source: genSource("Reunion"),
   },
   {
@@ -119,7 +119,7 @@ const trivia: Trivia[] = [
     question: "Who taught Hera Syndulla how to scramble a ship's signature?",
     correctAnswer: "Tech",
     wrongAnswers: ["Cham Syndulla", "Gobi Glie", "Ahsoka Tano"],
-    source: genSource("Resue on Ryloth"),
+    source: genSource("Rescue on Ryloth"),
   },
   {
     question:

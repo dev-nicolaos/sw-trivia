@@ -8,7 +8,7 @@ const trivia: Trivia[] = [
     question:
       "After the Battle of Yavin, where did Luke travel in an attempt to setup a secret supply line for the Alliance?",
     correctAnswer: "Rodia",
-    wrongAnswers: ["Orto Plutonia", "Sullust", "Pamarth"],
+    wrongAnswers: ["Orto Plutonia", "Sullust", "Pamarthe"],
     source,
   },
   {

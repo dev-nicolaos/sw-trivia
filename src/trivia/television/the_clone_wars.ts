@@ -521,7 +521,7 @@ const trivia: Trivia[] = [
     correctAnswer: "Using stolen Umbaran starfighters",
     wrongAnswers: [
       "Using anti-armor infantry rockets",
-      "Using buried thermal detonaters",
+      "Using buried thermal detonators",
       "The Jedi Generals sliced it apart with lightsabers",
     ],
     source: genSource("The General"),
@@ -578,7 +578,7 @@ const trivia: Trivia[] = [
   {
     question:
       "What unit was sent to steal an encryption module from a Separatist dreadnought?",
-    correctAnswer: "D-Sqaud",
+    correctAnswer: "D-Squad",
     wrongAnswers: ["Coruscant Honor Guard", "Aegis Company", ""],
     source: genSource("Secret Weapons"),
   },

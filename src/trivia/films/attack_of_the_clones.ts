@@ -26,12 +26,12 @@ const trivia: Trivia[] = [
   {
     question: 'Finish the quote: "He is a _____, not a murderer"',
     correctAnswer: "political idealist",
-    wrongAnswers: ["failed Jedi", "separtist leader", "Sith Lord"],
+    wrongAnswers: ["failed Jedi", "separatist leader", "Sith Lord"],
     source,
   },
   {
     question:
-      "Other than Amidala herself, who questioned Chancellor Paplatine's recommendation to assign Padmé Jedi protection?",
+      "Other than Amidala herself, who questioned Chancellor Palpatine's recommendation to assign Padmé Jedi protection?",
     correctAnswer: "Senator Organa",
     wrongAnswers: ["Senator Farr", "Master Windu", "Master Unduli"],
     source,

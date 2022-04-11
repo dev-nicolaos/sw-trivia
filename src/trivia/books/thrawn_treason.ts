@@ -34,7 +34,11 @@ const trivia: Trivia[] = [
     question:
       "Who was behind the operation stealing turbolaser parts from Project Stardust?",
     correctAnswer: "Grand Admiral Savit",
-    wrongAnswers: ["Grand Moff Tarkin", "Govenor Haveland", " Colonel Yularen"],
+    wrongAnswers: [
+      "Grand Moff Tarkin",
+      "Governor Haveland",
+      "Colonel Yularen",
+    ],
     source,
   },
 ];

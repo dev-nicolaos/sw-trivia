@@ -92,7 +92,7 @@ const trivia: Trivia[] = [
       "Who joined the Trade Federation in pushing for a commission to be sent to Naboo?",
     correctAnswer: "The Congress of Malastare",
     wrongAnswers: [
-      "The Represtative from Ryloth",
+      "The Representative from Ryloth",
       "The Senator from Alderaan",
       "The Jedi Council",
     ],

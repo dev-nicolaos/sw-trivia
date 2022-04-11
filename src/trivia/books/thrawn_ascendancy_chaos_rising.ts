@@ -33,7 +33,7 @@ const trivia: Trivia[] = [
     question: "What was a defining feature of Nicardun capital ships?",
     correctAnswer: "Oversized bridge viewport",
     wrongAnswers: [
-      "Asymetrical design",
+      "Asymmetrical design",
       "Massive cannons on the underside",
       "Storm clouds painted on the nose",
     ],

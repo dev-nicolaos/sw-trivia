@@ -20,7 +20,7 @@ const trivia: Trivia[] = [
     question: "Who of the following was NOT at the Imperial summit on Akiva?",
     correctAnswer: "Grand Admiral Thrawn",
     wrongAnswers: [
-      "Grand Moff Valco Pandeon",
+      "Grand Moff Valco Pandion",
       "Admiral Rae Sloane",
       "General Jylia Shale",
     ],
@@ -29,7 +29,7 @@ const trivia: Trivia[] = [
   {
     question: "On what planet did the Anklebiter Brigade operate?",
     correctAnswer: "Coruscant",
-    wrongAnswers: ["Lothal", "Chandrilla", "Naboo"],
+    wrongAnswers: ["Lothal", "Chandrila", "Naboo"],
     source,
   },
 ];

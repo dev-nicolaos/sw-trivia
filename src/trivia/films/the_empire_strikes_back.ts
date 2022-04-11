@@ -81,7 +81,7 @@ const trivia: Trivia[] = [
   {
     question:
       "Which Imperial did Darth Vader choke just before the Battle of Hoth?",
-    correctAnswer: "Admiral Ozzle",
+    correctAnswer: "Admiral Ozzel",
     wrongAnswers: ["Captain Piett", "Captain Needa", "Moff Jerjerrod"],
     source,
   },
@@ -103,7 +103,7 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "How many TIE fighters pursued the Millenium Falcon into the astroid field?",
+      "How many TIE fighters pursued the Millennium Falcon into the astroid field?",
     correctAnswer: "4",
     wrongAnswers: ["6", "2", "3"],
     source,
@@ -164,7 +164,7 @@ const trivia: Trivia[] = [
     source,
   },
   {
-    question: "What species stuck to Millenium Falcon inside the space slug?",
+    question: "What species stuck to Millennium Falcon inside the space slug?",
     correctAnswer: "Mynocks",
     wrongAnswers: ["Purrgil", "Grallocs", "Neebray"],
     source,
@@ -178,14 +178,14 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "Which bounty hunter was NOT recruited by the Empire to find the Millenium Falcon?",
+      "Which bounty hunter was NOT recruited by the Empire to find the Millennium Falcon?",
     correctAnswer: "IG-11",
     wrongAnswers: ["Boba Fett", "Bossk", "Dengar"],
     source,
   },
   {
     question:
-      "Which Star Destroyer chased the Millenium Falcon after it fled the space slug?",
+      "Which Star Destroyer chased the Millennium Falcon after it fled the space slug?",
     correctAnswer: "Avenger",
     wrongAnswers: ["Devastator", "Torment", "Overseer"],
     source,
@@ -276,14 +276,14 @@ const trivia: Trivia[] = [
   },
   {
     question:
-      "Who helped Luke through the top hatch of the Millenium Falcon underneath Cloud City?",
+      "Who helped Luke through the top hatch of the Millennium Falcon underneath Cloud City?",
     correctAnswer: "Lando Calrissian",
     wrongAnswers: ["Chewbacca", "Leia Organa", "Obi-Wan Kenobi"],
     source,
   },
   {
     question:
-      "Why wasn't the Millenium Falcon able to jump to lightspeed when leaving Cloud City?",
+      "Why wasn't the Millennium Falcon able to jump to light speed when leaving Cloud City?",
     correctAnswer: "Imperials had disabled the hyperdrive",
     wrongAnswers: [
       "Lando entered incorrect jump coordinates",
