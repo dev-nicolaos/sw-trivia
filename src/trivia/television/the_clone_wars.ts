@@ -578,7 +578,7 @@ const trivia: Trivia[] = [
   {
     question:
       "What unit was sent to steal an encryption module from a Separatist dreadnought?",
-    correctAnswer: "D-Sqaud",
+    correctAnswer: "D-Squad",
     wrongAnswers: ["Coruscant Honor Guard", "Aegis Company", ""],
     source: genSource("Secret Weapons"),
   },

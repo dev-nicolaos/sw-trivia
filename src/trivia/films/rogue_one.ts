@@ -5,7 +5,7 @@ const source = generateFilmSource("Rogue One");
 
 const trivia: Trivia[] = [
   {
-    question: "How many death troopers accompanied Krenic on Lah'mu?",
+    question: "How many death troopers accompanied Krennic on Lah'mu?",
     correctAnswer: "6",
     wrongAnswers: ["2", "4", "8"],
     source,

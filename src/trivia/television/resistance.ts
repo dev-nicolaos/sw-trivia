@@ -40,8 +40,7 @@ const trivia: Trivia[] = [
     source: genSource("The High Tower"),
   },
   {
-    question:
-      "The Colussus' enginneers were primarily made up of what species?",
+    question: "The Colussus' engineers were primarily made up of what species?",
     correctAnswer: "Chelidae",
     wrongAnswers: ["Ugnaughts", "Rodians", "Niktos"],
     source: genSource("The Children from Tehar"),
