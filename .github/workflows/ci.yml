@@ -8,7 +8,7 @@ on:
 
 env:
   # Should match TARGET_DENO_VERSION in src/version.ts
-  DENO_VERSION: "v1.20.4"
+  DENO_VERSION: "v1.28.1"
 
 jobs:
   format:
@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Setup repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Install Deno
         run: |-
@@ -31,7 +31,7 @@ jobs:
 
     steps:
       - name: Setup repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Install Deno
         run: |-
@@ -41,17 +41,17 @@ jobs:
       - name: Run linter
         run: deno lint src scripts
 
-  start:
+  start-with-type-check:
     runs-on: ubuntu-latest
 
     steps:
       - name: Setup repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Install Deno
         run: |-
           curl -fsSL https://deno.land/x/install/install.sh | sh -s ${{ env.DENO_VERSION }}
           echo "$HOME/.deno/bin" >> $GITHUB_PATH
 
-      - name: Print version
-        run: deno task start -- -v
+      - name: Type check and print version
+        run: deno run --check src/mod.ts -v
