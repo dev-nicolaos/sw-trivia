@@ -41,7 +41,7 @@ jobs:
       - name: Run linter
         run: deno lint src scripts
 
-  start:
+  start-with-type-check:
     runs-on: ubuntu-latest
 
     steps:
@@ -53,5 +53,5 @@ jobs:
           curl -fsSL https://deno.land/x/install/install.sh | sh -s ${{ env.DENO_VERSION }}
           echo "$HOME/.deno/bin" >> $GITHUB_PATH
 
-      - name: Print version
-        run: deno task start -v
+      - name: Type check and print version
+        run: deno run --check src/mod.ts -v
