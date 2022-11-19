@@ -35,8 +35,6 @@ The program will warn the user if the version of Deno being run does not match t
 
 ### Scripts
 
-**Note:** Unlike the final executable, arguments to dev scripts must be passed after an additional `--` (e.g. `deno task start -- --version`)
-
 #### Run Program
 
 `deno task start`

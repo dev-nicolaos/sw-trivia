@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## Unreleased
 
+### Changed
+
+- Updated runtime (Deno) to v1.28.1 and dependencies (Deno Standard) to
+  v0.165.0
+
 ## 0.16.0 - 2022-4-11
 
 ### Added
