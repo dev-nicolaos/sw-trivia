@@ -1,7 +1,7 @@
 import { dirname, fromFileUrl } from "std/path/mod.ts";
 import { parse } from "std/flags/mod.ts";
 
-import { ensureDirSync, existsSync } from "std/fs/mod.ts";
+import { ensureDirSync } from "std/fs/mod.ts";
 import { grantOrThrow } from "std/permissions/mod.ts";
 
 import { Source, SUPPORTED_MEDIA_TYPES } from "types";
@@ -70,23 +70,21 @@ async function createSourceFile({ name, mediaType }: Source) {
       { name: "write", path: targetDir },
     );
 
-    // TODO: refactor this not to use exists
-    if (existsSync(fullPath)) {
-      throw `Trivia file already exists for ${name}`;
-    }
+    Deno.openSync(fullPath);
 
-    ensureDirSync(targetDir);
-    Deno.writeTextFileSync(fullPath, template);
-
-    console.log(
-      `Success! Don't forget to import ${fileName} in ${targetDir}/mod.ts`,
-    );
+    throw `Trivia file already exists for ${name} (${mediaType})`;
   } catch (err) {
     if (err instanceof Deno.errors.PermissionDenied) {
       console.error(
         `Error: This script requires permission to read from (to ensure a trivia file doesn't already exist) and write to (to create a new trivia file) ${targetDir}`,
       );
       Deno.exit(2);
+    } else if (err instanceof Deno.errors.NotFound) {
+      ensureDirSync(targetDir);
+      Deno.writeTextFileSync(fullPath, template);
+      console.log(
+        `Success! Don't forget to import ${fileName} in ${targetDir}/mod.ts`,
+      );
     } else {
       throw err;
     }
@@ -111,6 +109,7 @@ if (!type) {
     "Please include the media type of the trivia source using the --type (-t for short) argument",
     `Valid media types are ${SUPPORTED_MEDIA_TYPES.join(", ")}`,
   );
+  // @ts-expect-error Known TS issue: https://github.com/microsoft/TypeScript/issues/26255
 } else if (!SUPPORTED_MEDIA_TYPES.includes(type.toLowerCase())) {
   errorMessages.push(`${type} is not a supported media type`);
 }
@@ -119,5 +118,6 @@ if (errorMessages.length) {
   for (const err of errorMessages) console.error(err);
   Deno.exit(1);
 } else {
+  // @ts-expect-error TS doesn't realize we've accounted for undefined
   createSourceFile({ name, mediaType: type });
 }
